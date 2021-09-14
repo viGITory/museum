@@ -1,0 +1,68 @@
+.form {
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &,
+  &__amount {
+    display: flex;
+  }
+
+  &__ticket-type {
+    max-width: 270px;
+  }
+
+  &__subtitle,
+  &__fieldset,
+  &__age,
+  &__total {
+    margin: 0;
+  }
+
+  &__subtitle,
+  &__total {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33px;
+  }
+
+  &__subtitle {
+    margin-bottom: 51px;
+
+    &--amount {
+      margin-bottom: 11px;
+
+      text-align: right;
+    }
+  }
+
+  &__fieldset {
+    padding: 0;
+
+    border: 0;
+  }
+
+  &__amount {
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 175px;
+  }
+
+  &__ticket-count {
+    max-width: 150px;
+    margin-bottom: 36px;
+
+    &:last-of-type {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__age {
+    margin-bottom: 12px;
+  }
+
+  &__total {
+    margin-bottom: 52px;
+
+    letter-spacing: 2px;
+  }
+}

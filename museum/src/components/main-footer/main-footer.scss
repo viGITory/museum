@@ -1,0 +1,20 @@
+.main-footer {
+  &__inner,
+  &__nav {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 135px;
+  }
+
+  &__nav {
+    width: 100%;
+    max-width: 400px;
+    margin-right: auto;
+  }
+
+  &__social {
+    align-self: flex-end;
+    max-width: 336px;
+    margin-bottom: 15px;
+  }
+}

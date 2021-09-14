@@ -1,0 +1,57 @@
+.radio-list {
+  padding: 0;
+
+  list-style: none;
+
+  &,
+  &__input {
+    margin: 0;
+  }
+
+  &__item {
+    margin-bottom: 49px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $active-text;
+    }
+  }
+
+  &__input,
+  &__label {
+    cursor: pointer;
+
+    transition: all .2s ease;
+  }
+
+  &__input {
+    width: 17px;
+    min-width: 17px;
+    height: 17px;
+    padding: 3px;
+    margin-right: 23px;
+
+    border: 2px solid $light-border;
+    border-radius: 50%;
+    appearance: none;
+
+    &:checked {
+      background-color: $light-bg;
+      background-position: center;
+      background-clip: content-box;
+    }
+
+    &:hover {
+      border-color: $active-btn;
+
+      &:checked {
+        background-color: $active-btn;
+      }
+    }
+  }
+}

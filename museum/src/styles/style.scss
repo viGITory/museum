@@ -1,0 +1,44 @@
+//- *** BASE ***
+@import "fonts";
+@import "variables";
+
+//- *** COMMON COMPONENTS ***
+@import "../components/html/html";
+@import "../components/page/page";
+@import "../components/visually-hidden/visually-hidden";
+@import "../components/container/container";
+@import "../components/section/section";
+
+//- *** HEADER ***
+@import "../components/main-header/main-header";
+@import "../components/logo/logo";
+@import "../components/main-menu/main-menu";
+
+//- *** WELCOME ***
+@import "../components/welcome/welcome";
+
+//- *** VISITING ***
+@import "../components/visiting/visiting";
+@import "../components/place/place";
+
+//- *** EXPLORE ***
+@import "../components/explore/explore";
+
+//- *** VIDEO ***
+@import "../components/video/video";
+@import "../components/player/player";
+@import "../components/control-bar/control-bar";
+
+//- *** TICKETS ***
+@import "../components/tickets/tickets";
+@import "../components/form/form";
+@import "../components/radio-list/radio-list";
+@import "../components/ticket-count/ticket-count";
+@import "../components/buy-btn/buy-btn";
+
+//- *** CONTACTS ***
+@import "../components/contacts/contacts";
+
+//- *** FOOTER ***
+@import "../components/main-footer/main-footer";
+@import "../components/social/social";

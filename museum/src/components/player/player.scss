@@ -1,0 +1,41 @@
+.player {
+  width: 100%;
+
+  &__screen {
+    position: relative;
+  }
+
+  &__screen-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 15.28%;
+    height: 34.98%;
+    padding: 0;
+
+    cursor: pointer;
+    background-color: transparent;
+    background-image: url("../assets/svg/screen-btn.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 0;
+    outline: none;
+
+    transition: filter .2s ease;
+    transform: translate(-50%, -50%);
+
+    &:hover,
+    &:focus,
+    &:active {
+      filter: $light-filter;
+    }
+  }
+
+  &__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+    object-fit: cover;
+  }
+}

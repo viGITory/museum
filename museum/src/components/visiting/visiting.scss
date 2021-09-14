@@ -1,0 +1,11 @@
+.visiting {
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 75px 60px;
+  }
+
+  &__item {
+    flex-basis: 440px;
+  }
+}

@@ -1,0 +1,26 @@
+.buy-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 175px;
+  height: 50px;
+  padding: 0;
+
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: 2px;
+
+  cursor: pointer;
+  background-color: $light-bg;
+  border: 0;
+  border-radius: 2px;
+
+  transition: all .2s ease;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $active-btn;
+  }
+}

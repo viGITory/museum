@@ -1,0 +1,350 @@
+doctype html
+html.html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title
+      | Museum
+  body.page
+
+    //- *** HEADER ***
+    header.section.main-header
+      div.container.main-header__inner
+        a.logo(href="#")
+          | Louvre
+        nav
+          ul.main-header__menu.main-menu
+            li.main-menu__item
+              a.main-menu__link(href="#visiting")
+                | Visiting
+            li.main-menu__item
+              a.main-menu__link(href="#explore")
+                | Explore
+            li.main-menu__item
+              a.main-menu__link(href="#video")
+                | Video
+            li.main-menu__item
+              a.main-menu__link(href="#tickets")
+                | Tickets
+            li.main-menu__item
+              a.main-menu__link(href="#contacts")
+                | Contacts
+
+    //- *** MAIN ***
+    main
+      h1.visually-hidden
+        | Louvre
+
+      //- *** WELCOME ***
+      section.section.welcome#welcome
+        div.welcome__wrapper
+          div.container.welcome__inner
+            h2.section__title.welcome__title
+              span.welcome__title-short
+                | Welcome
+              |  to the Louvre
+            p.welcome__subtitle
+              | From the castle to the museum
+            a.welcome__button(href="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736"
+                              target="_blank")
+              | Discover the Louvre
+
+      //- *** VISITING ***
+      section.section.section--light.visiting#visiting
+        div.container
+          h2.section__title.section__title--gold
+            | Virtual tour
+          div.visiting__wrapper
+            a.visiting__item.place(href="https://www.google.com/maps/@48.8606882,2.3356791,3a,90y,328.36h,87.55t/data=!3m7!1e1!3m5!1sAF1QipMZ9YgnArbwEIbTDANeSQYFu9gNqpW_2Sv8FBvY!2e10!3e12!7i4352!8i1815"
+                                   target="_blank")
+              article
+                img.place__img(src=require("../assets/images/visiting/royal-palace.jpg")
+                               width="440"
+                               height="285"
+                               alt="Royal Palace")
+                h3.place__title
+                  | Royal Palace
+                p.place__subtitle
+                  | 360° Virtual Tour
+                p.place__text
+                  | Google Street Panorama View
+            a.visiting__item.place(href="https://www.google.com/maps/@48.8563254,2.3352706,3a,75y,90t/data=!3m7!1e1!3m5!1sAF1QipNRj_CwP4coDMYdCHj6qHeBeJpI2VxU5BUsOX4F!2e10!3e12!7i11000!8i5500"
+                                   target="_blank")
+              article
+                img.place__img(src=require("../assets/images/visiting/denon-wing.jpg")
+                               width="440"
+                               height="285"
+                               alt="Denon Wing")
+                h3.place__title
+                  | Denon Wing
+                p.place__subtitle
+                  | 360° Virtual Tour
+                p.place__text
+                  | Google Street Panorama View
+            a.visiting__item.place(href="https://www.google.com/maps/@48.8601723,2.3395439,3a,88.4y,322.04h,84.25t/data=!3m7!1e1!3m5!1sAF1QipNMZGQuEA-pAUvIG_eP_2f3gWTKZEJ6XLVJ-Pgb!2e10!3e12!7i10240!8i5120"
+                                   target="_blank")
+              article
+                img.place__img(src=require("../assets/images/visiting/colonnade-perrault.jpg")
+                               width="440"
+                               height="285"
+                               alt="Colonnade Perrault")
+                h3.place__title
+                  | Colonnade Perrault
+                p.place__subtitle
+                  | 360° Virtual Tour
+                p.place__text
+                  | Google Street Panorama View
+            a.visiting__item.place(href="https://www.google.com/maps/@48.860183,2.3356156,3a,90y,177.69h,95.61t/data=!3m7!1e1!3m5!1sAF1QipP7uFZnTITRe-7AEVAgHAfqiCL-03gvBHcYWgF3!2e10!3e12!7i5472!8i2736"
+                                   target="_blank")
+              article
+                img.place__img(src=require("../assets/images/visiting/greek-hall.jpg")
+                               width="440"
+                               height="285"
+                               alt="Greek hall")
+                h3.place__title
+                  | Greek hall
+                p.place__subtitle
+                  | 360° Virtual Tour
+                p.place__text
+                  | Google Street Panorama View
+            a.visiting__item.place(href="https://www.google.com/maps/@48.8598788,2.3355157,3a,82.2y,7.53h,94t/data=!3m7!1e1!3m5!1sAF1QipO1wkUUbyzpPjj-OR0mR5etZJT-xl-40XK8rDQ3!2e10!3e12!7i10240!8i5120"
+                                   target="_blank")
+              article
+                img.place__img(src=require("../assets/images/visiting/mona-lisa.jpg")
+                               width="440"
+                               height="285"
+                               alt="Mona Lisa")
+                h3.place__title
+                  | Mona Lisa
+                p.place__subtitle
+                  | 360° Virtual Tour
+                p.place__text
+                  | Google Street Panorama View
+            a.visiting__item.place(href="https://www.google.com/maps/@48.8563254,2.3352706,3a,90y,21.26h,79.91t/data=!3m7!1e1!3m5!1sAF1QipPpGAowYatVyk3MMGnZAaQkYm2EUk-Dlca06SS5!2e10!3e12!7i11304!8i5652"
+                                   target="_blank")
+              article
+                img.place__img(src=require("../assets/images/visiting/night-palace.jpg")
+                               width="440"
+                               height="285"
+                               alt="Night Palace")
+                h3.place__title
+                  | Night Palace
+                p.place__subtitle
+                  | 360° Virtual Tour
+                p.place__text
+                  | Google Street Panorama View
+
+      //- *** EXPLORE ***
+      section.section.explore#explore
+        div.container.explore__inner
+          div.explore__wrapper
+            h2.section__title
+              | Picture explore
+            p.explore__text
+              | Las Meninas is a 1656 painting by Diego Velázquez,
+              | the leading artist of the Spanish Golden Age.
+            p.explore__text
+              | It was cleaned in 1984 to remove a <span class="explore__special-text">"yellow veil"</span>
+              | of dust that had gathered since the previous
+              | restoration in the 19th century.
+            p.explore__text
+              | The cleaning provoked furious protests,
+              | not because the picture had been damaged in any way,
+              | but because it looked different.
+          img.explore__img(src=require("../assets/images/las-meninas.jpg")
+                           width="720"
+                           height="700"
+                           alt="The picture by Diego Velázquez - Las Meninas")
+
+      //- *** VIDEO ***
+      section.section.section--light.video#video
+        div.container.video__inner
+          div.video__text-group
+            h2.section__title.section__title--gold.video__title
+              | Video journey
+            p.video__text
+              | Enter and visit one of the most famous museums
+              | in the world and enjoy masterpieces such as
+              | Mona Lisa or Hammurabi's Code
+          div.video__player.player
+            div.player__screen
+              img.player__img(src=require("../assets/images/player-bg.jpg")
+                              width="1440"
+                              height="629"
+                              alt="Video poster")
+              button.player__screen-btn(type="button")
+                span.visually-hidden
+                  | Screen-Play
+            div.control-bar
+              button.control-bar__btn.control-bar__btn--prev(type="button")
+                span.visually-hidden
+                  | Previous
+              button.control-bar__btn.control-bar__btn--play(type="button")
+                span.visually-hidden
+                  | Play
+              button.control-bar__btn.control-bar__btn--next(type="button")
+                span.visually-hidden
+                  | Next
+              input.control-bar__progress-bar(type="range"
+                                              value="47"
+                                              min="0"
+                                              max="100"
+                                              step="1"
+                                              aria-label="video-progress")
+              div.control-bar__volume-bar
+                button.control-bar__btn.control-bar__btn--vol(type="button")
+                  span.visually-hidden
+                    | Volume
+                input.control-bar__progress-bar.control-bar__progress-bar--vol(type="range"
+                                                                               value="42"
+                                                                               min="0"
+                                                                               max="100"
+                                                                               step="1"
+                                                                               aria-label="volume-level")
+              button.control-bar__btn.control-bar__btn--fullscreen(type="button")
+                  span.visually-hidden
+                    | Fullscreen
+
+      //- *** TICKETS ***
+      section.section.tickets#tickets
+        div.container
+          h2.section__title
+            | Buy tickets
+          div.tickets__wrapper
+            img.tickets__img(src=require("../assets/images/venus.jpg")
+                             width="720"
+                             height="550"
+                             alt="The picture by Pompeo Batoni - Venus Presenting Aeneas with Armour Forged by Vulcan, 1748")
+            form.tickets__form.form(action="#" method="post")
+              div.form__ticket-type
+                h3.form__subtitle
+                  | Ticket Type
+                fieldset.form__fieldset
+                  legend.visually-hidden
+                    | Ticket Type
+                  ul.radio-list
+                    li.radio-list__item
+                      label.radio-list__label
+                        input.radio-list__input(type="radio"
+                                                name="ticket-type"
+                                                checked)
+                        | Permanent exhibition
+                    li.radio-list__item
+                      label.radio-list__label
+                        input.radio-list__input(type="radio"
+                                                name="ticket-type")
+                        | Temporary exhibition
+                    li.radio-list__item
+                      label.radio-list__label
+                        input.radio-list__input(type="radio"
+                                                name="ticket-type")
+                        | Combined Admission
+              div.form__amount
+                h3.form__subtitle.form__subtitle--amount
+                  | Amount
+                div.form__ticket-count
+                  p.form__age
+                    | Basic 18+
+                  div.ticket-count
+                      button.ticket-count__btn(type="button"
+                                               onclick="this.nextElementSibling.stepDown()")
+                        | –
+                      input.ticket-count__sum(type="number"
+                                              value="1"
+                                              min="0"
+                                              max="100"
+                                              aria-label="basic-ticket-amount")
+                      button.ticket-count__btn(type="button"
+                                               onclick="this.previousElementSibling.stepUp()")
+                        | +
+                div.form__ticket-count
+                  p.form__age
+                    | Senior 65+
+                  div.ticket-count
+                      button.ticket-count__btn(type="button"
+                                               onclick="this.nextElementSibling.stepDown()")
+                        | –
+                      input.ticket-count__sum(type="number"
+                                              value="1"
+                                              min="0"
+                                              max="100"
+                                              aria-label="senior-ticket-amount")
+                      button.ticket-count__btn(type="button"
+                                               onclick="this.previousElementSibling.stepUp()")
+                        | +
+                p.form__total
+                  | Total €<span>220</span>
+                button.buy-btn
+                  | Buy Now
+
+      //- *** CONTACTS ***
+      section.section.section--light.contacts#contacts
+        div.container
+          h2.section__title.section__title--gold
+              | Contacts
+          div.contacts__wrapper
+            div.contacts__text-group
+              p.contacts__subtitle
+                | Palais Royal Musee du Louvre
+              address.contacts__text.contacts__text--address
+                | address: 75001 Paris, France
+              p.contacts__text
+                | phone:
+                a.contacts__link(href="tel:+33(0)140205050")
+                  |  +33(0) 1 40 20 50 50
+              p.contacts__text
+                | mail:
+                a.contacts__link(href="mailto:info@louvre.fr")
+                  |  info@louvre.fr
+            img.contacts__map(src=require("../assets/images/map.png")
+                              width="960"
+                              height="620"
+                              alt="Map with the address of the Louvre")
+
+    //- *** FOOTER ***
+    footer.section.main-footer
+      div.container.main-footer__inner
+        a.logo(href="#")
+          | Louvre
+        nav.main-footer__nav
+          ul.main-menu.main-menu--footer
+            li.main-menu__item
+              a.main-menu__link(href="#welcome")
+                | Welcome
+            li.main-menu__item
+              a.main-menu__link(href="#visiting")
+                | Visiting
+            li.main-menu__item
+              a.main-menu__link(href="#explore")
+                | Explore
+            li.main-menu__item
+              a.main-menu__link(href="#video")
+                | Video
+            li.main-menu__item
+              a.main-menu__link(href="#tickets")
+                | Tickets
+            li.main-menu__item
+              a.main-menu__link(href="#contacts")
+                | Contacts
+        div.main-footer__social
+          ul.social
+            li.social__item
+              a.social__link.social__link--youtube(href="https://www.youtube.com/user/louvre" target="_blank")
+                span.visually-hidden
+                  | Youtube
+            li.social__item
+              a.social__link.social__link--instagram(href="https://www.instagram.com/museelouvre/" target="_blank")
+                span.visually-hidden
+                  | Instagram
+            li.social__item
+              a.social__link.social__link--facebook(href="https://www.facebook.com/museedulouvre" target="_blank")
+                span.visually-hidden
+                  | Facebook
+            li.social__item
+              a.social__link.social__link--twitter(href="https://twitter.com/museelouvre" target="_blank")
+                span.visually-hidden
+                  | Twitter
+            li.social__item
+              a.social__link.social__link--pinterest(href="https://www.pinterest.fr/museedulouvre/" target="_blank")
+                span.visually-hidden
+                  | Pinterest

@@ -1,0 +1,48 @@
+.ticket-count {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 150px;
+  height: 50px;
+  padding: 0 11px;
+
+  border: 3px solid $light-border;
+
+  &__btn,
+  &__sum {
+    padding: 0;
+
+    font-family: inherit;
+    font-weight: inherit;
+    color: $light-text;
+
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+
+    transition: all .2s ease;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $active-btn;
+    }
+  }
+
+  &__btn {
+    font-size: 32px;
+    line-height: 37px;
+  }
+
+  &__sum {
+    font-size: inherit;
+    line-height: inherit;
+    text-align: center;
+
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      appearance: none;
+    }
+  }
+}

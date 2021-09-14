@@ -1,0 +1,34 @@
+//- *** COLORS ***
+
+//- *** WHITE ***
+$white: #fff;
+$light-text: $white;
+$light-btn: $white;
+$light-bg: $white;
+$light-border: $white;
+
+//- *** GOLD ***
+$gold: #9d8665;
+$gold-filter: invert(56%) sepia(31%) saturate(369%) hue-rotate(356deg) brightness(91%) contrast(91%);
+$active-text: $gold;
+$active-btn: $gold;
+$light-filter: $gold-filter;
+
+//- *** GRAY ***
+$light-gray: #c4c4c4;
+$middle-gray: #666;
+$gray-filter: invert(68%) sepia(0%) saturate(346%) hue-rotate(265deg) brightness(88%) contrast(92%);
+$dark-filter: $gray-filter;
+$light-bar: $light-gray;
+$social-color: $middle-gray;
+
+//- *** DARK RED ***
+$dark-red: #710707;
+$underline-color: $dark-red;
+$dark-btn: $dark-red;
+$active-bar: $dark-red;
+
+//- *** BLACK ***
+$black: #000;
+$dark-bg: #030303;
+$dark-text: $black;

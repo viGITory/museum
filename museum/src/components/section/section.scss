@@ -1,0 +1,28 @@
+.section {
+  padding: 75px 0;
+
+  background-color: $dark-bg;
+
+  &--light {
+    background-color: $light-bg;
+  }
+
+  &__title {
+    padding-bottom: 26px;
+    margin: 0;
+    margin-bottom: 75px;
+
+    font-family: Forum, serif;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 90px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+
+    border-bottom: 3px solid $underline-color;
+
+    &--gold {
+      color: $active-text;
+    }
+  }
+}
