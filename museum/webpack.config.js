@@ -4,6 +4,30 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 
+const pages = ['index.pug', 'tours1.html', 'tours2.html', 'tours3.html', 'tours4.html', 'tours5.html', 'tours6.html', 'tours7.html'];
+
+const createHtmlWebpackPlugin = pages.map((item) => {
+  if (item === 'index.pug') {
+    return new HtmlWebpackPlugin({
+      template: `src/pages/${item}`,
+      favicon: './src/favicon.ico',
+      filename: 'index.html'
+    });
+  } else if (item.startsWith('tours')) {
+    return new HtmlWebpackPlugin({
+      template: `src/pages/tours/${item}`,
+      favicon: './src/favicon.ico',
+      filename: `tours/${item}`
+    });
+  } else {
+    return new HtmlWebpackPlugin({
+      template: `src/pages/${item}`,
+      favicon: './src/favicon.ico',
+      filename: item
+    });
+  }
+});
+
 const devServer = (isDev) => !isDev ? {} : {
   devServer: {
     open: true,
@@ -62,12 +86,8 @@ module.exports = ({ development }) => ({
   },
   plugins: [
     new MiniCssExtractPlugin({ filename: '[name].[contenthash].css' }),
+    ...createHtmlWebpackPlugin,
     new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
-    new HtmlWebpackPlugin({
-      template: `src/pages/index.pug`,
-      favicon: './src/favicon.ico',
-      filename: 'index.html'
-    })
     // new CopyWebpackPlugin({}),
   ],
   resolve: {
