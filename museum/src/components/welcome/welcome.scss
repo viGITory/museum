@@ -7,20 +7,15 @@
   &__wrapper {
     max-width: 1920px;
     margin: 0 auto;
-
-    background-image: url("../assets/images/welcome-bg.jpg");
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    background-size: 1215px auto;
   }
 
   &__inner {
-    padding-top: 114px;
-    padding-bottom: 246px;
+    padding-top: 149px;
+    padding-bottom: 272px;
   }
 
   &__title {
-    margin-bottom: 26px;
+    margin-bottom: 25px;
 
     border: 0;
   }
@@ -36,7 +31,7 @@
 
   &__subtitle {
     margin: 0;
-    margin-bottom: 76px;
+    margin-bottom: 75px;
 
     font-size: 28px;
     line-height: 33px;

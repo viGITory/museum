@@ -10,7 +10,7 @@
   &__img {
     display: block;
     height: auto;
-    margin-bottom: 25px;
+    margin-bottom: 24px;
 
     object-fit: cover;
   }
@@ -23,7 +23,7 @@
 
   &__title {
     position: relative;
-    margin-bottom: 22px;
+    margin-bottom: 23px;
 
     font-family: Forum, serif;
     font-size: 32px;
@@ -34,7 +34,7 @@
 
     &::after {
       position: absolute;
-      bottom: -11px;
+      bottom: -12px;
       left: 0;
       width: 100%;
       max-width: 300px;
