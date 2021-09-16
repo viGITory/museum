@@ -1,0 +1,125 @@
+.welcome-slider {
+  width: 1000px;
+  height: 810px;
+
+  overflow: hidden;
+
+  &__wrapper,
+  &__numbers {
+    position: relative;
+  }
+
+  &__wrapper::after,
+  &__controls,
+  &__numbers::after {
+    position: absolute;
+  }
+
+  &__wrapper {
+    height: 750px;
+
+    &::after {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      content: "";
+      background: linear-gradient(90deg, $dark-bg 0%, rgba(0, 0, 0, .5) 16.19%, rgba(0, 0, 0, 0) 30.73%);
+    }
+  }
+
+  &__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+    object-fit: cover;
+  }
+
+  &__controls,
+  &__numbers,
+  &__bullet-list,
+  &__arrows {
+    display: flex;
+  }
+
+  &__controls {
+    right: 0;
+    bottom: 0;
+    align-items: center;
+    padding: 40px 75px;
+
+    background-color: $dark-bg;
+  }
+
+  &__numbers::after,
+  &__bullet {
+    background-color: #fff;
+  }
+
+  &__numbers {
+    justify-content: space-between;
+    width: 78px;
+    margin-right: 55px;
+
+    line-height: 40px;
+
+    &::after {
+      top: 50%;
+      left: 50%;
+      width: 2px;
+      height: 20px;
+
+      content: "";
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__bullet-list,
+  &__arrow-item {
+    padding: 0;
+  }
+
+  &__bullet-list {
+    margin: 0;
+    margin-right: 60px;
+    column-gap: 25px;
+
+    list-style: none;
+  }
+
+  &__bullet,
+  &__arrow-item {
+    cursor: pointer;
+  }
+
+  &__bullet {
+    width: 16px;
+    height: 16px;
+
+    &--active {
+      background-color: $gold;
+    }
+  }
+
+  &__arrows {
+    column-gap: 19px;
+  }
+
+  &__arrow-item {
+    width: 30px;
+    height: 8px;
+
+    background-color: transparent;
+    background-image: url("../assets/svg/slider-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: 0;
+
+    &--next {
+      transform: rotate(180deg);
+    }
+  }
+}

@@ -40,8 +40,8 @@ html.html(lang="en")
 
       //- *** WELCOME ***
       section.section.welcome#welcome
-        div.welcome__wrapper
-          div.container.welcome__inner
+        div.container.welcome__inner
+          div.welcome__wrapper
             h2.section__title.welcome__title
               span.welcome__title-short
                 | Welcome
@@ -51,6 +51,24 @@ html.html(lang="en")
             a.welcome__button(href="./tours/tours1.html"
                               target="_blank")
               | Discover the Louvre
+          div.welcome__slider.welcome-slider
+            div.welcome-slider__wrapper
+              img.welcome-slider__img(src="../assets/images/welcome-slider/welcome-slider1.jpg" alt="Mona Lisa" width="1000" height="750")
+            div.welcome-slider__controls
+              div.welcome-slider__numbers
+                span
+                  | 01
+                span
+                  | 05
+              ul.welcome-slider__bullet-list
+                li.welcome-slider__bullet.welcome-slider__bullet--active
+                li.welcome-slider__bullet
+                li.welcome-slider__bullet
+                li.welcome-slider__bullet
+                li.welcome-slider__bullet
+              div.welcome-slider__arrows
+                button.welcome-slider__arrow-item(type="button" aria-label="arow-prev")
+                button.welcome-slider__arrow-item.welcome-slider__arrow-item--next(type="button" aria-label="arow-next")
 
       //- *** VISITING ***
       section.section.section--light.visiting#visiting

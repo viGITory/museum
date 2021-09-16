@@ -4,14 +4,18 @@
     padding: 0;
   }
 
+  &__inner,
   &__wrapper {
-    max-width: 1920px;
-    margin: 0 auto;
+    position: relative;
   }
 
   &__inner {
+    min-height: 810px;
     padding-top: 149px;
-    padding-bottom: 272px;
+  }
+
+  &__wrapper {
+    z-index: 1;
   }
 
   &__title {
@@ -58,5 +62,11 @@
     &:active {
       background-color: $active-btn;
     }
+  }
+
+  &__slider {
+    position: absolute;
+    top: 0;
+    right: 20px;
   }
 }
