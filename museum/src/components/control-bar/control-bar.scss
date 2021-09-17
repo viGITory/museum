@@ -1,11 +1,10 @@
 .control-bar {
   box-sizing: border-box;
-  flex-wrap: wrap;
-  gap: 20px 41px;
   min-height: 85px;
-  padding: 24px 41px;
+  padding: 24px 30px;
+  column-gap: 50px;
 
-  background-color: $dark-bg;
+  background-color: $black;
 
   &,
   &__volume-bar {
@@ -14,8 +13,7 @@
   }
 
   &__btn {
-    display: block;
-    height: 30px;
+    height: 31px;
     padding: 0;
 
     cursor: pointer;
@@ -23,24 +21,14 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
-    border: 0;
+    border: none;
 
-    transition: filter .2s ease;
+    transition: all .2s ease;
 
     &:hover,
     &:focus,
     &:active {
-      filter: $dark-filter;
-    }
-
-    &--prev,
-    &--next {
-      width: 27px;
-      min-width: 27px;
-    }
-
-    &--prev {
-      background-image: url("../assets/svg/prev-btn.svg");
+      filter: invert(68%) sepia(0%) saturate(346%) hue-rotate(265deg) brightness(88%) contrast(92%);
     }
 
     &--play {
@@ -48,10 +36,6 @@
       min-width: 23px;
 
       background-image: url("../assets/svg/play-btn.svg");
-    }
-
-    &--next {
-      background-image: url("../assets/svg/next-btn.svg");
     }
 
     &--vol {
@@ -76,15 +60,16 @@
   }
 
   &__progress-bar {
-    width: 100%;
-    max-width: 820px;
+    width: 929px;
     height: 8px;
     margin: 0;
 
-    background: linear-gradient(to right, $active-bar 0%, $active-bar 47%, $light-bar 47%, $light-bar 100%);
+    background: linear-gradient(to right, #710707 0%, #710707 0%, #c4c4c4 0%, #c4c4c4 100%);
 
     &--vol {
       width: 155px;
+
+      background: linear-gradient(to right, #710707 50%, #710707 50%, #c4c4c4 0%, #c4c4c4 100%);
     }
   }
 
@@ -93,13 +78,11 @@
     height: 15px;
 
     cursor: ew-resize;
-    background-color: $light-btn;
-    border: 0;
+    background-color: #fff;
     border-radius: 50%;
   }
 
   &__volume-bar {
-    margin-right: 7px;
-    column-gap: 20px;
+    column-gap: 50px;
   }
 }

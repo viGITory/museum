@@ -179,35 +179,29 @@ html.html(lang="en")
 
       //- *** VIDEO ***
       section.section.section--light.video#video
-        div.container.video__inner
-          div.video__text-group
+        div.container
+          div.video__wrapper
             h2.section__title.section__title--gold.video__title
               | Video journey
             p.video__text
               | Enter and visit one of the most famous museums
               | in the world and enjoy masterpieces such as
               | Mona Lisa or Hammurabi's Code
-          div.video__player.player
-            div.player__screen
-              img.player__img(src=require("../assets/images/player-bg.jpg")
-                              width="1440"
-                              height="629"
-                              alt="Video poster")
-              button.player__screen-btn(type="button")
-                span.visually-hidden
-                  | Screen-Play
-            div.control-bar
-              button.control-bar__btn.control-bar__btn--prev(type="button")
-                span.visually-hidden
-                  | Previous
-              button.control-bar__btn.control-bar__btn--play(type="button")
+          div.video__player.video-player
+            div.video-player__wrapper
+              video.video-player__screen(src="../assets/video/video0.mp4" poster=require("../assets/images/video-posters/poster0.jpg"))
+              button.video-player__screen-btn(type="button")
                 span.visually-hidden
                   | Play
-              button.control-bar__btn.control-bar__btn--next(type="button")
+              div.video-player__playback
+              div.video-player__rewind
+                | 10 sec.
+            div.control-bar
+              button.control-bar__btn.control-bar__btn--play(type="button")
                 span.visually-hidden
-                  | Next
+                  | Play/Pause
               input.control-bar__progress-bar(type="range"
-                                              value="47"
+                                              value="0"
                                               min="0"
                                               max="100"
                                               step="1"
@@ -215,16 +209,34 @@ html.html(lang="en")
               div.control-bar__volume-bar
                 button.control-bar__btn.control-bar__btn--vol(type="button")
                   span.visually-hidden
-                    | Volume
+                    | Volume/Mute
                 input.control-bar__progress-bar.control-bar__progress-bar--vol(type="range"
-                                                                               value="42"
-                                                                               min="0"
-                                                                               max="100"
-                                                                               step="1"
-                                                                               aria-label="volume-level")
+                                                                              min="0"
+                                                                              max="100"
+                                                                              step="1"
+                                                                              aria-label="volume-level")
               button.control-bar__btn.control-bar__btn--fullscreen(type="button")
                   span.visually-hidden
                     | Fullscreen
+          div.video-slider
+            div.video-slider__wrapper
+              iframe.video-slider__frame(width='1280' height='720' src='https://www.youtube.com/embed/aWmJ5DgyWPI' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+              iframe.video-slider__frame(width='1280' height='720' src='https://www.youtube.com/embed/Vi5D6FKhRmo' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+              iframe.video-slider__frame(width='1280' height='720' src='https://www.youtube.com/embed/NOhDysLnTvY' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+              iframe.video-slider__frame(width='1280' height='720' src='https://www.youtube.com/embed/zp1BXPX8jcU' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+              iframe.video-slider__frame(width='1280' height='720' src='https://www.youtube.com/embed/2OR0OCr6uRE' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+            div.video-slider__bullets
+              button.video-slider__arrow(type="button")
+                span.visually-hidden
+                  | Arrow prev
+              span.video-slider__bullet-item.video-slider__bullet-item--active
+              span.video-slider__bullet-item
+              span.video-slider__bullet-item
+              span.video-slider__bullet-item
+              span.video-slider__bullet-item
+              button.video-slider__arrow.video-slider__arrow--next(type="button")
+                span.visually-hidden
+                  | Arrow next
 
       //- *** TICKETS ***
       section.section.tickets#tickets

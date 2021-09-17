@@ -1,20 +1,10 @@
 .video {
-  padding-top: 90px;
-
-  &__inner,
-  &__text-group {
+  &__wrapper {
     display: flex;
-  }
-
-  &__inner {
-    flex-direction: column;
-  }
-
-  &__text-group {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    order: 1;
+    margin-bottom: 75px;
   }
 
   &__title {
@@ -28,6 +18,7 @@
   &__text {
     flex-basis: 720px;
     margin: 0;
+    margin-top: 2px;
 
     line-height: 38px;
     color: $dark-text;
