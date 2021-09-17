@@ -88,7 +88,14 @@ module.exports = ({ development }) => ({
     new MiniCssExtractPlugin({ filename: '[name].[contenthash].css' }),
     ...createHtmlWebpackPlugin,
     new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
-    // new CopyWebpackPlugin({}),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: "src/assets",
+          to: "assets"
+        }
+      ],
+    }),
   ],
   resolve: {
     extensions: ['.js'],
