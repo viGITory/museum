@@ -9,7 +9,7 @@
   }
 
   &__item {
-    margin-bottom: 49px;
+    margin-bottom: 25px;
 
     &:last-child {
       margin-bottom: 0;
@@ -36,12 +36,12 @@
     padding: 3px;
     margin-right: 23px;
 
-    border: 2px solid $light-border;
+    border: 2px solid $black;
     border-radius: 50%;
     appearance: none;
 
     &:checked {
-      background-color: $light-bg;
+      background-color: $black;
       background-position: center;
       background-clip: content-box;
     }

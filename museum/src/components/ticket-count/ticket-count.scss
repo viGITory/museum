@@ -7,7 +7,7 @@
   height: 50px;
   padding: 0 11px;
 
-  border: 3px solid $light-border;
+  border: 3px solid $black;
 
   &__btn,
   &__sum {
@@ -15,7 +15,7 @@
 
     font-family: inherit;
     font-weight: inherit;
-    color: $light-text;
+    color: $black;
 
     cursor: pointer;
     background-color: transparent;
