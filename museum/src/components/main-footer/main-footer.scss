@@ -1,9 +1,20 @@
 .main-footer {
-  &__inner,
-  &__nav {
+  &__wrapper,
+  &__nav,
+  &__bottom {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 135px;
+  }
+
+  &__wrapper,
+  &__nav {
+    column-gap: 132px;
+  }
+
+  &__top {
+    padding-bottom: 40px;
+
+    border-bottom: 3px solid #666;
   }
 
   &__nav {
@@ -14,7 +25,33 @@
 
   &__social {
     align-self: flex-end;
-    max-width: 336px;
     margin-bottom: 15px;
+  }
+
+  &__bottom {
+    padding-top: 50px;
+
+    font-weight: 100;
+    line-height: 22px;
+    letter-spacing: 2px;
+  }
+
+  &__text {
+    margin: 0;
+
+    &--year {
+      margin-right: 488px;
+    }
+
+    &--school {
+      margin-right: auto;
+    }
+  }
+
+  &__link {
+    color: inherit;
+    text-decoration: none;
+
+    transition: color .2s ease;
   }
 }
