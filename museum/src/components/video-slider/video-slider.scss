@@ -31,14 +31,14 @@
 
     cursor: pointer;
     background-color: transparent;
-    background-image: url("../assets/svg/video-arrow.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
     border: 0;
 
-    &--next {
-      transform: rotate(180deg);
+    path {
+      transition: fill .2s ease;
+    }
+
+    &:hover path {
+      fill: $video-bullet-hover;
     }
   }
 
@@ -51,8 +51,14 @@
     background-color: $video-bullet-color;
     border-radius: 50%;
 
+    transition: background-color .2s ease;
+
     &--active {
       background-color: $video-bullet-active;
+    }
+
+    &:hover {
+      background-color: $video-bullet-hover;
     }
   }
 }

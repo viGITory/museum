@@ -15,10 +15,12 @@
   &__item {
     transition: all .2s ease;
 
-    &:hover,
-    &:focus,
-    &:active {
+    &:hover {
       filter: $social-hover;
+    }
+
+    &:active {
+      filter: $social-active;
     }
   }
 

@@ -55,5 +55,13 @@
     text-decoration: none;
 
     transition: color .2s ease;
+
+    &:hover {
+      color: $primary-hover;
+    }
+
+    &:active {
+      color: $primary-active;
+    }
   }
 }

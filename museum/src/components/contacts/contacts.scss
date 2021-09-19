@@ -49,10 +49,12 @@
 
     transition: color .2s ease;
 
-    &:hover,
-    &:focus,
-    &:active {
+    &:hover {
       color: $primary-hover;
+    }
+
+    &:active {
+      color: $primary-active;
     }
   }
 

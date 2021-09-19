@@ -15,8 +15,13 @@ $dark-bg: #030303;
 $booking-primary-dark: #030303;
 
 //- *** GOLD ***
-$logo-hover: invert(56%) sepia(31%) saturate(369%) hue-rotate(356deg) brightness(91%) contrast(91%);
-$social-hover: invert(56%) sepia(31%) saturate(369%) hue-rotate(356deg) brightness(91%) contrast(91%);
+$logo-hover: invert(44%) sepia(6%) saturate(2145%) hue-rotate(357deg) brightness(93%) contrast(81%);
+$social-hover: invert(44%) sepia(6%) saturate(2145%) hue-rotate(357deg) brightness(93%) contrast(81%);
+$video-btn-hover: invert(44%) sepia(6%) saturate(2145%) hue-rotate(357deg) brightness(93%) contrast(81%);
+
+$logo-active: invert(56%) sepia(31%) saturate(369%) hue-rotate(356deg) brightness(91%) contrast(91%);
+$social-active: invert(56%) sepia(31%) saturate(369%) hue-rotate(356deg) brightness(91%) contrast(91%);
+$welcome-arrow-hover: invert(56%) sepia(31%) saturate(369%) hue-rotate(356deg) brightness(91%) contrast(91%);
 
 $primary-hover: #9d8665;
 $section-title-bright: #9d8665;
@@ -27,6 +32,8 @@ $welcome-bullet-active: #d2b183;
 
 //- *** GRAY ***
 $progress-bg: #c4c4c4;
+$screen-btn-hover: #c4c4c4;
+
 $control-hover: invert(67%) sepia(0%) saturate(1%) hue-rotate(161deg) brightness(91%) contrast(90%);
 $select-active: #e7e7e7;
 $video-bullet-color: #999;
@@ -43,5 +50,6 @@ $welcome-btn-bg: #710707;
 $progress-active: #710707;
 $title-underline-color: #710707;
 
+$video-bullet-hover: #740c11;
 $booking-subtitle-color: #740c11;
 $booking-underline-color: #740c11;

@@ -92,6 +92,8 @@
   &__bullet,
   &__arrow-item {
     cursor: pointer;
+
+    transition: all .2s ease;
   }
 
   &__bullet {
@@ -100,6 +102,10 @@
 
     &--active {
       background-color: $welcome-bullet-active;
+    }
+
+    &:hover {
+      background-color: $primary-hover;
     }
   }
 
@@ -120,6 +126,10 @@
 
     &--next {
       transform: rotate(180deg);
+    }
+
+    &:hover {
+      filter: $welcome-arrow-hover;
     }
   }
 }

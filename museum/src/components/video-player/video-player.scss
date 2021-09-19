@@ -28,11 +28,6 @@
     position: absolute;
   }
 
-  &__screen-btn,
-  &__rewind {
-    background-repeat: no-repeat;
-  }
-
   &__screen-btn {
     top: 215px;
     left: 50%;
@@ -42,12 +37,18 @@
 
     cursor: pointer;
     background-color: transparent;
-    background-image: url("../assets/svg/screen-btn.svg");
-    background-size: contain;
     border: 0;
     outline: none;
 
     transform: translateX(-50%);
+
+    path {
+      transition: fill .2s ease;
+    }
+
+    &:hover path {
+      fill: $screen-btn-hover;
+    }
   }
 
   &__playback,
@@ -68,6 +69,7 @@
 
     text-align: center;
 
+    background-repeat: no-repeat;
     background-size: 45px auto;
   }
 }
