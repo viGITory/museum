@@ -12,7 +12,7 @@
   &__subtitle,
   &__text,
   &__link {
-    color: $dark-text;
+    color: $primary-dark-text;
   }
 
   &__subtitle,
@@ -52,7 +52,7 @@
     &:hover,
     &:focus,
     &:active {
-      color: $active-text;
+      color: $primary-hover;
     }
   }
 

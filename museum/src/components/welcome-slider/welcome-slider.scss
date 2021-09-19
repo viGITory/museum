@@ -25,7 +25,7 @@
       height: 100%;
 
       content: "";
-      background: linear-gradient(90deg, $dark-bg 0%, rgba(0, 0, 0, .5) 16.19%, rgba(0, 0, 0, 0) 30.73%);
+      background: linear-gradient(90deg, $extra-dark-bg 0%, rgba(0, 0, 0, .5) 16.19%, rgba(0, 0, 0, 0) 30.73%);
     }
   }
 
@@ -55,7 +55,7 @@
 
   &__numbers::after,
   &__bullet {
-    background-color: #fff;
+    background-color: $primary-light-text;
   }
 
   &__numbers {
@@ -99,7 +99,7 @@
     height: 16px;
 
     &--active {
-      background-color: $gold;
+      background-color: $welcome-bullet-active;
     }
   }
 

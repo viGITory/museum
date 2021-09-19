@@ -1,5 +1,5 @@
 .place {
-  color: $dark-text;
+  color: $primary-dark-text;
   text-decoration: none;
 
   &:hover &__title::after,
@@ -41,7 +41,7 @@
       height: 2px;
 
       content: "";
-      background-color: $underline-color;
+      background-color: $title-underline-color;
 
       transition: all .2s ease;
     }

@@ -4,7 +4,7 @@
   padding: 24px 30px;
   column-gap: 50px;
 
-  background-color: $black;
+  background-color: $extra-dark-bg;
 
   &,
   &__volume-bar {
@@ -28,7 +28,7 @@
     &:hover,
     &:focus,
     &:active {
-      filter: invert(68%) sepia(0%) saturate(346%) hue-rotate(265deg) brightness(88%) contrast(92%);
+      filter: $control-hover;
     }
 
     &--play {
@@ -64,12 +64,12 @@
     height: 8px;
     margin: 0;
 
-    background: linear-gradient(to right, #710707 0%, #710707 0%, #c4c4c4 0%, #c4c4c4 100%);
+    background: linear-gradient(to right, $progress-active 0%, $progress-active 0%, $progress-bg 0%, $progress-bg 100%);
 
     &--vol {
       width: 155px;
 
-      background: linear-gradient(to right, #710707 50%, #710707 50%, #c4c4c4 0%, #c4c4c4 100%);
+      background: linear-gradient(to right, $progress-active 50%, $progress-active 50%, $progress-bg 0%, $progress-bg 100%);
     }
   }
 
@@ -78,7 +78,7 @@
     height: 15px;
 
     cursor: ew-resize;
-    background-color: #fff;
+    background-color: $light-bg;
     border-radius: 50%;
   }
 

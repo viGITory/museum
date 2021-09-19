@@ -19,10 +19,10 @@
     text-transform: uppercase;
     letter-spacing: 5px;
 
-    border-bottom: 3px solid $underline-color;
+    border-bottom: 3px solid $title-underline-color;
 
     &--gold {
-      color: $active-text;
+      color: $section-title-bright;
     }
   }
 }
