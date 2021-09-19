@@ -24,12 +24,12 @@ const videoAction = () => {
     video.play();
     video.style.opacity = '1';
     playBtn.style.backgroundImage = 'url(assets/svg/pause.svg)';
-    screenBtn.style.backgroundImage = 'none';
+    screenBtn.style.display = 'none';
   } else {
     video.pause();
     video.style.opacity = '0.5';
     playBtn.style.backgroundImage = 'url(assets/svg/play-btn.svg)';
-    screenBtn.style.backgroundImage = 'url(assets/svg/screen-btn.svg)';
+    screenBtn.style.display = 'block';
   }
 };
 

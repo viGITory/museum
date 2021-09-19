@@ -1,18 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
-    <title>fullscreen_exit</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Two-Tone" transform="translate(-649.000000, -3437.000000)">
-            <g id="Navigation" transform="translate(100.000000, 3378.000000)">
-                <g id="Two-Tone-/-Navigation-/-fullscreen_exit" transform="translate(544.000000, 54.000000)">
-                    <g>
-                        <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
-                        <path d="M5,16 L8,16 L8,19 L10,19 L10,14 L5,14 L5,16 Z M8,8 L5,8 L5,10 L10,10 L10,5 L8,5 L8,8 Z M14,19 L16,19 L16,16 L19,16 L19,14 L14,14 L14,19 Z M16,8 L16,5 L14,5 L14,10 L19,10 L19,8 L16,8 Z" id="🔹-Primary-Color" fill="#b3b3b3"></path>
-                    </g>
-                </g>
-            </g>
-        </g>
-    </g>
+<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M28.2554 7.74495H35.9764V12.8119H23.1874V0.0229492H28.2544V7.74395L28.2554 7.74495ZM23.1884 35.976V23.1869H35.9774V28.2539H28.2564V35.9749H23.1894L23.1884 35.976ZM7.74544 7.74495V0.0239492H12.8124V12.8129H0.0234375V7.74595H7.74444L7.74544 7.74495ZM0.0244375 28.2549V23.1879H12.8134V35.977H7.74644V28.2559H0.0254375L0.0244375 28.2549Z" fill="#B3B3B3"/>
 </svg>
