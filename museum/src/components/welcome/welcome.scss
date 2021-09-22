@@ -4,18 +4,18 @@
     padding: 0;
   }
 
-  &__inner,
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    min-height: 810px;
+  }
+
   &__wrapper {
     position: relative;
-  }
-
-  &__inner {
-    min-height: 810px;
-    padding-top: 149px;
-  }
-
-  &__wrapper {
+    grid-column: 1 / span 6;
+    grid-row: 1;
     z-index: 1;
+    padding-top: 149px;
   }
 
   &__title {
@@ -68,8 +68,7 @@
   }
 
   &__slider {
-    position: absolute;
-    top: 0;
-    right: 20px;
+    grid-column: 5 / -1;
+    grid-row: 1;
   }
 }
