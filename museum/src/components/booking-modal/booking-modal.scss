@@ -1,0 +1,19 @@
+.booking-modal {
+  &__overlay,
+  &__booking {
+    position: fixed;
+  }
+
+  &__overlay {
+    top: 0;
+    z-index: -10;
+  }
+
+  &__booking {
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+
+    transform: translate(-10000px, -50%);
+  }
+}

@@ -1,0 +1,9 @@
+.js-show-booking {
+  transform: translate(-50%, -50%);
+}
+
+.js-show-overlay {
+  z-index: 2;
+
+  background-color: rgba(0, 0, 0, .7);
+}

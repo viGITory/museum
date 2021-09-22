@@ -1,0 +1,152 @@
+.payment-card {
+  width: 470px;
+  min-height: 241px;
+
+  &__frontside,
+  &__input {
+    box-sizing: border-box;
+  }
+
+  &__frontside {
+    position: relative;
+    z-index: 1;
+    width: 360px;
+    padding: 16px 20px 15px;
+
+    color: $payment-card-primary-dark;
+
+    background-color: $payment-card-front-bg;
+    background-image: url("../assets/svg/visa.svg"), url("../assets/svg/mastercard.svg");
+    background-repeat: no-repeat;
+    background-position: top 34px right 20px, top 64px right 20px;
+    background-size: 55px auto;
+    border-radius: 3px;
+  }
+
+  &__number {
+    margin-bottom: 10px;
+  }
+
+  &__label,
+  &__input,
+  &__input::placeholder,
+  &__input--code {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 14px;
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 4px;
+
+    &--code {
+      margin-bottom: 6px;
+    }
+  }
+
+  &__input {
+    height: 35px;
+    padding: 0;
+    padding-left: 9px;
+
+    font-family: inherit;
+
+    border: 1px solid $payment-card-border-color;
+
+    &,
+    &::placeholder {
+      color: inherit;
+    }
+
+    &::placeholder {
+      font-family: Roboto, sans-serif;
+    }
+
+    &--card-number {
+      width: 215px;
+    }
+
+    &--short {
+      width: 100px;
+
+      overflow: hidden;
+      background-image: url("../assets/svg/payment-arrow.svg");
+      background-repeat: no-repeat;
+      background-position: top -2px right -2px;
+      background-size: 32px auto;
+      outline: none;
+
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        opacity: 0;
+      }
+    }
+
+    &--holder {
+      width: 320px;
+    }
+
+    &--code {
+      width: 75px;
+
+      text-align: center;
+    }
+  }
+
+  &__validity,
+  &__backside {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__validity {
+    margin-bottom: 12px;
+    column-gap: 15px;
+  }
+
+  &__backside {
+    top: 31px;
+    right: 0;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    width: 360px;
+    height: 211px;
+    padding: 15px 20px 17px;
+
+    background-color: $payment-card-back-bg;
+    border-radius: 3px;
+
+    &,
+    &::after {
+      position: absolute;
+    }
+
+    &::after {
+      top: 25px;
+      left: 0;
+      width: 100%;
+      height: 45px;
+
+      content: "";
+      background-color: $payment-card-primary-dark;
+    }
+  }
+
+  &__code {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75px;
+  }
+
+  &__decription {
+    width: 55px;
+    margin: 0;
+    margin-top: 6px;
+
+    font-size: 10px;
+    line-height: 12px;
+    text-align: left;
+  }
+}

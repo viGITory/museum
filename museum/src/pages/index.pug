@@ -319,7 +319,7 @@ html.html(lang="en")
                         | +
                 p.form__total
                   | Total €<span>220</span>
-                button.buy-btn
+                button.buy-btn(type="button")
                   | Buy Now
 
       //- *** PARALLAX ***
@@ -404,3 +404,139 @@ html.html(lang="en")
           | The Rolling Scopes School
         a.main-footer__text.main-footer__link(href="https://github.com/viGITory" target="_blank")
           | viGITory
+
+    //- *** BOOKING MODAL ***
+    div.booking-modal
+      div.booking-modal__overlay.booking-overlay
+      div.booking-modal__booking.booking
+        button.booking__close-btn(type="button")
+          span.visually-hidden
+            | Close
+        form.booking__form(action="#" method="post")
+          div.booking__details
+            div.booking__header
+              h3.booking__title
+                | Booking tickets
+              p.booking__subtitle
+                | Tour to Louvre
+            fieldset.booking__fieldset
+              legend.visually-hidden
+                | Order details
+              label.booking-field.booking-field--date
+                input.booking-field__input.booking-field__input--date(type="date")
+              label.booking-field.booking-field--time
+                input.booking-field__input.booking-field__input--time(type="time")
+              label.booking-field.booking-field--name
+                input.booking-field__input(type="text" placeholder="Name")
+              label.booking-field.booking-field--email
+                input.booking-field__input(type="email" placeholder="E-mail")
+              label.booking-field.booking-field--tel
+                input.booking-field__input(type="tel" placeholder="Phone")
+              select.booking-field__input.booking-field__input--ticket-type
+                option(value="Ticket Type")
+                  | Ticket Type
+                option(value="Permanent exhibition")
+                  | Permanent exhibition
+                option(value="Temporary exhibition")
+                  | Temporary exhibition
+                option(value="Combined Admission")
+                  | Combined Admission
+              div.booking__entry
+                p.booking__entry-title
+                  | Entry Ticket
+                div.booking__wrapper
+                  p.booking__text
+                    | Basic 18+ (
+                    span.booking__price 20
+                      | !{' '}€)
+                  div.booking-counter
+                    button.booking-counter__btn(type="button" onclick="this.nextElementSibling.stepDown()")
+                      | –
+                    input.booking-counter__input(type="number" value="2" min="0" max="20")
+                    button.booking-counter__btn(type="button" onclick="this.previousElementSibling.stepUp()")
+                      | +
+                div.booking__wrapper
+                  p.booking__text
+                    | Senior 65+ (
+                    span.booking__price 10
+                      | !{' '}€)
+                  div.booking-counter
+                    button.booking-counter__btn(type="button" onclick="this.nextElementSibling.stepDown()")
+                      | –
+                    input.booking-counter__input(type="number" value="2" min="0" max="20")
+                    button.booking-counter__btn(type="button" onclick="this.previousElementSibling.stepUp()")
+                      | +
+          div.booking-overview
+            div.booking-overview__top
+              h4.booking-overview__title
+                | Overview
+              p.booking-overview__subtitle
+                | Tour to Louvre
+              p.booking-overview__text.booking-overview__text--date
+                | Friday, August 19
+              p.booking-overview__text.booking-overview__text--time
+                span.payment-overview__hour
+                  | 16
+                span
+                  | !{' '}:!{' '}
+                span.payment-overview__minute
+                  | 30
+              p.booking-overview__text.booking-overview__text--type
+                | Temporary exhibition
+              div.booking-overview__wrapper
+                p.booking-overview__type
+                  span.booking-overview__count
+                    | 2
+                  | Basic (
+                  span 20
+                    | !{' '}€)
+                p.booking-overview__amount
+                  span
+                    | 40
+                  | !{' '}€
+              div.booking-overview__wrapper
+                p.booking-overview__type
+                  span.booking-overview__count
+                    | 2
+                  | Senior (
+                  span 10
+                    | !{' '}€)
+                p.booking-overview__amount
+                  span
+                    | 20
+                  | !{' '}€
+            div.booking-overview__total
+              p.booking-overview__total-text
+                | Total:
+              p.booking-overview__total-sum
+                span
+                  | 60
+                | !{' '}€
+            div.booking-overview__payment-card.payment-card
+              div.payment-card__frontside
+                div.payment-card__number
+                  label.payment-card__label(for="card-number")
+                    | Card number
+                  input.payment-card__input.payment-card__input--card-number#card-number(type="text")
+                div.payment-card__validity
+                  div.payment-card__month
+                    label.payment-card__label(for="card-month")
+                      | Expiration date
+                    input.payment-card__input.payment-card__input--short#card-month(type="number" placeholder="03" min="0")
+                  div.payment-card__year
+                    label.visually-hidden(for="card-year")
+                      | Expiration year
+                    input.payment-card__input.payment-card__input--short#card-year(type="number" placeholder="2024" min="0")
+                div.payment-card__holder
+                  label.payment-card__label(for="card-holder")
+                    | Cardholder name
+                  input.payment-card__input.payment-card__input--holder#card-holder(type="text")
+              div.payment-card__backside
+                div.payment-card__code
+                  label.payment-card__label.payment-card__label--code(for="card-code")
+                    | CVC/CVV
+                  input.payment-card__input.payment-card__input--code#card-code(type="password" minlength="3" maxlength="4")
+                  p.payment-card__decription
+                    | The last<br> 3 or 4 digits on back<br> of the card
+            button.booking-overview__button
+              | Book

@@ -1,0 +1,154 @@
+.booking-field {
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+
+  &::before,
+  &--date::after,
+  &--time::after {
+    position: absolute;
+    top: 50%;
+
+    transform: translateY(-50%);
+  }
+
+  &::before {
+    left: 15px;
+
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  &--date,
+  &--time {
+    display: inline-block;
+
+    &::before {
+      width: 15px;
+      height: 15px;
+    }
+
+    &::after {
+      left: 45px;
+
+      font-size: 18px;
+      line-height: 21px;
+      color: $booking-primary-dark;
+    }
+  }
+
+  &--date {
+    margin-right: 20px;
+
+    &::before {
+      background-image: url("../assets/svg/calendar.svg");
+    }
+
+    &::after {
+      content: "Date";
+    }
+  }
+
+  &--time {
+    &::before {
+      background-image: url("../assets/svg/clock.svg");
+    }
+
+    &::after {
+      content: "Time";
+    }
+  }
+
+  &--name {
+    &::before {
+      width: 13px;
+      height: 15px;
+
+      background-image: url("../assets/svg/name-icon.svg");
+    }
+  }
+
+  &--email {
+    &::before {
+      width: 15px;
+      height: 11px;
+
+      background-image: url("../assets/svg/email-icon.svg");
+    }
+  }
+
+  &--tel {
+    &::before {
+      width: 14px;
+      height: 23px;
+
+      background-image: url("../assets/svg/tel-icon.svg");
+    }
+  }
+
+  &__input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 45px;
+    padding: 0;
+    padding-top: 3px;
+    padding-left: 44px;
+
+    border: 1px solid $booking-primary-dark;
+
+    &,
+    &::placeholder {
+      font-family: inherit;
+      font-size: 18px;
+      font-weight: inherit;
+      line-height: 21px;
+    }
+
+    &::placeholder {
+      color: $booking-primary-dark;
+    }
+
+    &--date,
+    &--time {
+      width: 190px;
+
+      cursor: pointer;
+      background-image: url("../assets/svg/input-arrow.svg");
+      background-position: right 15px center;
+      background-size: 17px auto;
+
+      &::-webkit-calendar-picker-indicator {
+        background: none;
+      }
+
+      &::-webkit-datetime-edit {
+        opacity: 0;
+      }
+    }
+
+    &--date,
+    &--time,
+    &--ticket-type {
+      background-repeat: no-repeat;
+    }
+
+    &--ticket-type {
+      margin-bottom: 20px;
+
+      background-image: url("../assets/svg/ticket-type-icon.svg"), url("../assets/svg/input-arrow.svg");
+      background-position: top 15px left 15px, right 15px center;
+      appearance: none;
+
+      option {
+        font-size: 18px;
+        line-height: 21px;
+      }
+
+      &:focus > option:checked {
+        background: $select-active;
+      }
+    }
+  }
+}

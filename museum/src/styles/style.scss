@@ -42,6 +42,15 @@
 @import "../components/ticket-count/ticket-count";
 @import "../components/buy-btn/buy-btn";
 
+//- *** BOOKING ***
+@import "../components/booking-modal/booking-modal";
+@import "../components/booking-overlay/booking-overlay";
+@import "../components/booking/booking";
+@import "../components/booking-field/booking-field";
+@import "../components/booking-counter/booking-counter";
+@import "../components/booking-overview/booking-overview";
+@import "../components/payment-card/payment-card";
+
 //- *** PARALLAX ***
 @import "../components/parallax/parallax";
 
@@ -55,3 +64,5 @@
 //- *** FULLSCREEN ***
 @import "fullscreen";
 
+//- *** JS CLASSES ***
+@import "js-classes";

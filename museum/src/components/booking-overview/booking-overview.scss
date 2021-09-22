@@ -1,0 +1,154 @@
+.booking-overview {
+  box-sizing: border-box;
+  width: 530px;
+  padding: 25px 29px;
+
+  border: 1px solid $booking-primary-dark;
+
+  &__top {
+    padding-bottom: 8px;
+    margin-bottom: 11px;
+
+    background-image: url("../assets/images/louvre.jpg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 150px auto;
+    border-bottom: 1px solid $title-underline-color;
+  }
+
+  &__title,
+  &__subtitle,
+  &__text,
+  &__total-sum {
+    margin: 0;
+
+    font-weight: 500;
+  }
+
+  &__title,
+  &__total {
+    font-size: 32px;
+    line-height: 37px;
+  }
+
+  &__title {
+    margin-bottom: 3px;
+
+    color: $overview-title-color;
+  }
+
+  &__subtitle,
+  &__wrapper,
+  &__button {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  &__subtitle {
+    margin-bottom: 11px;
+
+    color: $booking-subtitle-color;
+  }
+
+  &__text,
+  &__count {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  &__text,
+  &__total-text,
+  &__button {
+    font-weight: 300;
+  }
+
+  &__text {
+    margin-bottom: 6px;
+
+    &--date,
+    &--time,
+    &--type {
+      padding-left: 30px;
+
+      background-repeat: no-repeat;
+      background-position: top left;
+      background-size: 15px auto;
+    }
+
+    &--date {
+      background-image: url("../assets/svg/calendar.svg");
+    }
+
+    &--time {
+      background-image: url("../assets/svg/clock.svg");
+    }
+
+    &--type {
+      margin-bottom: 21px;
+
+      background-image: url("../assets/svg/check-circle.svg");
+    }
+  }
+
+  &__wrapper,
+  &__type,
+  &__total {
+    display: flex;
+  }
+
+  &__wrapper,
+  &__type,
+  &__amount,
+  &__total-text {
+    margin: 0;
+  }
+
+  &__wrapper {
+    justify-content: space-between;
+    margin-bottom: 7px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__count {
+    display: inline-block;
+    width: 32px;
+    height: 20px;
+    margin-right: 10px;
+
+    color: $overview-count-color;
+    text-align: center;
+
+    background-color: $booking-primary-dark;
+    border-radius: 4px;
+  }
+
+  &__type {
+    align-items: center;
+  }
+
+  &__total {
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  &__payment-card {
+    position: relative;
+    margin-bottom: 27px;
+  }
+
+  &__button {
+    float: right;
+    width: 220px;
+    height: 45px;
+    padding: 0;
+
+    color: $primary-light-text;
+
+    cursor: pointer;
+    background-color: $booking-btn-bg;
+    border: 0;
+  }
+}

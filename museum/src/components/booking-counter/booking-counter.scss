@@ -1,0 +1,41 @@
+.booking-counter {
+  display: flex;
+  align-items: center;
+  width: 105px;
+  height: 25px;
+
+  font-size: 18px;
+  line-height: 21px;
+
+  &__btn,
+  &__input {
+    width: 35px;
+    height: 100%;
+    padding: 0;
+
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  &__btn {
+    color: $primary-light-text;
+
+    background-color: $booking-primary-dark;
+    border: 0;
+  }
+
+  &__input {
+    box-sizing: border-box;
+
+    font-family: inherit;
+    text-align: center;
+
+    border: 1px solid $booking-primary-dark;
+    border-right: none;
+    border-left: none;
+
+    &::-webkit-inner-spin-button {
+      appearance: none;
+    }
+  }
+}
