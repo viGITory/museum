@@ -4,3 +4,4 @@ import '../styles/style.scss';
 //- *** COMPONENTS ***
 import '../components/video-player/video-player.js';
 import { createGallery } from '../components/gallery/gallery.js';
+import { showModal } from '../components/booking/booking.js';
