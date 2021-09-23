@@ -5,3 +5,4 @@ import '../styles/style.scss';
 import '../components/video-player/video-player.js';
 import { createGallery } from '../components/gallery/gallery.js';
 import { showModal } from '../components/booking/booking.js';
+import { addRipple } from '../components/booking-overview/booking-overview.js';

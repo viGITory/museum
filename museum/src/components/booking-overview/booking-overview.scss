@@ -140,10 +140,12 @@
   }
 
   &__button {
+    position: relative;
     float: right;
     width: 220px;
     height: 45px;
     padding: 0;
+    overflow: hidden;
 
     color: $primary-light-text;
 

@@ -7,3 +7,24 @@
 
   background-color: rgba(0, 0, 0, .7);
 }
+
+// *** RIPPLE ***
+.js-ripple-circle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+
+  background-color: $light-bg;
+  border-radius: 50%;
+
+  transform: translate(-50%, -50%) scale(0);
+  animation: scale .5s ease-out;
+}
+
+@keyframes scale {
+  to {
+    opacity: 0;
+
+    transform: translate(-50%, -50%) scale(3);
+  }
+}
