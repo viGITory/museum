@@ -13,7 +13,7 @@ html.html(lang="en")
         a.logo(href="#")
           | Louvre
         nav
-          ul.main-menu
+          ul.main-menu.list
             li.main-menu__item
               a.main-menu__link(href="#visiting")
                 | Visiting
@@ -60,7 +60,7 @@ html.html(lang="en")
                   | 01
                 span
                   | 05
-              ul.welcome-slider__bullet-list
+              ul.welcome-slider__bullet-list.list
                 li.welcome-slider__bullet.welcome-slider__bullet--active
                 li.welcome-slider__bullet
                 li.welcome-slider__bullet
@@ -267,7 +267,7 @@ html.html(lang="en")
                 fieldset.form__fieldset
                   legend.visually-hidden
                     | Ticket Type
-                  ul.radio-list
+                  ul.radio-list.list
                     li.radio-list__item
                       label.radio-list__label
                         input.radio-list__input(type="radio"
@@ -334,16 +334,18 @@ html.html(lang="en")
             div.contacts__text-group
               p.contacts__subtitle
                 | Palais Royal Musee du Louvre
-              address.contacts__text.contacts__text--address
-                | address: 75001 Paris, France
-              p.contacts__text
-                | phone:
-                a.contacts__link(href="tel:+33(0)140205050")
-                  |  +33(0) 1 40 20 50 50
-              p.contacts__text
-                | mail:
-                a.contacts__link(href="mailto:info@louvre.fr")
-                  |  info@louvre.fr
+              ul.list
+                li.contacts__text
+                  address.contacts__address
+                    | address: 75001 Paris, France
+                li.contacts__text
+                  | phone:
+                  a.contacts__link(href="tel:+33(0)140205050")
+                    |  +33(0) 1 40 20 50 50
+                li.contacts__text
+                  | mail:
+                  a.contacts__link(href="mailto:info@louvre.fr")
+                    |  info@louvre.fr
             img.contacts__map(src="assets/images/map.png"
                               width="960"
                               height="620"
@@ -356,7 +358,7 @@ html.html(lang="en")
           a.logo(href="#")
             | Louvre
           nav.main-footer__nav
-            ul.main-menu.main-menu--footer
+            ul.main-menu.main-menu--footer.list
               li.main-menu__item
                 a.main-menu__link(href="#visiting")
                   | Visiting
@@ -376,7 +378,7 @@ html.html(lang="en")
                 a.main-menu__link(href="#contacts")
                   | Contacts
           div.main-footer__social
-              ul.social
+              ul.social.list
                 li.social__item
                   a.social__link.social__link--youtube(href="https://www.youtube.com/user/louvre" target="_blank")
                     span.visually-hidden

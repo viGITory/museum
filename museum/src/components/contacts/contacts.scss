@@ -29,12 +29,6 @@
     line-height: 33px;
   }
 
-  &__text {
-    &--address {
-      font-style: normal;
-    }
-  }
-
   &__text,
   &__link {
     margin-bottom: 25px;
@@ -42,6 +36,10 @@
     &:last-child {
       margin-bottom: 0;
     }
+  }
+
+  &__address {
+    font-style: normal;
   }
 
   &__link {

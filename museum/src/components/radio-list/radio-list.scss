@@ -1,13 +1,4 @@
 .radio-list {
-  padding: 0;
-
-  list-style: none;
-
-  &,
-  &__input {
-    margin: 0;
-  }
-
   &__item {
     margin-bottom: 25px;
 
@@ -36,6 +27,7 @@
     min-width: 17px;
     height: 17px;
     padding: 3px;
+    margin: 0;
     margin-right: 23px;
 
     border: 2px solid $radio-color;

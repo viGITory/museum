@@ -77,17 +77,13 @@
     }
   }
 
-  &__bullet-list,
   &__arrow-item {
     padding: 0;
   }
 
   &__bullet-list {
-    margin: 0;
     margin-right: 60px;
     column-gap: 25px;
-
-    list-style: none;
   }
 
   &__bullet,
