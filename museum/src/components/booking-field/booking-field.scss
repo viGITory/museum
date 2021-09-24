@@ -92,9 +92,7 @@
     box-sizing: border-box;
     width: 100%;
     height: 45px;
-    padding: 0;
-    padding-top: 3px;
-    padding-left: 44px;
+    padding: 3px 9px 0 44px;
 
     border: 1px solid $booking-primary-dark;
 
@@ -114,10 +112,15 @@
     &--time {
       width: 190px;
 
-      cursor: pointer;
+      pointer-events: none;
       background-image: url("../assets/svg/input-arrow.svg");
       background-position: right 15px center;
       background-size: 17px auto;
+
+      &::-webkit-calendar-picker-indicator,
+      &::-webkit-datetime-edit {
+        cursor: pointer;
+      }
 
       &::-webkit-calendar-picker-indicator {
         background: none;
@@ -137,6 +140,7 @@
     &--ticket-type {
       margin-bottom: 20px;
 
+      cursor: pointer;
       background-image: url("../assets/svg/ticket-type-icon.svg"), url("../assets/svg/input-arrow.svg");
       background-position: top 15px left 15px, right 15px center;
       appearance: none;

@@ -47,8 +47,7 @@
 
   &__input {
     height: 35px;
-    padding: 0;
-    padding-left: 9px;
+    padding: 0 9px;
 
     font-family: inherit;
 
@@ -89,6 +88,7 @@
 
     &--code {
       width: 75px;
+      padding: 0;
 
       text-align: center;
     }

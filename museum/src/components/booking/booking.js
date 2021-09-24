@@ -7,6 +7,7 @@ export const showModal = () => {
   const toggleModal = () => {
     booking.classList.toggle('js-show-booking');
     overlay.classList.toggle('js-show-overlay');
+    closeBtn.classList.toggle('js-show-close-btn');
   }
 
   buyBtn.addEventListener('click', toggleModal);

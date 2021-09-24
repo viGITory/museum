@@ -519,15 +519,15 @@ html.html(lang="en")
                     | Card number
                   input.payment-card__input.payment-card__input--card-number#card-number(type="text")
                 div.payment-card__validity
-                  div.payment-card__month
+                  div
                     label.payment-card__label(for="card-month")
                       | Expiration date
-                    input.payment-card__input.payment-card__input--short#card-month(type="number" placeholder="03" min="0")
-                  div.payment-card__year
+                    input.payment-card__input.payment-card__input--short#card-month(type="number" value="03" min="1" max="12")
+                  div
                     label.visually-hidden(for="card-year")
                       | Expiration year
-                    input.payment-card__input.payment-card__input--short#card-year(type="number" placeholder="2024" min="0")
-                div.payment-card__holder
+                    input.payment-card__input.payment-card__input--short#card-year(type="number" value="2024" min="2021" max="2030")
+                div
                   label.payment-card__label(for="card-holder")
                     | Cardholder name
                   input.payment-card__input.payment-card__input--holder#card-holder(type="text")

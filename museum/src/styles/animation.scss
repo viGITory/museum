@@ -1,0 +1,7 @@
+@keyframes ripple {
+  to {
+    opacity: 0;
+
+    transform: translate(-50%, -50%) scale(3);
+  }
+}
