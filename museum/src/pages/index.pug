@@ -67,8 +67,12 @@ html.html(lang="en")
                 li.welcome-slider__bullet
                 li.welcome-slider__bullet
               div.welcome-slider__arrows
-                button.welcome-slider__arrow-item(type="button" aria-label="arow-prev")
-                button.welcome-slider__arrow-item.welcome-slider__arrow-item--next(type="button" aria-label="arow-next")
+                button.welcome-slider__arrow-item(type="button")
+                  span.visually-hidden
+                    | Prev
+                button.welcome-slider__arrow-item.welcome-slider__arrow-item--next(type="button")
+                   span.visually-hidden
+                    | Next
 
       //- *** VISITING ***
       section.section.section--light.visiting#visiting
@@ -190,7 +194,7 @@ html.html(lang="en")
           div.video__player.video-player
             div.video-player__wrapper
               video.video-player__screen(src="assets/video/video0.mp4" poster="assets/images/video-posters/poster0.jpg")
-              button.video-player__screen-btn(type="button")
+              button.video-player__screen-btn(type="button" aria-label="Play")
                 svg(width='220' height='220' viewbox='0 0 220 220' fill='none' xmlns='http://www.w3.org/2000/svg')
                   g(clip-path='url(#clip0)')
                     path(d='M110 8.89168C130.003 8.88778 149.558 14.816 166.191 25.9266C182.825 37.0372 195.79 52.831 203.446 71.3106C211.103 89.7901 213.107 110.125 209.206 129.744C205.304 149.363 195.672 167.384 181.528 181.528C167.384 195.672 149.363 205.304 129.744 209.206C110.125 213.107 89.7901 211.103 71.3106 203.446C52.8311 195.79 37.0372 182.825 25.9266 166.191C14.816 149.558 8.88776 130.003 8.89167 110C8.92826 83.1956 19.5925 57.4996 38.546 38.546C57.4996 19.5925 83.1956 8.92828 110 8.89168ZM110 0C88.2441 0 66.9767 6.45139 48.8873 18.5383C30.7979 30.6253 16.6989 47.805 8.37324 67.9048C0.0476007 88.0047 -2.13077 110.122 2.1136 131.46C6.35798 152.798 16.8345 172.398 32.2183 187.782C47.602 203.166 67.2022 213.642 88.5401 217.886C109.878 222.131 131.995 219.952 152.095 211.627C172.195 203.301 189.375 189.202 201.462 171.113C213.549 153.023 220 131.756 220 110C220 80.8262 208.411 52.8473 187.782 32.2183C167.153 11.5893 139.174 0 110 0Z' fill='white')
@@ -231,7 +235,7 @@ html.html(lang="en")
               iframe.video-slider__frame(width='1280' height='720' src='https://www.youtube.com/embed/zp1BXPX8jcU?controls=0&amp&amp;' title='YouTube video player' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='' loading="lazy")
               iframe.video-slider__frame(width='1280' height='720' src='https://www.youtube.com/embed/2OR0OCr6uRE?controls=0&amp&amp;' title='YouTube video player' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='' loading="lazy")
             div.video-slider__bullets
-              button.video-slider__arrow(type="button")
+              button.video-slider__arrow(type="button" aria-label="Prev")
                 svg(width='10' height='12' viewbox='0 0 10 12' fill='none' xmlns='http://www.w3.org/2000/svg')
                   path(fill-rule='evenodd' clip-rule='evenodd' d='M5.4777 0.219168C5.87773 0.564178 5.94259 1.19347 5.62256 1.62473L2.37578 6.00004L5.62256 10.3753C5.94259 10.8066 5.87773 11.4359 5.4777 11.7809C5.07766 12.1259 4.49394 12.056 4.17391 11.6247L0 6.00004L4.17391 0.375342C4.49394 -0.0559202 5.07766 -0.125842 5.4777 0.219168ZM9.65184 0.219168C10.0519 0.564178 10.1167 1.19347 9.7967 1.62473L6.54992 6.00004L9.7967 10.3753C10.1167 10.8066 10.0519 11.4359 9.65184 11.7809C9.2518 12.1259 8.66808 12.056 8.34805 11.6247L4.17414 6.00004L8.34805 0.375342C8.66808 -0.0559202 9.2518 -0.125842 9.65184 0.219168Z' fill='#999999')
               span.video-slider__bullet-item.video-slider__bullet-item--active
@@ -239,7 +243,7 @@ html.html(lang="en")
               span.video-slider__bullet-item
               span.video-slider__bullet-item
               span.video-slider__bullet-item
-              button.video-slider__arrow(type="button")
+              button.video-slider__arrow(type="button" aria-label="Next")
                 svg(width='10' height='12' viewbox='0 0 10 12' fill='none' xmlns='http://www.w3.org/2000/svg')
                   path(fill-rule='evenodd' clip-rule='evenodd' d='M0.348163 0.219168C0.748196 -0.125842 1.33192 -0.0559202 1.65195 0.375342L5.82586 6.00004L1.65194 11.6247C1.33192 12.056 0.748195 12.1259 0.348162 11.7809C-0.0518709 11.4359 -0.116729 10.8066 0.203297 10.3753L3.45008 6.00004L0.203298 1.62473C-0.116728 1.19347 -0.05187 0.564177 0.348163 0.219168ZM4.5223 0.219168C4.92234 -0.125841 5.50606 -0.0559197 5.82609 0.375342L10 6.00004L5.82609 11.6247C5.50606 12.056 4.92234 12.1259 4.5223 11.7809C4.12227 11.4359 4.05741 10.8066 4.37744 10.3753L7.62422 6.00004L4.37744 1.62473C4.05741 1.19347 4.12227 0.564178 4.5223 0.219168Z' fill='#999999')
 
@@ -424,25 +428,36 @@ html.html(lang="en")
             fieldset.booking__fieldset
               legend.visually-hidden
                 | Order details
-              label.booking-field.booking-field--date
+              label.booking__field.booking-field.booking-field--date
+                span.visually-hidden
+                  | Date
                 input.booking-field__input.booking-field__input--date(type="date")
-              label.booking-field.booking-field--time
+              label.booking__field.booking-field.booking-field--time
+                span.visually-hidden
+                  | Time
                 input.booking-field__input.booking-field__input--time(type="time")
-              label.booking-field.booking-field--name
+              label.booking__field.booking-field.booking-field--name
+                span.visually-hidden
+                  | Name
                 input.booking-field__input(type="text" placeholder="Name")
-              label.booking-field.booking-field--email
+              label.booking__field.booking-field.booking-field--email
+                span.visually-hidden
+                  | E-mail
                 input.booking-field__input(type="email" placeholder="E-mail")
-              label.booking-field.booking-field--tel
+              label.booking__field.booking-field.booking-field--tel
+                span.visually-hidden
+                  | Tel
                 input.booking-field__input(type="tel" placeholder="Phone")
-              select.booking-field__input.booking-field__input--ticket-type
-                option(value="Ticket Type")
-                  | Ticket Type
-                option(value="Permanent exhibition")
-                  | Permanent exhibition
-                option(value="Temporary exhibition")
-                  | Temporary exhibition
-                option(value="Combined Admission")
-                  | Combined Admission
+              div.booking__field.booking-field
+                select.booking-field__input.booking-field__input--ticket-type
+                  option(value="Ticket Type" hidden)
+                    | Ticket Type
+                  option(value="Permanent exhibition")
+                    | Permanent exhibition
+                  option(value="Temporary exhibition")
+                    | Temporary exhibition
+                  option(value="Combined Admission")
+                    | Combined Admission
               div.booking__entry
                 p.booking__entry-title
                   | Entry Ticket
@@ -454,7 +469,9 @@ html.html(lang="en")
                   div.booking-counter
                     button.booking-counter__btn(type="button" onclick="this.nextElementSibling.stepDown()")
                       | –
-                    input.booking-counter__input(type="number" value="2" min="0" max="20")
+                    label.visually-hidden(for="Basic-tickets")
+                      | Basic tickets
+                    input.booking-counter__input(id="Basic-tickets" type="number" value="2" min="0" max="20")
                     button.booking-counter__btn(type="button" onclick="this.previousElementSibling.stepUp()")
                       | +
                 div.booking__wrapper
@@ -465,7 +482,9 @@ html.html(lang="en")
                   div.booking-counter
                     button.booking-counter__btn(type="button" onclick="this.nextElementSibling.stepDown()")
                       | –
-                    input.booking-counter__input(type="number" value="2" min="0" max="20")
+                    label.visually-hidden(for="Senior-tickets")
+                      | Senior tickets
+                    input.booking-counter__input(id="Senior-tickets" type="number" value="2" min="0" max="20")
                     button.booking-counter__btn(type="button" onclick="this.previousElementSibling.stepUp()")
                       | +
           div.booking-overview

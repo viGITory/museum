@@ -1,7 +1,6 @@
 .booking-field {
   position: relative;
   display: block;
-  margin-bottom: 20px;
 
   &::before,
   &--date::after,
@@ -138,8 +137,6 @@
     }
 
     &--ticket-type {
-      margin-bottom: 20px;
-
       cursor: pointer;
       background-image: url("../assets/svg/ticket-type-icon.svg"), url("../assets/svg/input-arrow.svg");
       background-position: top 15px left 15px, right 15px center;
