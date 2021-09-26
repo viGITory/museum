@@ -24,13 +24,7 @@
     color: $explore-special-color;
   }
 
-  &__img {
-    display: block;
-    flex-basis: 720px;
-    max-width: 100%;
-    height: auto;
-    margin-top: 13px;
-
-    object-fit: cover;
+  &__compare-slider {
+    margin-top: 15px;
   }
 }
