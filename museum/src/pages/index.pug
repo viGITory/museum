@@ -223,6 +223,7 @@ html.html(lang="en")
                   span.visually-hidden
                     | Volume/Mute
                 input.control-bar__progress-bar.control-bar__progress-bar--vol(type="range"
+                                                                              value="44"
                                                                               min="0"
                                                                               max="100"
                                                                               step="1"
@@ -470,10 +471,10 @@ html.html(lang="en")
                     span.booking__price 20
                       | !{' '}€)
                   div.booking-counter
-                    button.booking-counter__btn(type="button" onclick="this.nextElementSibling.stepDown()")
-                      | –
                     label.visually-hidden(for="Basic-tickets")
                       | Basic tickets
+                    button.booking-counter__btn(type="button" onclick="this.nextElementSibling.stepDown()")
+                      | –
                     input.booking-counter__input(id="Basic-tickets" type="number" value="2" min="0" max="20")
                     button.booking-counter__btn(type="button" onclick="this.previousElementSibling.stepUp()")
                       | +
@@ -483,10 +484,10 @@ html.html(lang="en")
                     span.booking__price 10
                       | !{' '}€)
                   div.booking-counter
-                    button.booking-counter__btn(type="button" onclick="this.nextElementSibling.stepDown()")
-                      | –
                     label.visually-hidden(for="Senior-tickets")
                       | Senior tickets
+                    button.booking-counter__btn(type="button" onclick="this.nextElementSibling.stepDown()")
+                      | –
                     input.booking-counter__input(id="Senior-tickets" type="number" value="2" min="0" max="20")
                     button.booking-counter__btn(type="button" onclick="this.previousElementSibling.stepUp()")
                       | +

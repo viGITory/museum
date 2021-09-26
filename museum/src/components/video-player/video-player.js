@@ -14,7 +14,7 @@ const rewind = document.querySelector('.video-player__rewind');
 const modal = document.querySelector('.modal');
 const timers = new Map();
 
-video.volume = 0.5;
+video.volume = 0.44;
 
 let currentVolume = video.volume;
 
