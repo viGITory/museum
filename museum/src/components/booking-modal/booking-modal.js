@@ -1,4 +1,4 @@
-export const showModal = () => {
+const showModal = () => {
   const buyBtn = document.querySelector('.buy-btn');
   const booking = document.querySelector('.booking');
   const closeBtn = booking.querySelector('.booking__close-btn');
@@ -15,3 +15,5 @@ export const showModal = () => {
   overlay.addEventListener('click', toggleModal);
 }
 showModal();
+
+export default showModal;

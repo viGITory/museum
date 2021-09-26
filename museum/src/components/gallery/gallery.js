@@ -1,4 +1,4 @@
-export const createGallery = () => {
+const createGallery = () => {
   const galleryContainer = document.querySelector('.gallery__wrapper');
   const galleryImages = ['assets/images/gallery/gallery1.jpg', 'assets/images/gallery/gallery2.jpg', 'assets/images/gallery/gallery3.jpg',
                          'assets/images/gallery/gallery4.jpg', 'assets/images/gallery/gallery5.jpg', 'assets/images/gallery/gallery6.jpg',
@@ -25,3 +25,5 @@ export const createGallery = () => {
   });
 };
 createGallery();
+
+export default createGallery;

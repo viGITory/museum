@@ -1,4 +1,4 @@
-export const addRipple = () => {
+const addRipple = () => {
   const button = document.querySelector('.booking-overview__button');
 
   button.addEventListener('click', (event) => {
@@ -10,8 +10,8 @@ export const addRipple = () => {
 
     const circle = document.createElement('span');
     circle.classList.add('js-ripple-circle');
-    circle.style.top = y + 'px';
-    circle.style.left = x + 'px';
+    circle.style.top = `${y}px`;
+    circle.style.left = `${x}px`;
 
     event.target.appendChild(circle);
 
@@ -19,3 +19,5 @@ export const addRipple = () => {
   });
 };
 addRipple();
+
+export default addRipple;

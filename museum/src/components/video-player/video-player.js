@@ -1,6 +1,3 @@
-'use strict';
-
-//- *** VARIABLES ***
 const videoContainer = document.querySelector('.video-player');
 const video = document.querySelector('.video-player__screen');
 const screenBtn = document.querySelector('.video-player__screen-btn');
