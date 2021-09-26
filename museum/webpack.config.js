@@ -40,10 +40,10 @@ module.exports = ({ development }) => ({
   mode: development ? 'development' : 'production',
   devtool: development ? 'inline-source-map' : false,
   entry: {
-    app: './src/scripts/index.js'
+    index: './src/scripts/index.js'
   },
   output: {
-    filename: 'app.[hash].js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
     assetModuleFilename: 'assets/images/[name][ext]'
   },
@@ -85,7 +85,7 @@ module.exports = ({ development }) => ({
     ],
   },
   plugins: [
-    new MiniCssExtractPlugin({ filename: '[name].[contenthash].css' }),
+    new MiniCssExtractPlugin({ filename: 'style.css' }),
     ...createHtmlWebpackPlugin,
     new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
     new CopyWebpackPlugin({
