@@ -1,0 +1,441 @@
+@media (max-width: 1023px) {
+  // *** COMMON COMPONENTS ***
+  .page {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .section {
+    padding: 40px 0;
+
+    &__title {
+      margin-bottom: 40px;
+
+      font-size: 40px;
+      line-height: 60px;
+    }
+  }
+
+  // *** HEADER ***
+  .main-header {
+    padding: 44px 0 33px;
+
+    &__button {
+      top: 11px;
+    }
+  }
+
+  // *** WELCOME ***
+  .welcome {
+    padding: 0;
+
+    &__inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__wrapper {
+      padding-top: 0;
+    }
+
+    &__title {
+      margin-bottom: 25px;
+
+      font-size: 40px;
+      line-height: 60px;
+      text-align: center;
+    }
+
+    &__subtitle {
+      margin-bottom: 47px;
+
+      font-size: 20px;
+      line-height: 23px;
+    }
+
+    &__button {
+      display: none;
+    }
+  }
+
+  .welcome-slider {
+    width: 728px;
+    height: 646px;
+
+    &__wrapper {
+      height: 546px;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    &__controls {
+      position: static;
+      justify-content: center;
+      padding: 30px 0 29px;
+    }
+  }
+
+  // *** VISITING ***
+  .visiting {
+    padding-bottom: 80px;
+
+    &__title {
+      margin-bottom: 40px;
+    }
+
+    &__wrapper {
+      gap: 39px 56px;
+    }
+
+    &__item {
+      flex-basis: 280px;
+    }
+  }
+
+  .place {
+    &__title {
+      font-size: 22px;
+      line-height: 24px;
+    }
+
+    &__img {
+      height: 180px;
+    }
+  }
+
+  // *** EXPLORE ***
+  .explore {
+    &__inner {
+      display: block;
+    }
+
+    &__wrapper {
+      margin-bottom: 0;
+    }
+
+    &__title {
+      margin-bottom: 40px;
+    }
+
+    &__text {
+      display: none;
+    }
+  }
+
+  .compare-slider {
+    width: 728px;
+    height: 705px;
+
+    &__before,
+    &__after {
+      height: 100%;
+    }
+
+    &__before {
+      width: 100%;
+    }
+
+    &__after {
+      background-size: cover;
+    }
+
+    &__divider {
+      &::before,
+      &::after {
+        height: 334px;
+      }
+
+      &::before {
+        top: -338px;
+      }
+
+      &::after {
+        bottom: -338px;
+      }
+    }
+  }
+
+  // *** VIDEO ***
+  .video {
+    padding-bottom: 80px;
+
+    &__title {
+      margin-bottom: 20px;
+    }
+
+    &__player {
+      margin-bottom: 21px;
+    }
+  }
+
+  .video-player {
+    width: 728px;
+
+    &__screen {
+      height: 329px;
+    }
+
+    &__screen-btn {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  .control-bar {
+    position: relative;
+    min-height: 53px;
+    padding: 13px 30px;
+    column-gap: 35px;
+
+    &__btn {
+      &--play {
+        height: 29px;
+      }
+
+      &--vol,
+      &--fullscreen {
+        width: 27px;
+        min-width: 27px;
+      }
+
+      &--vol {
+        height: 21px;
+      }
+
+      &--fullscreen {
+        height: 27px;
+      }
+    }
+
+    &__progress-bar--video,
+    &__progress-bar--vol,
+    &__volume-bar {
+      width: 100%;
+    }
+
+    &__progress-bar {
+      &--video {
+        position: absolute;
+        top: -3px;
+        left: 0;
+      }
+    }
+
+    &__volume-bar {
+      column-gap: 35px;
+    }
+  }
+
+  .video-slider {
+    &__wrapper {
+      margin-bottom: 20px;
+      column-gap: 20px;
+    }
+
+    &__frame {
+      width: 354px;
+      min-width: 354px;
+      height: 199px;
+    }
+
+    &__bullet-item {
+      width: 10px;
+      height: 10px;
+    }
+  }
+
+  // *** GALLERY ***
+  .gallery {
+    height: 1220px;
+
+    &__title {
+      margin-bottom: 40px;
+    }
+
+    &__wrapper {
+      overflow: hidden;
+      column-gap: 24px;
+
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+
+    &__img {
+      width: 352px;
+    }
+  }
+
+  // *** TICKETS ***
+  .tickets {
+    &__title {
+      margin-bottom: 40px;
+    }
+
+    &__wrapper {
+      column-gap: 59px;
+    }
+
+    &__img {
+      flex-basis: 444px;
+      height: 340px;
+    }
+  }
+
+  .form {
+    &__subtitle,
+    &__ticket-count:last-of-type,
+    &__total {
+      margin-bottom: 39px;
+    }
+
+    &__ticket-count {
+      margin-bottom: 25px;
+    }
+  }
+
+  // *** PARALLAX ***
+  .parallax {
+    height: 300px;
+  }
+
+  // *** CONTACTS ***
+  .contacts {
+    padding-bottom: 67px;
+
+    &__subtitle,
+    &__text:last-child {
+      margin-bottom: 40px;
+    }
+
+    &__subtitle {
+      max-width: 155px;
+
+      font-size: 20px;
+      line-height: 23px;
+    }
+
+    &__map {
+      width: 728px;
+      height: 476px;
+    }
+  }
+
+  // *** FOOTER ***
+  .main-footer {
+    padding-top: 49px;
+
+    &__top {
+      padding-bottom: 40px;
+
+      border-bottom-width: 1px;
+    }
+
+    &__wrapper {
+      column-gap: 89px;
+    }
+
+    &__nav {
+      max-width: 393px;
+      margin-bottom: 33px;
+    }
+
+    &__social {
+      margin-right: 90px;
+      margin-bottom: 0;
+      margin-left: auto;
+    }
+
+    &__bottom {
+      padding-top: 40px;
+    }
+  }
+
+  .main-menu {
+    &--footer {
+      column-gap: 118px;
+      column-width: 130px;
+    }
+
+    &--footer &__link {
+      font-size: 18px;
+      line-height: 36px;
+    }
+  }
+
+  // *** BOOKING-MODAL ***
+  .booking {
+    box-sizing: border-box;
+    width: 590px;
+    height: 100vh;
+    padding: 80px 30px 40px;
+    overflow-y: scroll;
+
+    &__close-btn {
+      right: 25px;
+    }
+
+    &__form {
+      display: block;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    &__details {
+      width: 100%;
+      margin-bottom: 51px;
+    }
+
+    &__header {
+      margin-bottom: 40px;
+    }
+
+    &__title {
+      margin-bottom: 15px;
+    }
+
+    &__entry {
+      padding-top: 8px;
+      padding-bottom: 13px;
+    }
+  }
+
+  .booking-field {
+    &--date {
+      margin-right: 28px;
+    }
+
+    &__input {
+      &--date,
+      &--time {
+        width: 251px;
+      }
+    }
+  }
+
+  .booking-overview {
+    width: 100%;
+    padding: 25px 15px;
+    padding-bottom: 23px;
+
+    &__total {
+      margin-bottom: 15px;
+    }
+
+    &__payment-card {
+      margin-bottom: 25px;
+    }
+  }
+
+  .payment-card {
+    width: 500px;
+
+    &__backside {
+      top: 30px;
+    }
+  }
+}
