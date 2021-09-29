@@ -12,7 +12,7 @@ html.html(lang="en")
       div.container.main-header__inner
         a.logo(href="#")
           | Louvre
-        nav
+        nav.main-header__nav
           ul.main-menu.list
             li.main-menu__item
               a.main-menu__link(href="#visiting")
@@ -32,6 +32,8 @@ html.html(lang="en")
             li.main-menu__item
               a.main-menu__link(href="#contacts")
                 | Contacts
+        button.main-header__button.burger-btn(type="button")
+          span.burger-btn__line
 
     //- *** MAIN ***
     main
@@ -326,7 +328,7 @@ html.html(lang="en")
                                                onclick="this.previousElementSibling.stepUp()")
                         | +
                 p.form__total
-                  | Total €<span>220</span>
+                  | Total €<span class="form__total-sum">220</span>
                 button.buy-btn(type="button")
                   | Buy Now
 

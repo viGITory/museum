@@ -1,0 +1,43 @@
+.burger-btn {
+  display: flex;
+  align-items: center;
+  width: 32px;
+  height: 18px;
+  padding: 0;
+
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+
+  &__line {
+    pointer-events: none;
+  }
+
+  &::before,
+  &::after,
+  &__line {
+    width: 100%;
+    height: 2px;
+
+    background-color: $light-bg;
+
+    transition: all .2s ease;
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+
+    content: "";
+
+    transform-origin: center;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+}

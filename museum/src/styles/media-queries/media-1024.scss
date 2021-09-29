@@ -1,0 +1,411 @@
+@media (max-width: 1919px) {
+  //- *** COMMON COMPONENTS ***
+  .page {
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .container {
+    max-width: 1024px;
+  }
+
+  .section {
+    padding: 60px 0;
+
+    &__title {
+      padding-bottom: 20px;
+      margin-bottom: 60px;
+
+      font-size: 50px;
+      line-height: 75px;
+    }
+  }
+
+  // *** HEADER ***
+  .main-header {
+    padding: 49px 0 48px;
+
+    &__nav {
+      display: none;
+    }
+  }
+
+  .logo {
+    height: 33px;
+    line-height: 33px;
+  }
+
+  // *** WELCOME ***
+  .welcome {
+    padding: 0;
+
+    &__inner {
+      min-height: auto;
+    }
+
+    &__wrapper {
+      padding-top: 50px;
+    }
+
+    &__title {
+      padding: 0;
+      margin-bottom: 25px;
+
+      font-size: 50px;
+      line-height: 90px;
+    }
+
+    &__subtitle {
+      margin-bottom: 50px;
+
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    &__button {
+      width: 300px;
+      min-height: 60px;
+    }
+  }
+
+  .welcome-slider {
+    width: 700px;
+    height: 585px;
+
+    &__wrapper {
+      height: 525px;
+    }
+
+    &__controls {
+      box-sizing: border-box;
+      justify-content: flex-end;
+      width: 100%;
+      column-gap: 45px;
+    }
+
+    &__numbers,
+    &__bullet-list {
+      margin-right: 0;
+    }
+
+    &__numbers {
+      width: 71px;
+
+      &::after {
+        width: 1px;
+        height: 16px;
+      }
+    }
+
+    &__bullet {
+      width: 12px;
+      height: 12px;
+    }
+  }
+
+  // *** VISITING ***
+  .visiting {
+    &__wrapper {
+      justify-content: center;
+      gap: 60px 108px;
+    }
+
+    &__item {
+      flex-basis: 330px;
+    }
+  }
+
+  .place {
+    &__img {
+      margin-bottom: 25px;
+    }
+
+    &__title {
+      font-size: 28px;
+      line-height: 31px;
+      letter-spacing: 3px;
+
+      &::after {
+        max-width: 150px;
+      }
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+
+  // *** EXPLORE ***
+  .explore {
+    &__wrapper {
+      flex-basis: auto;
+      margin-bottom: 59px;
+    }
+
+    &__text {
+      margin-bottom: 0;
+
+      &:last-child {
+        display: none;
+      }
+    }
+
+    &__compare-slider {
+      margin: 0 auto;
+    }
+  }
+
+  // *** VIDEO ***
+  .video {
+    &__wrapper {
+      margin-bottom: 0;
+    }
+
+    &__title {
+      padding: 0;
+      margin-bottom: 40px;
+    }
+
+    &__text {
+      display: none;
+    }
+  }
+
+  .video-player {
+    width: 984px;
+
+    &__screen {
+      height: 442px;
+    }
+
+    &__screen-btn {
+      width: 152px;
+      height: 152px;
+
+      & > svg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .control-bar {
+    min-height: 60px;
+    padding: 15px 40px;
+    column-gap: 30px;
+
+    &__btn {
+      &--vol,
+      &--fullscreen {
+        width: 26px;
+        min-width: 26px;
+      }
+
+      &--vol {
+        height: 20px;
+      }
+
+      &--fullscreen {
+        height: 26px;
+      }
+    }
+
+    &__progress-bar {
+      width: 564px;
+      height: 5px;
+
+      &::-webkit-slider-thumb {
+        width: 13px;
+        height: 13px;
+      }
+
+      &--vol {
+        width: 143px;
+      }
+    }
+
+    &__volume-bar {
+      column-gap: 31px;
+    }
+  }
+
+  .video-slider {
+    &__frame {
+      width: 300px;
+      min-width: 300px;
+      height: 170px;
+    }
+  }
+
+  // *** GALLERY ***
+  .gallery {
+    height: 1460px;
+
+    &__title {
+      padding-bottom: 0;
+    }
+
+    &__img {
+      width: 304px;
+    }
+  }
+
+  // *** TICKETS ***
+  .tickets {
+    &__wrapper {
+      column-gap: 80px;
+    }
+
+    &__img {
+      flex-basis: 700px;
+      width: 700px;
+      height: 440px;
+    }
+  }
+
+  .form {
+    flex-basis: auto;
+
+    &__subtitle,
+    &__ticket-count {
+      margin-bottom: 30px;
+    }
+
+    &__subtitle {
+      &--amount {
+        text-align: left;
+      }
+    }
+
+    &__ticket-type {
+      display: none;
+    }
+
+    &__amount {
+      align-items: normal;
+    }
+
+    &__age {
+      margin-bottom: 10px;
+
+      font-size: 22px;
+      line-height: 26px;
+    }
+
+    &__ticket-count {
+      max-width: 175px;
+
+      &:last-of-type {
+        margin-bottom: 24px;
+      }
+    }
+
+    &__total {
+      margin-bottom: auto;
+    }
+
+    &__total-sum {
+      display: inline-block;
+      margin-left: 14px;
+    }
+  }
+
+  .ticket-count {
+    width: 175px;
+    padding: 0 15px;
+  }
+
+  .buy-btn {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  // *** CONTACTS ***
+  .contacts {
+    &__subtitle {
+      max-width: 185px;
+      margin-bottom: 35px;
+
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    &__text {
+      margin-bottom: 15px;
+    }
+
+    &__map {
+      flex-basis: auto;
+      width: 694px;
+      height: 456px;
+    }
+  }
+
+  // *** MAIN-FOOTER ***
+  .main-menu {
+    &--footer {
+      column-gap: 60px;
+      column-width: 136px;
+    }
+
+    &--footer &__link {
+      font-size: 22px;
+      line-height: 40px;
+    }
+
+    &--footer &__item {
+      margin-bottom: 10px;
+    }
+  }
+
+  .main-footer {
+    &__top {
+      padding-bottom: 32px;
+    }
+
+    &__wrapper {
+      column-gap: 30px;
+    }
+
+    &__nav {
+      max-width: 353px;
+    }
+
+    &__social {
+      margin-bottom: 16px;
+    }
+
+    &__bottom {
+      justify-content: space-between;
+      padding-top: 52px;
+
+      font-size: 22px;
+    }
+
+    &__text {
+      &--year,
+      &--school {
+        margin-right: 0;
+      }
+
+      &--school {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  // *** BOOKING-MODAL ***
+  .booking {
+    width: 1024px;
+
+    &__close-btn {
+      top: 25px;
+      right: 22px;
+    }
+
+    &__form {
+      padding: 75px 0 30px;
+    }
+  }
+}

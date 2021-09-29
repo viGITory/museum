@@ -2,9 +2,18 @@
   padding: 51px 0 50px;
 
   &__inner {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+  }
+
+  &__button {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+
+    transform: translateY(-50%);
   }
 }

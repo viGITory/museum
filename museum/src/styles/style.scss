@@ -14,6 +14,7 @@
 @import "../components/main-header/main-header";
 @import "../components/logo/logo";
 @import "../components/main-menu/main-menu";
+@import "../components/burger-btn/burger-btn";
 
 //- *** WELCOME ***
 @import "../components/welcome/welcome";
@@ -71,3 +72,6 @@
 
 //- *** ANIMATION ***
 @import "animation";
+
+//- *** MEDIA-QUERIES ***
+@import "media-queries/media-1024";
