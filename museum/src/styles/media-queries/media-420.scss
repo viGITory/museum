@@ -1,0 +1,491 @@
+@media (max-width: 767px) {
+  // *** COMMON COMPONENTS ***
+  .page {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .section {
+    &__title {
+      font-size: 28px;
+      line-height: 40px;
+    }
+  }
+
+  // *** HEADER ***
+  .main-header {
+    padding: 35px 0;
+
+    &__button {
+      top: 10px;
+    }
+  }
+
+  .logo {
+    width: 140px;
+    height: 20px;
+    padding-left: 54px;
+
+    font-size: 16px;
+    line-height: 20px;
+
+    background-size: 29px auto;
+
+    &--footer {
+      padding-left: 49px;
+    }
+  }
+
+  // *** WELCOME ***
+  .welcome {
+    &__inner {
+      padding-top: 6px;
+    }
+
+    &__subtitle {
+      margin-bottom: 50px;
+
+      font-size: inherit;
+      line-height: inherit;
+    }
+  }
+
+  .welcome-slider {
+    width: 380px;
+    height: 365px;
+
+    &__wrapper {
+      height: 285px;
+    }
+
+    &__controls {
+      padding: 20px 0;
+      column-gap: 25px;
+    }
+
+    &__numbers {
+      width: 50px;
+    }
+
+    &__bullet-list {
+      column-gap: 10px;
+    }
+
+    &__bullet {
+      width: 7px;
+      height: 7px;
+    }
+
+    &__arrows {
+      column-gap: 15px;
+    }
+
+    &__arrow-item {
+      width: 20px;
+    }
+  }
+
+  // *** WELCOME ***
+  .visiting {
+    padding-bottom: 40px;
+
+    &__wrapper {
+      gap: 41px 0;
+    }
+  }
+
+  .place {
+    &__img {
+      margin-bottom: 24px;
+    }
+
+    &__title {
+      margin-bottom: 22px;
+
+      font-size: 18px;
+      line-height: 20px;
+      letter-spacing: 5px;
+    }
+  }
+
+  // *** EXPLORE ***
+  .compare-slider {
+    width: 380px;
+    height: 368px;
+
+    &__after {
+      width: 231px;
+    }
+
+    &__divider {
+      left: 221px;
+      width: 20px;
+      height: 20px;
+
+      border-width: 2px;
+
+      &::before,
+      &::after {
+        width: 2px;
+        height: 174px;
+      }
+
+      &::before {
+        top: -176px;
+      }
+
+      &::after {
+        top: 18px;
+      }
+    }
+  }
+
+  // *** EXPLORE ***
+  .video {
+    padding: 37px 0 40px;
+
+    &__player {
+      margin-bottom: 40px;
+    }
+  }
+
+  .video-player {
+    width: 380px;
+
+    &__screen {
+      height: 172px;
+    }
+
+    &__screen-btn {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  .control-bar {
+    padding: 16px 20px;
+
+    &,
+    &__volume-bar {
+      column-gap: 30px;
+    }
+
+    &__btn {
+      &--vol,
+      &--fullscreen {
+        width: 18px;
+        min-width: 18px;
+      }
+
+      &--play,
+      &--fullscreen {
+        height: 18px;
+      }
+
+      &--play {
+        width: 14px;
+        min-width: 14px;
+      }
+
+      &--vol {
+        height: 14px;
+      }
+    }
+
+    &__progress-bar {
+      height: 4px;
+
+      &--video {
+        top: -1px;
+      }
+
+      &::-webkit-slider-thumb {
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
+
+  .video-slider {
+    &__wrapper {
+      margin-bottom: 40px;
+    }
+
+    &__frame {
+      width: 180px;
+      min-width: 180px;
+      height: 101px;
+    }
+
+    &__arrow {
+      &,
+      & > svg {
+        width: 7px;
+        height: 8px;
+      }
+    }
+
+    &__bullet-item {
+      width: 8px;
+      height: 8px;
+    }
+  }
+
+  // *** GALLERY ***
+  .gallery {
+    height: 757px;
+
+    &::after {
+      height: 122px;
+    }
+
+    &__wrapper {
+      height: 2000px;
+    }
+
+    &__img {
+      width: 178px;
+
+      &:nth-child(3) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  // *** TICKETS ***
+  .tickets {
+    &__img {
+      height: 160px;
+      margin-bottom: 40px;
+    }
+
+    &__wrapper {
+      justify-content: center;
+    }
+  }
+
+  .form {
+    &__subtitle--amount,
+    &__ticket-count {
+      margin-bottom: 20px;
+    }
+
+    &__subtitle,
+    &__age,
+    &__total {
+      font-size: inherit;
+      line-height: inherit;
+    }
+
+    &__subtitle {
+      &--amount {
+        text-align: center;
+      }
+    }
+
+    &__amount {
+      align-items: center;
+    }
+
+    &__age {
+      margin-bottom: 15px;
+    }
+
+    &__ticket-count:last-of-type,
+    &__total {
+      margin-bottom: 40px;
+    }
+
+    &__total {
+      letter-spacing: 0;
+    }
+
+    &__total-sum {
+      margin-left: 4px;
+    }
+  }
+
+  .ticket-count {
+    &__sum {
+      font-size: 22px;
+      line-height: 26px;
+    }
+  }
+
+  .buy-btn {
+    font-size: inherit;
+  }
+
+  // *** TICKETS ***
+  .contacts {
+    padding-bottom: 40px;
+
+    &__subtitle {
+      max-width: 124px;
+
+      font-size: inherit;
+      line-height: inherit;
+    }
+
+    &__map {
+      height: 248px;
+    }
+  }
+
+  // *** FOOTER ***
+  .main-footer {
+    padding-top: 40px;
+
+    &__top {
+      border-bottom-width: 2px;
+    }
+
+    &__wrapper {
+      row-gap: 40px;
+    }
+
+    &__nav {
+      margin-bottom: 0;
+    }
+
+    &__bottom {
+      font-size: inherit;
+    }
+
+    &__social {
+      margin-right: auto;
+    }
+
+    &__text {
+      &--school {
+        display: none;
+      }
+    }
+  }
+
+  .main-menu {
+    &--footer {
+      column-count: 3;
+      column-gap: 70px;
+      column-width: 0;
+    }
+
+    &--footer &__item {
+      padding: 0;
+      margin: 0;
+
+      &:nth-child(odd) {
+        margin-bottom: 30px;
+      }
+    }
+
+    &--footer &__link {
+      font-size: inherit;
+      line-height: inherit;
+    }
+  }
+
+  .social {
+    column-gap: 5px;
+  }
+
+  // *** BOOKING-MODAL ***
+  .booking {
+    width: 420px;
+
+    &__close-btn {
+      width: 25px;
+      height: 25px;
+    }
+
+    &__details {
+      margin-bottom: 50px;
+    }
+
+    &__title {
+      font-size: 32px;
+      line-height: 35px;
+    }
+
+    &__field {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+
+  .booking-field {
+    &__input {
+      &--date,
+      &--time {
+        width: 100%;
+      }
+    }
+  }
+
+  .booking-overview {
+    &__top {
+      margin-bottom: 12px;
+
+      background-size: 120px auto;
+    }
+
+    &__text {
+      &--type {
+        margin-bottom: 22px;
+      }
+    }
+
+    &__payment-card {
+      margin-bottom: 38px;
+    }
+  }
+
+  .payment-card {
+    width: 330px;
+
+    &__frontside,
+    &__backside {
+      width: 100%;
+    }
+
+    &__frontside {
+      margin-bottom: 25px;
+    }
+
+    &__label--code,
+    &__input {
+      font-size: 13px;
+      line-height: 15px;
+    }
+
+    &__label  {
+      font-size: 11px;
+      line-height: 13px;
+
+      &--code {
+        margin-bottom: 4px;
+      }
+    }
+
+    &__input {
+      &--holder {
+        width: 100%;
+      }
+    }
+
+    &__backside {
+      position: relative;
+      top: 0;
+      left: 0;
+      padding-top: 19px;
+    }
+
+    &__decription {
+      width: 48px;
+      margin-bottom: 5px;
+
+      font-size: 9px;
+      line-height: 11px;
+    }
+  }
+}
