@@ -2,10 +2,11 @@
   &__wrapper {
     display: flex;
     flex-wrap: wrap;
-    gap: 75px 60px;
+    justify-content: space-between;
+    row-gap: 75px;
   }
 
   &__item {
-    flex-basis: 440px;
+    width: calc(100% / 3 - 39px);
   }
 }

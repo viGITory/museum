@@ -5,10 +5,6 @@
     line-height: 23px;
   }
 
-  .container {
-    max-width: 1024px;
-  }
-
   .section {
     padding: 60px 0;
 
@@ -111,7 +107,7 @@
     }
 
     &__item {
-      flex-basis: 330px;
+      width: calc(50% - 162px);
     }
   }
 
@@ -244,10 +240,6 @@
 
     &__title {
       padding-bottom: 0;
-    }
-
-    &__img {
-      width: 304px;
     }
   }
 

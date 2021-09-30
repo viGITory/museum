@@ -90,7 +90,11 @@
     padding-bottom: 40px;
 
     &__wrapper {
-      gap: 41px 0;
+      row-gap: 41px;
+    }
+
+    &__item {
+      width: calc(100% - 102px);
     }
   }
 
@@ -241,14 +245,6 @@
 
     &__wrapper {
       height: 2000px;
-    }
-
-    &__img {
-      width: 178px;
-
-      &:nth-child(3) {
-        margin-top: 0;
-      }
     }
   }
 

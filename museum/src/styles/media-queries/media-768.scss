@@ -91,7 +91,7 @@
     }
 
     &__item {
-      flex-basis: 280px;
+      width: calc(50% - 86px);
     }
   }
 
@@ -99,10 +99,6 @@
     &__title {
       font-size: 22px;
       line-height: 24px;
-    }
-
-    &__img {
-      height: 180px;
     }
   }
 
@@ -266,7 +262,11 @@
     }
 
     &__img {
-      width: 352px;
+      width: calc(50% - 12px);
+
+      &:nth-child(3) {
+        margin-top: 0;
+      }
     }
   }
 
