@@ -77,10 +77,6 @@
     }
   }
 
-  &__arrow-item {
-    padding: 0;
-  }
-
   &__bullet-list {
     margin-right: 60px;
     column-gap: 25px;
@@ -113,6 +109,7 @@
   &__arrow-item {
     width: 30px;
     height: 8px;
+    padding: 0;
 
     background-color: transparent;
     background-image: url("../assets/svg/slider-arrow.svg");

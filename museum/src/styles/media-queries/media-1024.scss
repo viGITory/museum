@@ -28,6 +28,7 @@
 
   .logo {
     height: 33px;
+
     line-height: 33px;
   }
 
@@ -223,6 +224,10 @@
   .gallery {
     height: 1460px;
 
+    &::after {
+      height: 239px;
+    }
+
     &__title {
       padding-bottom: 0;
     }
@@ -321,8 +326,7 @@
   // *** MAIN-FOOTER ***
   .main-menu {
     &--footer {
-      column-gap: 60px;
-      column-width: 136px;
+      column-gap: 95px;
     }
 
     &--footer &__link {
@@ -341,11 +345,7 @@
     }
 
     &__wrapper {
-      column-gap: 30px;
-    }
-
-    &__nav {
-      max-width: 353px;
+      column-gap: calc(100% / 3 - 300px);
     }
 
     &__social {

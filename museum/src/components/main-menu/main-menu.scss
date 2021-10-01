@@ -4,10 +4,11 @@
   column-gap: 36px;
 
   &--footer {
-    display: block;
-    width: 100%;
-    column-gap: 110px;
-    column-width: 130px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-flow: column;
+    column-gap: 145px;
   }
 
   &__item {

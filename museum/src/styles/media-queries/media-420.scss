@@ -228,11 +228,11 @@
     height: 757px;
 
     &::after {
-      height: 122px;
+      height: 112px;
     }
 
     &__wrapper {
-      height: 2000px;
+      height: 1000px;
     }
   }
 
@@ -329,6 +329,7 @@
     }
 
     &__nav {
+      flex-basis: 100%;
       margin-bottom: 0;
     }
 
@@ -349,18 +350,15 @@
 
   .main-menu {
     &--footer {
-      column-count: 3;
-      column-gap: 70px;
-      column-width: 0;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-auto-flow: column;
+      gap: 30px calc(100% / 3 - 55px);
     }
 
     &--footer &__item {
       padding: 0;
       margin: 0;
-
-      &:nth-child(odd) {
-        margin-bottom: 30px;
-      }
     }
 
     &--footer &__link {

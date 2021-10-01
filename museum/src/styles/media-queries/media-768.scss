@@ -235,11 +235,16 @@
   .gallery {
     height: 1220px;
 
+    &::after {
+      height: 235px;
+    }
+
     &__title {
       margin-bottom: 40px;
     }
 
     &__wrapper {
+      height: 2000px;
       overflow: hidden;
       column-gap: 24px;
 
@@ -324,11 +329,10 @@
     }
 
     &__wrapper {
-      column-gap: 89px;
+      column-gap: calc(100% / 3 - 155px);
     }
 
     &__nav {
-      max-width: 393px;
       margin-bottom: 33px;
     }
 
@@ -345,8 +349,7 @@
 
   .main-menu {
     &--footer {
-      column-gap: 118px;
-      column-width: 130px;
+      column-gap: 157px;
     }
 
     &--footer &__link {
