@@ -85,7 +85,7 @@
     }
   }
 
-  // *** WELCOME ***
+  // *** VISITING ***
   .visiting {
     padding-bottom: 40px;
 
@@ -112,39 +112,7 @@
     }
   }
 
-  // *** EXPLORE ***
-  .compare-slider {
-    width: 380px;
-    height: 368px;
-
-    &__after {
-      width: 231px;
-    }
-
-    &__divider {
-      left: 221px;
-      width: 20px;
-      height: 20px;
-
-      border-width: 2px;
-
-      &::before,
-      &::after {
-        width: 2px;
-        height: 174px;
-      }
-
-      &::before {
-        top: -176px;
-      }
-
-      &::after {
-        top: 18px;
-      }
-    }
-  }
-
-  // *** EXPLORE ***
+  // *** VIDEO ***
   .video {
     padding: 37px 0 40px;
 
@@ -300,7 +268,7 @@
     font-size: inherit;
   }
 
-  // *** TICKETS ***
+  // *** CONTACTS ***
   .contacts {
     padding-bottom: 40px;
 

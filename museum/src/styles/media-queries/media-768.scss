@@ -122,36 +122,7 @@
   }
 
   .compare-slider {
-    width: 728px;
-    height: 705px;
-
-    &__before,
-    &__after {
-      height: 100%;
-    }
-
-    &__before {
-      width: 100%;
-    }
-
-    &__after {
-      background-size: cover;
-    }
-
-    &__divider {
-      &::before,
-      &::after {
-        height: 334px;
-      }
-
-      &::before {
-        top: -338px;
-      }
-
-      &::after {
-        bottom: -338px;
-      }
-    }
+    width: 100%;
   }
 
   // *** VIDEO ***

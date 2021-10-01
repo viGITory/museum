@@ -153,6 +153,10 @@
     }
   }
 
+  .compare-slider {
+    width: 75%;
+  }
+
   // *** VIDEO ***
   .video {
     &__wrapper {
@@ -323,7 +327,7 @@
     }
   }
 
-  // *** MAIN-FOOTER ***
+  // *** FOOTER ***
   .main-menu {
     &--footer {
       column-gap: 95px;

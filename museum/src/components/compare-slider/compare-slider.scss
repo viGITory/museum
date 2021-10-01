@@ -1,64 +1,47 @@
 .compare-slider {
   position: relative;
-  width: 720px;
+  width: 50%;
+  max-width: 720px;
 
   &,
   &__after {
-    height: 700px;
+    height: 100%;
+    max-height: 700px;
   }
 
   &__after,
-  &__divider,
-  &__divider::before,
-  &__divider::after {
+  &__divider {
     position: absolute;
   }
 
   &__before {
     display: block;
+    max-width: 100%;
+    height: auto;
   }
 
   &__after {
     top: 0;
-    width: 441px;
+    width: 61.2%;
 
     background-image: url("../assets/images/las-meninas-after.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
   }
 
   &__divider {
     top: 50%;
-    left: 421px;
+    left: 58.5%;
     z-index: 1;
-    box-sizing: border-box;
-    width: 40px;
-    height: 40px;
+    width: 5.42%;
+    height: 100%;
 
     cursor: ew-resize;
-    background-color: transparent;
-    border: 5px solid #fff;
-    border-radius: 50%;
+    background-image: url("../assets/svg/explore-divider.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
 
     transform: translateY(-50%);
-
-    &::before,
-    &::after {
-      left: 50%;
-      width: 5px;
-      height: 332px;
-
-      content: "";
-      background-color: #fff;
-
-      transform: translateX(-50%);
-    }
-
-    &::before {
-      top: -335px;
-    }
-
-    &::after {
-      top: 33px;
-    }
   }
 }
