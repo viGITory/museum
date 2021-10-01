@@ -154,12 +154,6 @@
   }
 
   .video-player {
-    width: 380px;
-
-    &__screen {
-      height: 172px;
-    }
-
     &__screen-btn {
       width: 50px;
       height: 50px;
@@ -167,7 +161,7 @@
   }
 
   .control-bar {
-    padding: 16px 20px;
+    padding: 18px 20px;
 
     &,
     &__volume-bar {
@@ -213,12 +207,6 @@
   .video-slider {
     &__wrapper {
       margin-bottom: 40px;
-    }
-
-    &__frame {
-      width: 180px;
-      min-width: 180px;
-      height: 101px;
     }
 
     &__arrow {
@@ -324,7 +312,7 @@
     }
 
     &__map {
-      height: 248px;
+      min-height: 248px;
     }
   }
 

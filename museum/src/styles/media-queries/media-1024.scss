@@ -169,12 +169,6 @@
   }
 
   .video-player {
-    width: 984px;
-
-    &__screen {
-      height: 442px;
-    }
-
     &__screen-btn {
       width: 152px;
       height: 152px;
@@ -188,7 +182,7 @@
 
   .control-bar {
     min-height: 60px;
-    padding: 15px 40px;
+    padding: 14px 40px;
     column-gap: 30px;
 
     &__btn {
@@ -208,7 +202,6 @@
     }
 
     &__progress-bar {
-      width: 564px;
       height: 5px;
 
       &::-webkit-slider-thumb {
@@ -223,14 +216,6 @@
 
     &__volume-bar {
       column-gap: 31px;
-    }
-  }
-
-  .video-slider {
-    &__frame {
-      width: 300px;
-      min-width: 300px;
-      height: 170px;
     }
   }
 
@@ -328,9 +313,8 @@
     }
 
     &__map {
-      flex-basis: auto;
-      width: 694px;
-      height: 456px;
+      width: 70.5%;
+      min-height: 454px;
     }
   }
 
