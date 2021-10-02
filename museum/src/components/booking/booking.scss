@@ -1,5 +1,6 @@
 .booking {
-  width: 1440px;
+  width: 100%;
+  max-width: 1440px;
 
   color: $booking-primary-dark;
 
@@ -127,6 +128,7 @@
   }
 
   &__wrapper {
+    flex-wrap: wrap;
     align-items: center;
     margin-bottom: 18px;
 

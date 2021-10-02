@@ -83,12 +83,12 @@
   }
 
   .welcome-slider {
-    width: 728px;
-    height: 646px;
+    width: 100%;
+    min-width: auto;
+    height: 100%;
+    min-height: auto;
 
     &__wrapper {
-      height: 546px;
-
       &::after {
         display: none;
       }
@@ -355,7 +355,7 @@
   // *** BOOKING-MODAL ***
   .booking {
     box-sizing: border-box;
-    width: 590px;
+    max-width: 590px;
     height: 100vh;
     padding: 80px 30px 40px;
     overflow-y: scroll;
@@ -417,7 +417,7 @@
   }
 
   .payment-card {
-    width: 500px;
+    max-width: 100%;
 
     &__backside {
       top: 30px;

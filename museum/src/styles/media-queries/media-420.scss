@@ -76,13 +76,6 @@
   }
 
   .welcome-slider {
-    width: 380px;
-    height: 365px;
-
-    &__wrapper {
-      height: 285px;
-    }
-
     &__controls {
       padding: 20px 0;
       column-gap: 25px;
@@ -369,8 +362,6 @@
 
   // *** BOOKING-MODAL ***
   .booking {
-    width: 420px;
-
     &__details {
       margin-bottom: 50px;
     }
@@ -409,12 +400,13 @@
     }
 
     &__payment-card {
+      align-self: center;
       margin-bottom: 38px;
     }
   }
 
   .payment-card {
-    width: 330px;
+    max-width: 330px;
 
     &__frontside,
     &__backside {

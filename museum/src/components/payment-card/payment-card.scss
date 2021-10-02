@@ -1,16 +1,27 @@
 .payment-card {
-  width: 470px;
+  max-width: 470px;
   min-height: 241px;
+
+  &,
+  &__frontside,
+  &__backside,
+  &__input {
+    width: 100%;
+  }
 
   &__frontside,
   &__input {
     box-sizing: border-box;
   }
 
+  &__frontside,
+  &__backside {
+    max-width: 360px;
+  }
+
   &__frontside {
     position: relative;
     z-index: 1;
-    width: 360px;
     padding: 16px 20px 15px;
 
     color: $payment-card-primary-dark;
@@ -63,7 +74,7 @@
     }
 
     &--card-number {
-      width: 215px;
+      max-width: 215px;
     }
 
     &--short {
@@ -82,10 +93,6 @@
       }
     }
 
-    &--holder {
-      width: 100%;
-    }
-
     &--code {
       width: 75px;
       padding: 0;
@@ -101,6 +108,7 @@
   }
 
   &__validity {
+    flex-wrap: wrap;
     margin-bottom: 12px;
     column-gap: 15px;
   }
@@ -110,7 +118,6 @@
     right: 0;
     box-sizing: border-box;
     justify-content: flex-end;
-    width: 360px;
     height: 211px;
     padding: 15px 20px 17px;
 

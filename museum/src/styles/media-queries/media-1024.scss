@@ -95,12 +95,8 @@
   }
 
   .welcome-slider {
-    width: 700px;
-    height: 585px;
-
-    &__wrapper {
-      height: 525px;
-    }
+    min-width: 700px;
+    min-height: 585px;
 
     &__controls {
       box-sizing: border-box;
@@ -404,8 +400,6 @@
 
   // *** BOOKING-MODAL ***
   .booking {
-    width: 1024px;
-
     &__close-btn {
       top: 25px;
       right: 22px;

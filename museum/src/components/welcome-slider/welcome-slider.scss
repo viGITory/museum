@@ -1,8 +1,6 @@
 .welcome-slider {
   position: relative;
-  width: 1000px;
-  height: 810px;
-
+  min-width: 1000px;
   overflow: hidden;
 
   &__wrapper,
@@ -17,8 +15,6 @@
   }
 
   &__wrapper {
-    height: 750px;
-
     &::after {
       top: 0;
       left: 0;
