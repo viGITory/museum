@@ -13,7 +13,7 @@ html.html(lang="en")
         a.logo(href="#")
           | Louvre
         nav.main-header__nav
-          ul.main-menu.list
+          ul.main-header__menu.main-menu.list
             li.main-menu__item
               a.main-menu__link(href="#visiting")
                 | Visiting
@@ -32,8 +32,35 @@ html.html(lang="en")
             li.main-menu__item
               a.main-menu__link(href="#contacts")
                 | Contacts
-        button.main-header__button.burger-btn(type="button")
-          span.burger-btn__line
+          div.main-header__wrapper
+            img.main-header__img.main-header__img--wide(src="assets/images/nav-images/nav-img1.jpg", alt="Louvre 1")
+            img.main-header__img(src="assets/images/nav-images/nav-img2.jpg", alt="Louvre 2")
+            img.main-header__img(src="assets/images/nav-images/nav-img3.jpg", alt="Louvre 3")
+          div.main-header__social
+            ul.social.list
+              li.social__item
+                a.social__link.social__link--youtube(href="https://www.youtube.com/user/louvre" target="_blank")
+                  span.visually-hidden
+                    | Youtube
+              li.social__item
+                a.social__link.social__link--instagram(href="https://www.instagram.com/museelouvre/" target="_blank")
+                  span.visually-hidden
+                    | Instagram
+              li.social__item
+                a.social__link.social__link--facebook(href="https://www.facebook.com/museedulouvre" target="_blank")
+                  span.visually-hidden
+                    | Facebook
+              li.social__item
+                a.social__link.social__link--twitter(href="https://twitter.com/museelouvre" target="_blank")
+                  span.visually-hidden
+                    | Twitter
+              li.social__item
+                a.social__link.social__link--pinterest(href="https://www.pinterest.fr/museedulouvre/" target="_blank")
+                  span.visually-hidden
+                    | Pinterest
+        div.main-header__button
+          button.burger-btn(type="button")
+            span.burger-btn__line
 
     //- *** MAIN ***
     main
@@ -373,24 +400,24 @@ html.html(lang="en")
           a.logo.logo--footer(href="#")
             | Louvre
           nav.main-footer__nav
-            ul.main-menu.main-menu--footer.list
-              li.main-menu__item
-                a.main-menu__link(href="#visiting")
+            ul.footer-menu.list
+              li.footer-menu__item
+                a.footer-menu__link(href="#visiting")
                   | Visiting
-              li.main-menu__item
-                a.main-menu__link(href="#explore")
+              li.footer-menu__item
+                a.footer-menu__link(href="#explore")
                   | Explore
-              li.main-menu__item
-                a.main-menu__link(href="#video")
+              li.footer-menu__item
+                a.footer-menu__link(href="#video")
                   | Video
-              li.main-menu__item
-                a.main-menu__link(href="#gallery")
+              li.footer-menu__item
+                a.footer-menu__link(href="#gallery")
                   | Gallery
-              li.main-menu__item
-                a.main-menu__link(href="#tickets")
+              li.footer-menu__item
+                a.footer-menu__link(href="#tickets")
                   | Tickets
-              li.main-menu__item
-                a.main-menu__link(href="#contacts")
+              li.footer-menu__item
+                a.footer-menu__link(href="#contacts")
                   | Contacts
           div.main-footer__social
               ul.social.list

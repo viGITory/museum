@@ -2,6 +2,7 @@
 import '../styles/style.scss';
 
 //- *** COMPONENTS ***
+import '../components/main-header/header-nav.js';
 import '../components/video-player/video-player.js';
 import '../components/compare-slider/compare-slider.js';
 import createGallery from '../components/gallery/gallery.js';

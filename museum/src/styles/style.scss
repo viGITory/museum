@@ -45,6 +45,17 @@
 @import "../components/ticket-count/ticket-count";
 @import "../components/buy-btn/buy-btn";
 
+//- *** PARALLAX ***
+@import "../components/parallax/parallax";
+
+//- *** CONTACTS ***
+@import "../components/contacts/contacts";
+
+//- *** FOOTER ***
+@import "../components/main-footer/main-footer";
+@import "../components/footer-menu/footer-menu";
+@import "../components/social/social";
+
 //- *** BOOKING ***
 @import "../components/booking-modal/booking-modal";
 @import "../components/booking-overlay/booking-overlay";
@@ -54,21 +65,8 @@
 @import "../components/booking-overview/booking-overview";
 @import "../components/payment-card/payment-card";
 
-//- *** PARALLAX ***
-@import "../components/parallax/parallax";
-
-//- *** CONTACTS ***
-@import "../components/contacts/contacts";
-
-//- *** FOOTER ***
-@import "../components/main-footer/main-footer";
-@import "../components/social/social";
-
 //- *** FULLSCREEN ***
 @import "fullscreen";
-
-//- *** JS CLASSES ***
-@import "js-classes";
 
 //- *** ANIMATION ***
 @import "animation";
@@ -77,3 +75,6 @@
 @import "media-queries/media-1024";
 @import "media-queries/media-768";
 @import "media-queries/media-420";
+
+//- *** JS CLASSES ***
+@import "js-classes";

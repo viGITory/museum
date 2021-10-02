@@ -22,7 +22,18 @@
     padding: 49px 0 48px;
 
     &__nav {
-      display: none;
+      position: absolute;
+      top: 81px;
+      left: 0;
+      z-index: 2;
+      min-width: 297px;
+      padding: 22px 55px;
+
+      transform: translateX(-1000px);
+    }
+
+    &__button {
+      display: block;
     }
   }
 
@@ -30,6 +41,24 @@
     height: 33px;
 
     line-height: 33px;
+  }
+
+  .main-menu {
+    flex-direction: column;
+    max-width: 122px;
+
+    &__item {
+      padding: 0;
+
+      background-image: url("../assets/svg/menu-arrow.svg");
+      background-repeat: no-repeat;
+      background-position: right center;
+      background-size: 12px auto;
+    }
+
+    &__link  {
+      line-height: 48px;
+    }
   }
 
   // *** WELCOME ***
@@ -328,24 +357,9 @@
   }
 
   // *** FOOTER ***
-  .main-menu {
-    &--footer {
-      column-gap: 95px;
-    }
-
-    &--footer &__link {
-      font-size: 22px;
-      line-height: 40px;
-    }
-
-    &--footer &__item {
-      margin-bottom: 10px;
-    }
-  }
-
   .main-footer {
     &__top {
-      padding-bottom: 32px;
+      padding-bottom: 35px;
     }
 
     &__wrapper {
@@ -372,6 +386,19 @@
       &--school {
         margin-left: 10px;
       }
+    }
+  }
+
+  .footer-menu {
+    column-gap: 85px;
+
+    &__item {
+      margin-bottom: 10px;
+    }
+
+    &__link {
+      font-size: 22px;
+      line-height: 40px;
     }
   }
 
