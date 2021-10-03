@@ -6,7 +6,6 @@
   &,
   &__after {
     height: 100%;
-    max-height: 700px;
   }
 
   &__after,
@@ -16,6 +15,7 @@
 
   &__before {
     display: block;
+    width: 100%;
     max-width: 100%;
     height: auto;
   }
@@ -24,7 +24,7 @@
     top: 0;
     width: 61.2%;
 
-    background-image: url("../assets/images/las-meninas-after.jpg");
+    background-image: url("../assets/images/compare-slider/las-meninas-after-1024.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }

@@ -7,9 +7,12 @@
     column-gap: 60px;
   }
 
+  &__picture {
+    max-width: 720px;
+  }
+
   &__img {
     display: block;
-    flex-basis: 720px;
     max-width: 100%;
     height: auto;
 

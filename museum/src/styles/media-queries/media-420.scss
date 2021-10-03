@@ -22,6 +22,7 @@
 
     &__nav {
       top: 55px;
+      min-height: auto;
       padding-top: 22px;
       row-gap: 23px;
     }
@@ -33,16 +34,12 @@
       column-gap: 12px;
     }
 
-    &__img {
-      min-height: 95px;
+    &__wide {
+      grid-column: auto;
+    }
 
-      &:nth-child(2) {
-        order: -1;
-      }
-
-      &--wide {
-        grid-column: auto;
-      }
+    picture:nth-child(2)  {
+      order: -1;
     }
   }
 
@@ -77,7 +74,7 @@
 
   .welcome-slider {
     &__controls {
-      padding: 20px 0;
+      padding: 19px 0 20px;
       column-gap: 25px;
     }
 
@@ -108,7 +105,7 @@
     padding-bottom: 40px;
 
     &__wrapper {
-      row-gap: 41px;
+      row-gap: 39px;
     }
 
     &__item {
@@ -118,7 +115,8 @@
 
   .place {
     &__img {
-      margin-bottom: 24px;
+      min-height: 180px;
+      margin-bottom: 26px;
     }
 
     &__title {
@@ -132,12 +130,18 @@
 
   // *** EXPLORE ***
   .explore {
-    padding-bottom: 38px;
+    padding-bottom: 39px;
+  }
+
+  .compare-slider {
+    &__after {
+      background-image: url("../assets/images/compare-slider/las-meninas-after-420.jpg");
+    }
   }
 
   // *** VIDEO ***
   .video {
-    padding: 37px 0 40px;
+    padding: 36px 0 40px;
 
     &__player {
       margin-bottom: 40px;
@@ -197,14 +201,13 @@
 
   .video-slider {
     &__wrapper {
-      margin-bottom: 40px;
+      margin-bottom: 37px;
     }
 
     &__arrow {
       &,
       & > svg {
         width: 7px;
-        height: 8px;
       }
     }
 
@@ -229,8 +232,7 @@
 
   // *** TICKETS ***
   .tickets {
-    &__img {
-      height: 160px;
+    &__picture {
       margin-bottom: 40px;
     }
 
@@ -390,6 +392,7 @@
     &__top {
       margin-bottom: 12px;
 
+      background-image: url("../assets/images/booking/booking-louvre-420.jpg");
       background-size: 120px auto;
     }
 
@@ -417,7 +420,6 @@
       margin-bottom: 25px;
     }
 
-    &__label--code,
     &__input {
       font-size: 13px;
       line-height: 15px;
@@ -429,6 +431,9 @@
 
       &--code {
         margin-bottom: 4px;
+
+        font-size: 13px;
+        line-height: 15px;
       }
     }
 
@@ -445,7 +450,7 @@
       padding-top: 19px;
     }
 
-    &__decription {
+    &__description {
       width: 48px;
       margin-bottom: 5px;
 

@@ -33,29 +33,41 @@ html.html(lang="en")
               a.main-menu__link(href="#contacts")
                 | Contacts
           div.main-header__wrapper
-            img.main-header__img.main-header__img--wide(src="assets/images/nav-images/nav-img1.jpg", alt="Louvre 1")
-            img.main-header__img(src="assets/images/nav-images/nav-img2.jpg", alt="Louvre 2")
-            img.main-header__img(src="assets/images/nav-images/nav-img3.jpg", alt="Louvre 3")
+            picture.main-header__wide
+              source(srcset="assets/images/nav-images/nav-img1-420.webp" media="(max-width: 767px)")
+              source(srcset="assets/images/nav-images/nav-img1-420.jpg" media="(max-width: 767px)")
+              source(srcset="assets/images/nav-images/nav-img1-768.webp")
+              img.main-header__img(src="assets/images/nav-images/nav-img1-768.jpg" alt="Louvre 1" width="658" height="194")
+            picture
+              source(srcset="assets/images/nav-images/nav-img2-420.webp" media="(max-width: 767px)")
+              source(srcset="assets/images/nav-images/nav-img2-420.jpg" media="(max-width: 767px)")
+              source(srcset="assets/images/nav-images/nav-img2-768.webp")
+              img.main-header__img(src="assets/images/nav-images/nav-img2-768.jpg" alt="Louvre 2" width="319" height="161")
+            picture
+              source(srcset="assets/images/nav-images/nav-img3-420.webp" media="(max-width: 767px)")
+              source(srcset="assets/images/nav-images/nav-img3-420.jpg" media="(max-width: 767px)")
+              source(srcset="assets/images/nav-images/nav-img3-768.webp")
+              img.main-header__img(src="assets/images/nav-images/nav-img3-768.jpg" alt="Louvre 3" width="319" height="161")
           div.main-header__social
             ul.social.list
               li.social__item
-                a.social__link.social__link--youtube(href="https://www.youtube.com/user/louvre" target="_blank")
+                a.social__link.social__link--youtube(href="https://www.youtube.com/user/louvre" target="_blank" rel="noopener noreferrer")
                   span.visually-hidden
                     | Youtube
               li.social__item
-                a.social__link.social__link--instagram(href="https://www.instagram.com/museelouvre/" target="_blank")
+                a.social__link.social__link--instagram(href="https://www.instagram.com/museelouvre/" target="_blank" rel="noopener noreferrer")
                   span.visually-hidden
                     | Instagram
               li.social__item
-                a.social__link.social__link--facebook(href="https://www.facebook.com/museedulouvre" target="_blank")
+                a.social__link.social__link--facebook(href="https://www.facebook.com/museedulouvre" target="_blank" rel="noopener noreferrer")
                   span.visually-hidden
                     | Facebook
               li.social__item
-                a.social__link.social__link--twitter(href="https://twitter.com/museelouvre" target="_blank")
+                a.social__link.social__link--twitter(href="https://twitter.com/museelouvre" target="_blank" rel="noopener noreferrer")
                   span.visually-hidden
                     | Twitter
               li.social__item
-                a.social__link.social__link--pinterest(href="https://www.pinterest.fr/museedulouvre/" target="_blank")
+                a.social__link.social__link--pinterest(href="https://www.pinterest.fr/museedulouvre/" target="_blank" rel="noopener noreferrer")
                   span.visually-hidden
                     | Pinterest
         div.main-header__button
@@ -82,7 +94,15 @@ html.html(lang="en")
               | Discover the Louvre
           div.welcome__slider.welcome-slider
             div.welcome-slider__wrapper
-              img.welcome-slider__img(src="assets/images/welcome-slider/welcome-slider1.jpg" alt="The picture by Leonardo da Vinci - Mona Lisa" width="1000" height="750")
+              picture
+                source(srcset="assets/images/welcome-slider/welcome-slider1-420.webp" media="(max-width: 767px)")
+                source(srcset="assets/images/welcome-slider/welcome-slider1-420.jpg" media="(max-width: 767px)")
+                source(srcset="assets/images/welcome-slider/welcome-slider1-768.webp" media="(max-width: 1023px)")
+                source(srcset="assets/images/welcome-slider/welcome-slider1-768.jpg" media="(max-width: 1023px)")
+                source(srcset="assets/images/welcome-slider/welcome-slider1-1024.webp" media="(max-width: 1919px)")
+                source(srcset="assets/images/welcome-slider/welcome-slider1-1024.jpg" media="(max-width: 1919px)")
+                source(srcset="assets/images/welcome-slider/welcome-slider1-1920.webp")
+                img.welcome-slider__img(src="assets/images/welcome-slider/welcome-slider1-1920.jpg" alt="The picture by Leonardo da Vinci - Mona Lisa" width="1000" height="750")
             div.welcome-slider__controls
               div.welcome-slider__numbers
                 span
@@ -112,10 +132,18 @@ html.html(lang="en")
             a.visiting__item.place(href="./tours/tours2.html"
                                    target="_blank")
               article
-                img.place__img(src="assets/images/visiting/royal-palace.jpg"
-                               width="440"
-                               height="285"
-                               alt="Royal Palace")
+                picture
+                  source(srcset="assets/images/visiting/royal-palace-420.webp" media="(max-width: 767px)")
+                  source(srcset="assets/images/visiting/royal-palace-420.jpg" media="(max-width: 767px)")
+                  source(srcset="assets/images/visiting/royal-palace-768.webp" media="(max-width: 1023px)")
+                  source(srcset="assets/images/visiting/royal-palace-768.jpg" media="(max-width: 1023px)")
+                  source(srcset="assets/images/visiting/royal-palace-1024.webp" media="(max-width: 1919px)")
+                  source(srcset="assets/images/visiting/royal-palace-1024.jpg" media="(max-width: 1919px)")
+                  source(srcset="assets/images/visiting/royal-palace-1920.webp")
+                  img.place__img(src="assets/images/visiting/royal-palace-1920.jpg"
+                                 width="440"
+                                 height="285"
+                                 alt="Royal Palace")
                 h3.place__title
                   | Royal Palace
                 p.place__subtitle
@@ -125,10 +153,18 @@ html.html(lang="en")
             a.visiting__item.place(href="./tours/tours3.html"
                                    target="_blank")
               article
-                img.place__img(src="assets/images/visiting/denon-wing.jpg"
-                               width="440"
-                               height="285"
-                               alt="Denon Wing")
+                picture
+                  source(srcset="assets/images/visiting/denon-wing-420.webp" media="(max-width: 767px)")
+                  source(srcset="assets/images/visiting/denon-wing-420.jpg" media="(max-width: 767px)")
+                  source(srcset="assets/images/visiting/denon-wing-768.webp" media="(max-width: 1023px)")
+                  source(srcset="assets/images/visiting/denon-wing-768.jpg" media="(max-width: 1023px)")
+                  source(srcset="assets/images/visiting/denon-wing-1024.webp" media="(max-width: 1919px)")
+                  source(srcset="assets/images/visiting/denon-wing-1024.jpg" media="(max-width: 1919px)")
+                  source(srcset="assets/images/visiting/denon-wing-1920.webp")
+                  img.place__img(src="assets/images/visiting/denon-wing-1920.jpg"
+                                 width="440"
+                                 height="285"
+                                 alt="Denon Wing")
                 h3.place__title
                   | Denon Wing
                 p.place__subtitle
@@ -138,10 +174,18 @@ html.html(lang="en")
             a.visiting__item.place(href="./tours/tours4.html"
                                    target="_blank")
               article
-                img.place__img(src="assets/images/visiting/colonnade-perrault.jpg"
-                               width="440"
-                               height="285"
-                               alt="Colonnade Perrault")
+                picture
+                  source(srcset="assets/images/visiting/colonnade-perrault-420.webp" media="(max-width: 767px)")
+                  source(srcset="assets/images/visiting/colonnade-perrault-420.jpg" media="(max-width: 767px)")
+                  source(srcset="assets/images/visiting/colonnade-perrault-768.webp" media="(max-width: 1023px)")
+                  source(srcset="assets/images/visiting/colonnade-perrault-768.jpg" media="(max-width: 1023px)")
+                  source(srcset="assets/images/visiting/colonnade-perrault-1024.webp" media="(max-width: 1919px)")
+                  source(srcset="assets/images/visiting/colonnade-perrault-1024.jpg" media="(max-width: 1919px)")
+                  source(srcset="assets/images/visiting/colonnade-perrault-1920.webp")
+                  img.place__img(src="assets/images/visiting/colonnade-perrault-1920.jpg"
+                                 width="440"
+                                 height="285"
+                                 alt="Colonnade Perrault")
                 h3.place__title
                   | Colonnade Perrault
                 p.place__subtitle
@@ -151,10 +195,18 @@ html.html(lang="en")
             a.visiting__item.place(href="./tours/tours5.html"
                                    target="_blank")
               article
-                img.place__img(src="assets/images/visiting/greek-hall.jpg"
-                               width="440"
-                               height="285"
-                               alt="Greek hall")
+                picture
+                  source(srcset="assets/images/visiting/greek-hall-420.webp" media="(max-width: 767px)")
+                  source(srcset="assets/images/visiting/greek-hall-420.jpg" media="(max-width: 767px)")
+                  source(srcset="assets/images/visiting/greek-hall-768.webp" media="(max-width: 1023px)")
+                  source(srcset="assets/images/visiting/greek-hall-768.jpg" media="(max-width: 1023px)")
+                  source(srcset="assets/images/visiting/greek-hall-1024.webp" media="(max-width: 1919px)")
+                  source(srcset="assets/images/visiting/greek-hall-1024.jpg" media="(max-width: 1919px)")
+                  source(srcset="assets/images/visiting/greek-hall-1920.webp")
+                  img.place__img(src="assets/images/visiting/greek-hall-1920.jpg"
+                                 width="440"
+                                 height="285"
+                                 alt="Greek hall")
                 h3.place__title
                   | Greek hall
                 p.place__subtitle
@@ -164,10 +216,18 @@ html.html(lang="en")
             a.visiting__item.place(href="./tours/tours6.html"
                                    target="_blank")
               article
-                img.place__img(src="assets/images/visiting/mona-lisa.jpg"
-                               width="440"
-                               height="285"
-                               alt="Mona Lisa")
+                picture
+                  source(srcset="assets/images/visiting/mona-lisa-420.webp" media="(max-width: 767px)")
+                  source(srcset="assets/images/visiting/mona-lisa-420.jpg" media="(max-width: 767px)")
+                  source(srcset="assets/images/visiting/mona-lisa-768.webp" media="(max-width: 1023px)")
+                  source(srcset="assets/images/visiting/mona-lisa-768.jpg" media="(max-width: 1023px)")
+                  source(srcset="assets/images/visiting/mona-lisa-1024.webp" media="(max-width: 1919px)")
+                  source(srcset="assets/images/visiting/mona-lisa-1024.jpg" media="(max-width: 1919px)")
+                  source(srcset="assets/images/visiting/mona-lisa-1920.webp")
+                  img.place__img(src="assets/images/visiting/mona-lisa-1920.jpg"
+                                 width="440"
+                                 height="285"
+                                 alt="Mona Lisa")
                 h3.place__title
                   | Mona Lisa
                 p.place__subtitle
@@ -177,10 +237,18 @@ html.html(lang="en")
             a.visiting__item.place(href="./tours/tours7.html"
                                    target="_blank")
               article
-                img.place__img(src="assets/images/visiting/night-palace.jpg"
-                               width="440"
-                               height="285"
-                               alt="Night Palace")
+                picture
+                  source(srcset="assets/images/visiting/night-palace-420.webp" media="(max-width: 767px)")
+                  source(srcset="assets/images/visiting/night-palace-420.jpg" media="(max-width: 767px)")
+                  source(srcset="assets/images/visiting/night-palace-768.webp" media="(max-width: 1023px)")
+                  source(srcset="assets/images/visiting/night-palace-768.jpg" media="(max-width: 1023px)")
+                  source(srcset="assets/images/visiting/night-palace-1024.webp" media="(max-width: 1919px)")
+                  source(srcset="assets/images/visiting/night-palace-1024.jpg" media="(max-width: 1919px)")
+                  source(srcset="assets/images/visiting/night-palace-1920.webp")
+                  img.place__img(src="assets/images/visiting/night-palace-1920.jpg"
+                                 width="440"
+                                 height="285"
+                                 alt="Night Palace")
                 h3.place__title
                   | Night Palace
                 p.place__subtitle
@@ -206,10 +274,16 @@ html.html(lang="en")
               | not because the picture had been damaged in any way,
               | but because it looked different.
           div.explore__compare-slider.compare-slider
-            img.compare-slider__before(src="assets/images/las-meninas-before.jpg"
-                                       width="720"
-                                       height="700"
-                                       alt="The picture by Diego Velázquez - Las Meninas")
+            picture
+              source(srcset="assets/images/compare-slider/las-meninas-before-420.webp" media="(max-width: 767px)")
+              source(srcset="assets/images/compare-slider/las-meninas-before-420.jpg" media="(max-width: 767px)")
+              source(srcset="assets/images/compare-slider/las-meninas-before-768.webp" media="(max-width: 1023px)")
+              source(srcset="assets/images/compare-slider/las-meninas-before-768.jpg" media="(max-width: 1023px)")
+              source(srcset="assets/images/compare-slider/las-meninas-before-1024.webp")
+              img.compare-slider__before(src="assets/images/compare-slider/las-meninas-before-1024.jpg"
+                                         width="720"
+                                         height="700"
+                                         alt="The picture by Diego Velázquez - Las Meninas")
             div.compare-slider__after
             div.compare-slider__divider
 
@@ -225,7 +299,9 @@ html.html(lang="en")
               | Mona Lisa or Hammurabi's Code
           div.video__player.video-player
             div.video-player__wrapper
-              video.video-player__screen(src="assets/video/video0.mp4" poster="assets/images/video-posters/poster0.jpg")
+              video.video-player__screen(poster="assets/images/video-posters/poster0.jpg")
+                source(src="assets/video/video0.webm")
+                source(src="assets/video/video0.mp4")
               button.video-player__screen-btn(type="button" aria-label="Play")
                 svg(width='220' height='220' viewbox='0 0 220 220' fill='none' xmlns='http://www.w3.org/2000/svg')
                   g(clip-path='url(#clip0)')
@@ -298,10 +374,18 @@ html.html(lang="en")
           h2.section__title.section__title--gold
             | Buy tickets
           div.tickets__wrapper
-            img.tickets__img(src="assets/images/venus.jpg"
-                             width="720"
-                             height="550"
-                             alt="The picture by Pompeo Batoni - Venus Presenting Aeneas with Armour Forged by Vulcan, 1748")
+            picture.tickets__picture
+              source(srcset="assets/images/tickets/tickets-venus-420.webp" media="(max-width: 767px)")
+              source(srcset="assets/images/tickets/tickets-venus-420.jpg" media="(max-width: 767px)")
+              source(srcset="assets/images/tickets/tickets-venus-768.webp" media="(max-width: 1023px)")
+              source(srcset="assets/images/tickets/tickets-venus-768.jpg" media="(max-width: 1023px)")
+              source(srcset="assets/images/tickets/tickets-venus-1024.webp" media="(max-width: 1919px)")
+              source(srcset="assets/images/tickets/tickets-venus-1024.jpg" media="(max-width: 1919px)")
+              source(srcset="assets/images/tickets/tickets-venus-1920.webp")
+              img.tickets__img(src="assets/images/tickets/tickets-venus-1920.jpg"
+                               width="720"
+                               height="550"
+                               alt="The picture by Pompeo Batoni - Venus Presenting Aeneas with Armour Forged by Vulcan, 1748")
             form.tickets__form.form(action="#" method="post")
               div.form__ticket-type
                 h3.form__subtitle
@@ -388,10 +472,18 @@ html.html(lang="en")
                   | mail:
                   a.contacts__link(href="mailto:info@louvre.fr")
                     |  info@louvre.fr
-            img.contacts__map(src="assets/images/map.png"
-                              width="960"
-                              height="620"
-                              alt="Map with the address of the Louvre")
+            picture.contacts__map
+              source(srcset="assets/images/contacts/map-420.webp" media="(max-width: 767px)")
+              source(srcset="assets/images/contacts/map-420.png" media="(max-width: 767px)")
+              source(srcset="assets/images/contacts/map-768.webp" media="(max-width: 1023px)")
+              source(srcset="assets/images/contacts/map-768.png" media="(max-width: 1023px)")
+              source(srcset="assets/images/contacts/map-1024.webp" media="(max-width: 1919px)")
+              source(srcset="assets/images/contacts/map-1024.png" media="(max-width: 1919px)")
+              source(srcset="assets/images/contacts/map-1920.webp")
+              img.contacts__img(src="assets/images/contacts/map-1920.png"
+                                width="960"
+                                height="620"
+                                alt="Map with the address of the Louvre")
 
     //- *** FOOTER ***
     footer.section.main-footer
@@ -422,31 +514,31 @@ html.html(lang="en")
           div.main-footer__social
               ul.social.list
                 li.social__item
-                  a.social__link.social__link--youtube(href="https://www.youtube.com/user/louvre" target="_blank")
+                  a.social__link.social__link--youtube(href="https://www.youtube.com/user/louvre" target="_blank" rel="noopener noreferrer")
                     span.visually-hidden
                       | Youtube
                 li.social__item
-                  a.social__link.social__link--instagram(href="https://www.instagram.com/museelouvre/" target="_blank")
+                  a.social__link.social__link--instagram(href="https://www.instagram.com/museelouvre/" target="_blank" rel="noopener noreferrer")
                     span.visually-hidden
                       | Instagram
                 li.social__item
-                  a.social__link.social__link--facebook(href="https://www.facebook.com/museedulouvre" target="_blank")
+                  a.social__link.social__link--facebook(href="https://www.facebook.com/museedulouvre" target="_blank" rel="noopener noreferrer")
                     span.visually-hidden
                       | Facebook
                 li.social__item
-                  a.social__link.social__link--twitter(href="https://twitter.com/museelouvre" target="_blank")
+                  a.social__link.social__link--twitter(href="https://twitter.com/museelouvre" target="_blank" rel="noopener noreferrer")
                     span.visually-hidden
                       | Twitter
                 li.social__item
-                  a.social__link.social__link--pinterest(href="https://www.pinterest.fr/museedulouvre/" target="_blank")
+                  a.social__link.social__link--pinterest(href="https://www.pinterest.fr/museedulouvre/" target="_blank" rel="noopener noreferrer")
                     span.visually-hidden
                       | Pinterest
       div.container.main-footer__bottom
         p.main-footer__text.main-footer__text--year
           | © 2021
-        a.main-footer__link.main-footer__text.main-footer__text--school(href="https://rs.school" target="_blank")
+        a.main-footer__link.main-footer__text.main-footer__text--school(href="https://rs.school" target="_blank" rel="noopener noreferrer")
           | The Rolling Scopes School
-        a.main-footer__text.main-footer__link(href="https://github.com/viGITory" target="_blank")
+        a.main-footer__text.main-footer__link(href="https://github.com/viGITory" target="_blank" rel="noopener noreferrer")
           | viGITory
 
     //- *** BOOKING MODAL ***

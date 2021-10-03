@@ -27,6 +27,7 @@
       left: 0;
       z-index: 2;
       min-width: 297px;
+      min-height: 585px;
       padding: 22px 55px;
 
       transform: translateX(-1000px);
@@ -129,7 +130,7 @@
   .visiting {
     &__wrapper {
       justify-content: center;
-      gap: 60px 108px;
+      gap: 59px 108px;
     }
 
     &__item {
@@ -167,6 +168,8 @@
 
     &__text {
       margin-bottom: 0;
+
+      line-height: 37px;
 
       &:last-child {
         display: none;
@@ -268,10 +271,8 @@
       column-gap: 80px;
     }
 
-    &__img {
-      flex-basis: 700px;
-      width: 700px;
-      height: 440px;
+    &__picture {
+      max-width: 700px;
     }
   }
 
@@ -334,6 +335,8 @@
 
   // *** CONTACTS ***
   .contacts {
+    padding-bottom: 63px;
+
     &__subtitle {
       max-width: 185px;
       margin-bottom: 35px;
@@ -355,11 +358,11 @@
   // *** FOOTER ***
   .main-footer {
     &__top {
-      padding-bottom: 35px;
+      padding-bottom: 33px;
     }
 
     &__wrapper {
-      column-gap: calc(100% / 3 - 300px);
+      column-gap: calc(100% / 3 - 298px);
     }
 
     &__social {

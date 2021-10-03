@@ -21,9 +21,9 @@
     padding: 44px 0 33px;
 
     &__nav {
+      top: 66px;
       width: 100%;
-      padding-top: 7px;
-      padding-bottom: 35px;
+      padding-bottom: 33px;
       row-gap: 22px;
     }
 
@@ -103,7 +103,7 @@
 
   // *** VISITING ***
   .visiting {
-    padding-bottom: 80px;
+    padding-bottom: 78px;
 
     &__title {
       margin-bottom: 40px;
@@ -123,12 +123,14 @@
       font-size: 22px;
       line-height: 24px;
     }
+
+    &__img {
+      margin-bottom: 27px;
+    }
   }
 
   // *** EXPLORE ***
   .explore {
-    padding-bottom: 45px;
-
     &__inner {
       display: block;
     }
@@ -148,6 +150,11 @@
 
   .compare-slider {
     width: 100%;
+    max-width: 728px;
+
+    &__after {
+      background-image: url("../assets/images/compare-slider/las-meninas-after-768.jpg");
+    }
   }
 
   // *** VIDEO ***
@@ -173,7 +180,7 @@
   .control-bar {
     position: relative;
     min-height: 53px;
-    padding: 13px 30px;
+    padding: 14px 30px;
     column-gap: 35px;
 
     &__btn {
@@ -250,7 +257,7 @@
       }
     }
 
-    &__img {
+    &__picture {
       width: calc(50% - 12px);
 
       &:nth-child(3) {
@@ -269,9 +276,8 @@
       column-gap: 59px;
     }
 
-    &__img {
-      flex-basis: 444px;
-      height: 340px;
+    &__picture {
+      max-width: 444px;
     }
   }
 

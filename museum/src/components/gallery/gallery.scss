@@ -42,10 +42,8 @@
     }
   }
 
-  &__img {
-    display: block;
+  &__picture {
     width: calc(100% / 3 - 24px);
-    height: auto;
 
     &:first-child,
     &:nth-child(3) {
@@ -63,5 +61,11 @@
     &:nth-child(3n) {
       order: 3;
     }
+  }
+
+  &__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
   }
 }
