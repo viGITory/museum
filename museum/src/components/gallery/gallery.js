@@ -134,6 +134,7 @@ const createGallery = () => {
     img.width = item.width;
     img.height = item.height;
 
+    img.loading = 'lazy';
     img.alt = item.alt;
   });
 };
