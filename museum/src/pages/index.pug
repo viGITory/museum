@@ -34,19 +34,19 @@ html.html(lang="en")
                 | Contacts
           div.main-header__wrapper
             picture.main-header__wide
-              source(srcset="assets/images/nav-images/nav-img1-420.webp" media="(max-width: 767px)")
+              source(srcset="assets/images/nav-images/nav-img1-420.webp" media="(max-width: 767px)" type="image/webp")
               source(srcset="assets/images/nav-images/nav-img1-420.jpg" media="(max-width: 767px)")
-              source(srcset="assets/images/nav-images/nav-img1-768.webp")
+              source(srcset="assets/images/nav-images/nav-img1-768.webp" type="image/webp")
               img.main-header__img(src="assets/images/nav-images/nav-img1-768.jpg" loading="lazy" alt="Louvre 1" width="658" height="194")
             picture
-              source(srcset="assets/images/nav-images/nav-img2-420.webp" media="(max-width: 767px)")
+              source(srcset="assets/images/nav-images/nav-img2-420.webp" media="(max-width: 767px)" type="image/webp")
               source(srcset="assets/images/nav-images/nav-img2-420.jpg" media="(max-width: 767px)")
-              source(srcset="assets/images/nav-images/nav-img2-768.webp")
+              source(srcset="assets/images/nav-images/nav-img2-768.webp" type="image/webp")
               img.main-header__img(src="assets/images/nav-images/nav-img2-768.jpg" loading="lazy" alt="Louvre 2" width="319" height="161")
             picture
-              source(srcset="assets/images/nav-images/nav-img3-420.webp" media="(max-width: 767px)")
+              source(srcset="assets/images/nav-images/nav-img3-420.webp" media="(max-width: 767px)" type="image/webp")
               source(srcset="assets/images/nav-images/nav-img3-420.jpg" media="(max-width: 767px)")
-              source(srcset="assets/images/nav-images/nav-img3-768.webp")
+              source(srcset="assets/images/nav-images/nav-img3-768.webp" type="image/webp")
               img.main-header__img(src="assets/images/nav-images/nav-img3-768.jpg" loading="lazy" alt="Louvre 3" width="319" height="161")
           div.main-header__social
             ul.social.list
@@ -71,7 +71,7 @@ html.html(lang="en")
                   span.visually-hidden
                     | Pinterest
         div.main-header__button
-          button.burger-btn(type="button")
+          button.burger-btn(type="button" aria-label="Menu button")
             span.burger-btn__line
 
     //- *** MAIN ***
@@ -95,13 +95,13 @@ html.html(lang="en")
           div.welcome__slider.welcome-slider
             div.welcome-slider__wrapper
               picture
-                source(srcset="assets/images/welcome-slider/welcome-slider1-420.webp" media="(max-width: 767px)")
+                source(srcset="assets/images/welcome-slider/welcome-slider1-420.webp" media="(max-width: 767px)" type="image/webp")
                 source(srcset="assets/images/welcome-slider/welcome-slider1-420.jpg" media="(max-width: 767px)")
-                source(srcset="assets/images/welcome-slider/welcome-slider1-768.webp" media="(max-width: 1023px)")
+                source(srcset="assets/images/welcome-slider/welcome-slider1-768.webp" media="(max-width: 1023px)" type="image/webp")
                 source(srcset="assets/images/welcome-slider/welcome-slider1-768.jpg" media="(max-width: 1023px)")
-                source(srcset="assets/images/welcome-slider/welcome-slider1-1024.webp" media="(max-width: 1919px)")
+                source(srcset="assets/images/welcome-slider/welcome-slider1-1024.webp" media="(max-width: 1919px)" type="image/webp")
                 source(srcset="assets/images/welcome-slider/welcome-slider1-1024.jpg" media="(max-width: 1919px)")
-                source(srcset="assets/images/welcome-slider/welcome-slider1-1920.webp")
+                source(srcset="assets/images/welcome-slider/welcome-slider1-1920.webp" type="image/webp")
                 img.welcome-slider__img(src="assets/images/welcome-slider/welcome-slider1-1920.jpg" alt="The picture by Leonardo da Vinci - Mona Lisa" width="1000" height="750")
             div.welcome-slider__controls
               div.welcome-slider__numbers
@@ -133,13 +133,13 @@ html.html(lang="en")
                                    target="_blank")
               article
                 picture
-                  source(srcset="assets/images/visiting/royal-palace-420.webp" media="(max-width: 767px)")
+                  source(srcset="assets/images/visiting/royal-palace-420.webp" media="(max-width: 767px)" type="image/webp")
                   source(srcset="assets/images/visiting/royal-palace-420.jpg" media="(max-width: 767px)")
-                  source(srcset="assets/images/visiting/royal-palace-768.webp" media="(max-width: 1023px)")
+                  source(srcset="assets/images/visiting/royal-palace-768.webp" media="(max-width: 1023px)" type="image/webp")
                   source(srcset="assets/images/visiting/royal-palace-768.jpg" media="(max-width: 1023px)")
-                  source(srcset="assets/images/visiting/royal-palace-1024.webp" media="(max-width: 1919px)")
+                  source(srcset="assets/images/visiting/royal-palace-1024.webp" media="(max-width: 1919px)" type="image/webp")
                   source(srcset="assets/images/visiting/royal-palace-1024.jpg" media="(max-width: 1919px)")
-                  source(srcset="assets/images/visiting/royal-palace-1920.webp")
+                  source(srcset="assets/images/visiting/royal-palace-1920.webp" type="image/webp")
                   img.place__img(src="assets/images/visiting/royal-palace-1920.jpg"
                                  width="440"
                                  height="285"
@@ -155,13 +155,13 @@ html.html(lang="en")
                                    target="_blank")
               article
                 picture
-                  source(srcset="assets/images/visiting/denon-wing-420.webp" media="(max-width: 767px)")
+                  source(srcset="assets/images/visiting/denon-wing-420.webp" media="(max-width: 767px)" type="image/webp")
                   source(srcset="assets/images/visiting/denon-wing-420.jpg" media="(max-width: 767px)")
-                  source(srcset="assets/images/visiting/denon-wing-768.webp" media="(max-width: 1023px)")
+                  source(srcset="assets/images/visiting/denon-wing-768.webp" media="(max-width: 1023px)" type="image/webp")
                   source(srcset="assets/images/visiting/denon-wing-768.jpg" media="(max-width: 1023px)")
-                  source(srcset="assets/images/visiting/denon-wing-1024.webp" media="(max-width: 1919px)")
+                  source(srcset="assets/images/visiting/denon-wing-1024.webp" media="(max-width: 1919px)" type="image/webp")
                   source(srcset="assets/images/visiting/denon-wing-1024.jpg" media="(max-width: 1919px)")
-                  source(srcset="assets/images/visiting/denon-wing-1920.webp")
+                  source(srcset="assets/images/visiting/denon-wing-1920.webp" type="image/webp")
                   img.place__img(src="assets/images/visiting/denon-wing-1920.jpg"
                                  width="440"
                                  height="285"
@@ -177,13 +177,13 @@ html.html(lang="en")
                                    target="_blank")
               article
                 picture
-                  source(srcset="assets/images/visiting/colonnade-perrault-420.webp" media="(max-width: 767px)")
+                  source(srcset="assets/images/visiting/colonnade-perrault-420.webp" media="(max-width: 767px)" type="image/webp")
                   source(srcset="assets/images/visiting/colonnade-perrault-420.jpg" media="(max-width: 767px)")
-                  source(srcset="assets/images/visiting/colonnade-perrault-768.webp" media="(max-width: 1023px)")
+                  source(srcset="assets/images/visiting/colonnade-perrault-768.webp" media="(max-width: 1023px)" type="image/webp")
                   source(srcset="assets/images/visiting/colonnade-perrault-768.jpg" media="(max-width: 1023px)")
-                  source(srcset="assets/images/visiting/colonnade-perrault-1024.webp" media="(max-width: 1919px)")
+                  source(srcset="assets/images/visiting/colonnade-perrault-1024.webp" media="(max-width: 1919px)" type="image/webp")
                   source(srcset="assets/images/visiting/colonnade-perrault-1024.jpg" media="(max-width: 1919px)")
-                  source(srcset="assets/images/visiting/colonnade-perrault-1920.webp")
+                  source(srcset="assets/images/visiting/colonnade-perrault-1920.webp" type="image/webp")
                   img.place__img(src="assets/images/visiting/colonnade-perrault-1920.jpg"
                                  width="440"
                                  height="285"
@@ -199,13 +199,13 @@ html.html(lang="en")
                                    target="_blank")
               article
                 picture
-                  source(srcset="assets/images/visiting/greek-hall-420.webp" media="(max-width: 767px)")
+                  source(srcset="assets/images/visiting/greek-hall-420.webp" media="(max-width: 767px)" type="image/webp")
                   source(srcset="assets/images/visiting/greek-hall-420.jpg" media="(max-width: 767px)")
-                  source(srcset="assets/images/visiting/greek-hall-768.webp" media="(max-width: 1023px)")
+                  source(srcset="assets/images/visiting/greek-hall-768.webp" media="(max-width: 1023px)" type="image/webp")
                   source(srcset="assets/images/visiting/greek-hall-768.jpg" media="(max-width: 1023px)")
-                  source(srcset="assets/images/visiting/greek-hall-1024.webp" media="(max-width: 1919px)")
+                  source(srcset="assets/images/visiting/greek-hall-1024.webp" media="(max-width: 1919px)" type="image/webp")
                   source(srcset="assets/images/visiting/greek-hall-1024.jpg" media="(max-width: 1919px)")
-                  source(srcset="assets/images/visiting/greek-hall-1920.webp")
+                  source(srcset="assets/images/visiting/greek-hall-1920.webp" type="image/webp")
                   img.place__img(src="assets/images/visiting/greek-hall-1920.jpg"
                                  width="440"
                                  height="285"
@@ -221,13 +221,13 @@ html.html(lang="en")
                                    target="_blank")
               article
                 picture
-                  source(srcset="assets/images/visiting/mona-lisa-420.webp" media="(max-width: 767px)")
+                  source(srcset="assets/images/visiting/mona-lisa-420.webp" media="(max-width: 767px)" type="image/webp")
                   source(srcset="assets/images/visiting/mona-lisa-420.jpg" media="(max-width: 767px)")
-                  source(srcset="assets/images/visiting/mona-lisa-768.webp" media="(max-width: 1023px)")
+                  source(srcset="assets/images/visiting/mona-lisa-768.webp" media="(max-width: 1023px)" type="image/webp")
                   source(srcset="assets/images/visiting/mona-lisa-768.jpg" media="(max-width: 1023px)")
-                  source(srcset="assets/images/visiting/mona-lisa-1024.webp" media="(max-width: 1919px)")
+                  source(srcset="assets/images/visiting/mona-lisa-1024.webp" media="(max-width: 1919px)" type="image/webp")
                   source(srcset="assets/images/visiting/mona-lisa-1024.jpg" media="(max-width: 1919px)")
-                  source(srcset="assets/images/visiting/mona-lisa-1920.webp")
+                  source(srcset="assets/images/visiting/mona-lisa-1920.webp" type="image/webp")
                   img.place__img(src="assets/images/visiting/mona-lisa-1920.jpg"
                                  width="440"
                                  height="285"
@@ -243,13 +243,13 @@ html.html(lang="en")
                                    target="_blank")
               article
                 picture
-                  source(srcset="assets/images/visiting/night-palace-420.webp" media="(max-width: 767px)")
+                  source(srcset="assets/images/visiting/night-palace-420.webp" media="(max-width: 767px)" type="image/webp")
                   source(srcset="assets/images/visiting/night-palace-420.jpg" media="(max-width: 767px)")
-                  source(srcset="assets/images/visiting/night-palace-768.webp" media="(max-width: 1023px)")
+                  source(srcset="assets/images/visiting/night-palace-768.webp" media="(max-width: 1023px)" type="image/webp")
                   source(srcset="assets/images/visiting/night-palace-768.jpg" media="(max-width: 1023px)")
-                  source(srcset="assets/images/visiting/night-palace-1024.webp" media="(max-width: 1919px)")
+                  source(srcset="assets/images/visiting/night-palace-1024.webp" media="(max-width: 1919px)" type="image/webp")
                   source(srcset="assets/images/visiting/night-palace-1024.jpg" media="(max-width: 1919px)")
-                  source(srcset="assets/images/visiting/night-palace-1920.webp")
+                  source(srcset="assets/images/visiting/night-palace-1920.webp" type="image/webp")
                   img.place__img(src="assets/images/visiting/night-palace-1920.jpg"
                                  width="440"
                                  height="285"
@@ -281,11 +281,11 @@ html.html(lang="en")
               | but because it looked different.
           div.explore__compare-slider.compare-slider
             picture
-              source(srcset="assets/images/compare-slider/las-meninas-before-420.webp" media="(max-width: 767px)")
+              source(srcset="assets/images/compare-slider/las-meninas-before-420.webp" media="(max-width: 767px)" type="image/webp")
               source(srcset="assets/images/compare-slider/las-meninas-before-420.jpg" media="(max-width: 767px)")
-              source(srcset="assets/images/compare-slider/las-meninas-before-768.webp" media="(max-width: 1023px)")
+              source(srcset="assets/images/compare-slider/las-meninas-before-768.webp" media="(max-width: 1023px)" type="image/webp")
               source(srcset="assets/images/compare-slider/las-meninas-before-768.jpg" media="(max-width: 1023px)")
-              source(srcset="assets/images/compare-slider/las-meninas-before-1024.webp")
+              source(srcset="assets/images/compare-slider/las-meninas-before-1024.webp" type="image/webp")
               img.compare-slider__before(src="assets/images/compare-slider/las-meninas-before-1024.jpg"
                                          width="720"
                                          height="700"
@@ -382,13 +382,13 @@ html.html(lang="en")
             | Buy tickets
           div.tickets__wrapper
             picture.tickets__picture
-              source(srcset="assets/images/tickets/tickets-venus-420.webp" media="(max-width: 767px)")
+              source(srcset="assets/images/tickets/tickets-venus-420.webp" media="(max-width: 767px)" type="image/webp")
               source(srcset="assets/images/tickets/tickets-venus-420.jpg" media="(max-width: 767px)")
-              source(srcset="assets/images/tickets/tickets-venus-768.webp" media="(max-width: 1023px)")
+              source(srcset="assets/images/tickets/tickets-venus-768.webp" media="(max-width: 1023px)" type="image/webp")
               source(srcset="assets/images/tickets/tickets-venus-768.jpg" media="(max-width: 1023px)")
-              source(srcset="assets/images/tickets/tickets-venus-1024.webp" media="(max-width: 1919px)")
+              source(srcset="assets/images/tickets/tickets-venus-1024.webp" media="(max-width: 1919px)" type="image/webp")
               source(srcset="assets/images/tickets/tickets-venus-1024.jpg" media="(max-width: 1919px)")
-              source(srcset="assets/images/tickets/tickets-venus-1920.webp")
+              source(srcset="assets/images/tickets/tickets-venus-1920.webp" type="image/webp")
               img.tickets__img(src="assets/images/tickets/tickets-venus-1920.jpg"
                                width="720"
                                height="550"
@@ -481,13 +481,13 @@ html.html(lang="en")
                   a.contacts__link(href="mailto:info@louvre.fr")
                     |  info@louvre.fr
             picture.contacts__map
-              source(srcset="assets/images/contacts/map-420.webp" media="(max-width: 767px)")
+              source(srcset="assets/images/contacts/map-420.webp" media="(max-width: 767px)" type="image/webp")
               source(srcset="assets/images/contacts/map-420.png" media="(max-width: 767px)")
-              source(srcset="assets/images/contacts/map-768.webp" media="(max-width: 1023px)")
+              source(srcset="assets/images/contacts/map-768.webp" media="(max-width: 1023px)" type="image/webp")
               source(srcset="assets/images/contacts/map-768.png" media="(max-width: 1023px)")
-              source(srcset="assets/images/contacts/map-1024.webp" media="(max-width: 1919px)")
+              source(srcset="assets/images/contacts/map-1024.webp" media="(max-width: 1919px)" type="image/webp")
               source(srcset="assets/images/contacts/map-1024.png" media="(max-width: 1919px)")
-              source(srcset="assets/images/contacts/map-1920.webp")
+              source(srcset="assets/images/contacts/map-1920.webp" type="image/webp")
               img.contacts__img(src="assets/images/contacts/map-1920.png"
                                 width="960"
                                 height="620"

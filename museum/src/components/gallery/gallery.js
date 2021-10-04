@@ -129,6 +129,7 @@ const createGallery = () => {
     img.classList.add('gallery__img');
 
     source.srcset = item.webp;
+    source.type = 'image/webp';
     img.src = item.jpg;
 
     img.width = item.width;
