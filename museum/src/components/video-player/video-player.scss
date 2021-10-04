@@ -8,6 +8,10 @@
     position: relative;
   }
 
+  &__wrapper {
+    padding-bottom: 45.14%;
+  }
+
   &__screen,
   &__playback,
   &__rewind {
@@ -15,10 +19,12 @@
   }
 
   &__screen {
+    position: absolute;
+    top: 0;
+    left: 0;
     display: block;
     width: 100%;
     height: 100%;
-    max-height: 650px;
 
     object-fit: cover;
   }
