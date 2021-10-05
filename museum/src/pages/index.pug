@@ -5,6 +5,8 @@ html.html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title
       | Museum
+    script(src="https://api.mapbox.com/mapbox-gl-js/v2.5.0/mapbox-gl.js")
+    link(href="https://api.mapbox.com/mapbox-gl-js/v2.5.0/mapbox-gl.css" rel="stylesheet")
   body.page
 
     //- *** HEADER ***
@@ -480,19 +482,8 @@ html.html(lang="en")
                   | mail:
                   a.contacts__link(href="mailto:info@louvre.fr")
                     |  info@louvre.fr
-            picture.contacts__map
-              source(srcset="assets/images/contacts/map-420.webp" media="(max-width: 767px)" type="image/webp")
-              source(srcset="assets/images/contacts/map-420.png" media="(max-width: 767px)")
-              source(srcset="assets/images/contacts/map-768.webp" media="(max-width: 1023px)" type="image/webp")
-              source(srcset="assets/images/contacts/map-768.png" media="(max-width: 1023px)")
-              source(srcset="assets/images/contacts/map-1024.webp" media="(max-width: 1919px)" type="image/webp")
-              source(srcset="assets/images/contacts/map-1024.png" media="(max-width: 1919px)")
-              source(srcset="assets/images/contacts/map-1920.webp" type="image/webp")
-              img.contacts__img(src="assets/images/contacts/map-1920.png"
-                                width="960"
-                                height="620"
-                                loading="lazy"
-                                alt="Map with the address of the Louvre")
+            div.contacts__map-wrapper
+              div.contacts__map#map
 
     //- *** FOOTER ***
     footer.section.main-footer
