@@ -5,8 +5,14 @@ html.html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title
       | Museum
+    //- *** MAPBOX ***
     script(src="https://api.mapbox.com/mapbox-gl-js/v2.5.0/mapbox-gl.js")
     link(href="https://api.mapbox.com/mapbox-gl-js/v2.5.0/mapbox-gl.css" rel="stylesheet")
+
+    //- *** SWIPER ***
+    script(src="https://unpkg.com/swiper@7/swiper-bundle.min.js")
+    link(href="https://unpkg.com/swiper@7/swiper-bundle.min.css" rel="stylesheet" )
+
   body.page
 
     //- *** HEADER ***
@@ -95,35 +101,36 @@ html.html(lang="en")
                               target="_blank")
               | Discover the Louvre
           div.welcome__slider.welcome-slider
-            div.welcome-slider__wrapper
-              picture
-                source(srcset="assets/images/welcome-slider/welcome-slider1-420.webp" media="(max-width: 767px)" type="image/webp")
-                source(srcset="assets/images/welcome-slider/welcome-slider1-420.jpg" media="(max-width: 767px)")
-                source(srcset="assets/images/welcome-slider/welcome-slider1-768.webp" media="(max-width: 1023px)" type="image/webp")
-                source(srcset="assets/images/welcome-slider/welcome-slider1-768.jpg" media="(max-width: 1023px)")
-                source(srcset="assets/images/welcome-slider/welcome-slider1-1024.webp" media="(max-width: 1919px)" type="image/webp")
-                source(srcset="assets/images/welcome-slider/welcome-slider1-1024.jpg" media="(max-width: 1919px)")
-                source(srcset="assets/images/welcome-slider/welcome-slider1-1920.webp" type="image/webp")
-                img.welcome-slider__img(src="assets/images/welcome-slider/welcome-slider1-1920.jpg" alt="The picture by Leonardo da Vinci - Mona Lisa" width="1000" height="750")
-            div.welcome-slider__controls
-              div.welcome-slider__numbers
-                span
-                  | 01
-                span
-                  | 05
-              ul.welcome-slider__bullet-list.list
-                li.welcome-slider__bullet.welcome-slider__bullet--active
-                li.welcome-slider__bullet
-                li.welcome-slider__bullet
-                li.welcome-slider__bullet
-                li.welcome-slider__bullet
-              div.welcome-slider__arrows
-                button.welcome-slider__arrow-item(type="button")
-                  span.visually-hidden
-                    | Prev
-                button.welcome-slider__arrow-item.welcome-slider__arrow-item--next(type="button")
-                   span.visually-hidden
-                    | Next
+            div.welcome-slider__wrapper.swiper
+              div.swiper-wrapper
+                div.swiper-slide
+                  picture
+                    source(srcset="assets/images/welcome-slider/welcome-slider1.webp" type="image/webp")
+                    img.welcome-slider__img(src="assets/images/welcome-slider/welcome-slider1.jpg" alt="Mona Lisa")
+                div.swiper-slide
+                  picture
+                    source(srcset="assets/images/welcome-slider/welcome-slider2.webp" type="image/webp")
+                    img.welcome-slider__img(src="assets/images/welcome-slider/welcome-slider2.jpg" alt="Liberty Leading the People")
+                div.swiper-slide
+                  picture
+                    source(srcset="assets/images/welcome-slider/welcome-slider3.webp" type="image/webp")
+                    img.welcome-slider__img(src="assets/images/welcome-slider/welcome-slider3.jpg" alt="La Belle Ferronnière by Leonardo da Vinci")
+                div.swiper-slide
+                  picture
+                    source(srcset="assets/images/welcome-slider/welcome-slider4.webp" type="image/webp")
+                    img.welcome-slider__img(src="assets/images/welcome-slider/welcome-slider4.jpg" alt="The Raft of the Medusa")
+                div.swiper-slide
+                  picture
+                    source(srcset="assets/images/welcome-slider/welcome-slider5.webp" type="image/webp")
+                    img.welcome-slider__img(src="assets/images/welcome-slider/welcome-slider5.jpg" alt="The Astronomer, Johannes Vermeer")
+              div.welcome-slider__controls
+                div.welcome-slider__numbers
+                  span.welcome-slider__current-slide 01
+                  span 05
+                div.welcome-slider__bullets.swiper-pagination
+                div.welcome-slider__arrows
+                  div.welcome-slider__arrow-item.swiper-button-prev
+                  div.welcome-slider__arrow-item.welcome-slider__arrow-item--next.swiper-button-next
 
       //- *** VISITING ***
       section.section.section--light.visiting#visiting

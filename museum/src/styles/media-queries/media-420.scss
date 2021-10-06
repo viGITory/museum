@@ -73,22 +73,40 @@
   }
 
   .welcome-slider {
+    padding-bottom: 95.8%;
+
+    &__img {
+      height: 78.6%;
+    }
+
     &__controls {
-      padding: 19px 0 20px;
+      height: 22.07%;
+      padding: 19px;
       column-gap: 25px;
     }
 
     &__numbers {
       width: 50px;
+
+      font-size: inherit;
+      line-height: inherit;
+
+      &::after {
+        height: 13px;
+      }
     }
 
-    &__bullet-list {
+    &__bullets {
       column-gap: 10px;
-    }
 
-    &__bullet {
-      width: 7px;
-      height: 7px;
+      &.swiper-pagination-bullets {
+        width: auto;
+      }
+
+      &.swiper-pagination-horizontal .swiper-pagination-bullet {
+        width: 7px;
+        height: 7px;
+      }
     }
 
     &__arrows {

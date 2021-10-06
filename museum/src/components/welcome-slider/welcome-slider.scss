@@ -1,118 +1,148 @@
 .welcome-slider {
-  position: relative;
   min-width: 1000px;
-  overflow: hidden;
+  height: 0;
+  padding-bottom: 81%;
 
-  &__wrapper,
+  &,
   &__numbers {
     position: relative;
   }
 
-  &__wrapper::after,
-  &__controls,
-  &__numbers::after {
+  &,
+  &::after,
+  &__wrapper,
+  &__img {
+    width: 100%;
+  }
+
+  &::after,
+  &__wrapper,
+  &__controls {
     position: absolute;
   }
 
+  &::after,
   &__wrapper {
-    &::after {
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+    height: 100%;
+  }
 
-      content: "";
-      background: linear-gradient(90deg, $extra-dark-bg 0%, rgba(0, 0, 0, .5) 16.19%, rgba(0, 0, 0, 0) 30.73%);
-    }
+  &::after,
+  &__controls {
+    z-index: 1;
+  }
+
+  &::after {
+    pointer-events: none;
+    content: "";
+    background: linear-gradient(90deg, $extra-dark-bg 0%, rgba(0, 0, 0, .5) 16.19%, rgba(0, 0, 0, 0) 30.73%);
+  }
+
+  &__wrapper {
+    top: 0;
+    left: 0;
   }
 
   &__img {
     display: block;
     max-width: 100%;
-    height: auto;
+    height: 92.59%;
 
     object-fit: cover;
   }
 
   &__controls,
-  &__numbers,
-  &__bullet-list,
-  &__arrows {
+  &__numbers {
     display: flex;
+    align-items: center;
   }
 
   &__controls {
     right: 0;
     bottom: 0;
-    align-items: center;
-    padding: 40px 75px;
+    box-sizing: border-box;
+    width: 60%;
+    height: 14.82%;
+    padding: 40px 75px 40px 74px;
 
     background-color: $dark-bg;
   }
 
-  &__numbers::after,
-  &__bullet {
-    background-color: $primary-light-text;
-  }
-
   &__numbers {
     justify-content: space-between;
-    width: 78px;
+    width: 76px;
+    height: 40px;
     margin-right: 55px;
 
-    line-height: 40px;
-
     &::after {
+      position: absolute;
       top: 50%;
       left: 50%;
-      width: 2px;
-      height: 20px;
+      width: 1px;
+      height: 17px;
 
       content: "";
+      background-color: $light-bg;
+
       transform: translate(-50%, -50%);
     }
   }
 
-  &__bullet-list {
+  &__bullets,
+  &__arrows {
+    display: flex;
+  }
+
+  &__bullets,
+  &__arrow-item {
+    position: static;
+  }
+
+  &__bullets {
     margin-right: 60px;
     column-gap: 25px;
-  }
 
-  &__bullet,
-  &__arrow-item {
-    cursor: pointer;
-
-    transition: all .2s ease;
-  }
-
-  &__bullet {
-    width: 16px;
-    height: 16px;
-
-    &--active {
-      background-color: $welcome-bullet-active;
+    // SWIPER
+    &.swiper-pagination-bullets {
+      width: 180px;
     }
 
-    &:hover {
-      background-color: $primary-hover;
+    &.swiper-pagination-horizontal .swiper-pagination-bullet {
+      width: 16px;
+      height: 16px;
+      margin: 0;
+
+      cursor: pointer;
+      background-color: $light-bg;
+      border-radius: 0;
+      opacity: 1;
+
+      transition: background-color .2s ease;
+
+      &:hover {
+        background-color: $primary-hover;
+      }
+
+      &-active {
+        background-color: $welcome-bullet-active;
+      }
     }
   }
 
   &__arrows {
-    column-gap: 19px;
+    column-gap: 20px;
   }
 
   &__arrow-item {
     width: 30px;
     height: 8px;
-    padding: 0;
+    margin: 0;
 
-    background-color: transparent;
     background-image: url("../assets/svg/slider-arrow.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    border: 0;
+
+    transition: filter .2s ease;
 
     &--next {
       transform: rotate(180deg);
@@ -120,6 +150,11 @@
 
     &:hover {
       filter: $welcome-arrow-hover;
+    }
+
+    // SWIPER
+    &::after {
+      content: "";
     }
   }
 }
