@@ -54,6 +54,12 @@
   }
 }
 
+// *** GALLERY ***
+.js-gallery {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
 // *** RIPPLE ***
 .js-ripple-circle {
   position: absolute;

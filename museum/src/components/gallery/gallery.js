@@ -141,4 +141,21 @@ const createGallery = () => {
 };
 createGallery();
 
-export default createGallery;
+const showGallery = () => {
+  const images = document.querySelectorAll('.gallery__img');
+
+  const elementInView = (element, offset = 0) => {
+    const elementTop = element.getBoundingClientRect().top;
+
+    return (elementTop <= ((window.innerHeight || document.documentElement.clientHeight) - offset));
+  };
+
+  const scrollAnimation = () => {
+    images.forEach((item) => {
+      elementInView(item, -570) ? item.classList.add('js-gallery') : item.classList.remove('js-gallery');
+    })
+  };
+
+  window.addEventListener('scroll', scrollAnimation);
+};
+showGallery();

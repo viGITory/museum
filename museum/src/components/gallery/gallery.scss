@@ -67,5 +67,9 @@
     display: block;
     max-width: 100%;
     height: auto;
+
+    opacity: 0;
+    transition: opacity .8s ease .2s, transform .8s ease;
+    transform: translateY(100%) scale(0);
   }
 }
