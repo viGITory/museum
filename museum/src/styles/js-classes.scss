@@ -1,6 +1,6 @@
 // *** HEADER MENU ***
 .js-show-nav {
-  transform: translateX(0);
+  transform: translateX(1000px);
 }
 
 .js-open-burger .burger-btn {
@@ -29,6 +29,7 @@
 }
 
 .js-show-booking {
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 

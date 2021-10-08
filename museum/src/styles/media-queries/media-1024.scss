@@ -24,13 +24,13 @@
     &__nav {
       position: absolute;
       top: 81px;
-      left: 0;
+      left: -1000px;
       z-index: 2;
       min-width: 297px;
       min-height: 585px;
       padding: 22px 55px;
 
-      transform: translateX(-1000px);
+      transition: transform .5s ease;
     }
 
     &__button {
@@ -170,7 +170,7 @@
   // *** EXPLORE ***
   .explore {
     &__wrapper {
-      flex-basis: auto;
+      flex-basis: 100%;
       margin-bottom: 59px;
     }
 

@@ -9,6 +9,12 @@
   background-color: transparent;
   border: 0;
 
+  transition: filter .2s ease;
+
+  &:hover {
+    filter: $burger-hover;
+  }
+
   &__line {
     pointer-events: none;
   }
