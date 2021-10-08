@@ -21,20 +21,26 @@ const videoAction = () => {
     video.play();
     video.style.opacity = '1';
     playBtn.style.backgroundImage = 'url(assets/svg/pause.svg)';
-    screenBtn.style.display = 'none';
+    screenBtn.style.opacity = '0';
   } else {
     video.pause();
     video.style.opacity = '0.5';
     playBtn.style.backgroundImage = 'url(assets/svg/play-btn.svg)';
-    screenBtn.style.display = 'block';
+    screenBtn.style.opacity = '1';
   }
 };
 
 screenBtn.addEventListener('click', videoAction);
 playBtn.addEventListener('click', videoAction);
 video.addEventListener('click', videoAction);
-document.addEventListener('keyup', (event) => {
-  if (event.code === 'Space' || event.code === 'KeyK') videoAction();
+videoContainer.addEventListener('keydown', (event) => {
+  if (event.code === 'Space') event.preventDefault();
+});
+
+videoContainer.addEventListener('keyup', (event) => {
+  if (event.code === 'Space' || event.code === 'KeyK') {
+    videoAction();
+  }
 });
 
 //- *** REWIND / PLAYBACK ***
@@ -57,19 +63,36 @@ const videoProgress = () => {
 };
 
 const changeVideoTime = (event) => {
-  let progress = Math.floor(event.offsetX) / (progressBar.offsetWidth / 100);
-
-  video.currentTime = video.duration * (progress / 100);
+  video.currentTime = video.duration * (progressBar.value / 100);
 };
 
 video.addEventListener('timeupdate', videoProgress);
-progressBar.addEventListener('click', changeVideoTime);
+progressBar.addEventListener('pointerdown', () => {
+  video.removeEventListener('timeupdate', videoProgress);
+  progressBar.addEventListener('input', () => {
+    progressBar.style.background = `linear-gradient(to right,
+                                                    #710707 0%, #710707 ${progressBar.value}%,
+                                                    #c4c4c4 ${progressBar.value}%, #c4c4c4 100%)`;
+  });
+
+  progressBar.addEventListener('pointerup', (event) => {
+    changeVideoTime(event);
+    video.addEventListener('timeupdate', videoProgress);
+  });
+
+  progressBar.addEventListener('touchend', () => {
+    changeVideoTime();
+    video.addEventListener('timeupdate', videoProgress)
+  });
+});
+
 video.addEventListener('ended', () => {
   video.currentTime = 0;
+  screenBtn.style.opacity = '1';
   playBtn.style.backgroundImage = 'url(assets/svg/play-btn.svg)';
 });
 
-document.addEventListener('keyup', (event) => {
+videoContainer.addEventListener('keyup', (event) => {
   if (event.code === 'KeyJ') {
     showElement(rewind);
 
@@ -87,14 +110,14 @@ document.addEventListener('keyup', (event) => {
   }
 });
 
-document.addEventListener('keyup', (event) => {
+videoContainer.addEventListener('keyup', (event) => {
   if (isFinite(event.key) && event.code !== 'Space') {
     video.currentTime = video.duration * (event.key / 10);
   }
 });
 
 //- *** VIDEO SPEED ***
-document.addEventListener('keydown', (event) => {
+videoContainer.addEventListener('keydown', (event) => {
   if (event.shiftKey && event.code === 'Comma') {
     showElement(playback);
 
@@ -147,7 +170,8 @@ const muteVolume = () => {
 
 volumeBtn.addEventListener('click', muteVolume);
 volumeBar.addEventListener('change', сhangeVolume);
-document.addEventListener('keyup', (event) => {
+volumeBar.addEventListener('input', сhangeVolume);
+videoContainer.addEventListener('keyup', (event) => {
   if (event.code === 'KeyM') muteVolume();
 });
 
@@ -164,10 +188,10 @@ const changeScreenMode = () => {
 
 fullScreenBtn.addEventListener('click', changeScreenMode);
 video.addEventListener('dblclick', changeScreenMode);
-document.addEventListener('keyup', (event) => {
+videoContainer.addEventListener('keyup', (event) => {
   if (event.code === 'KeyF') changeScreenMode();
 });
 
-document.addEventListener('fullscreenchange', () => {
+videoContainer.addEventListener('fullscreenchange', () => {
   if (!document.fullscreenElement) fullScreenBtn.style.backgroundImage = 'url(assets/svg/fullscreen-btn.svg';
 });
