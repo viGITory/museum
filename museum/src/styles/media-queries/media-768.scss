@@ -207,11 +207,6 @@
       }
     }
 
-    &__progress-bar--vol,
-    &__volume-bar {
-      width: 100%;
-    }
-
     &__progress-bar {
       &--video {
         position: absolute;
@@ -221,6 +216,7 @@
     }
 
     &__volume-bar {
+      width: 100%;
       column-gap: 35px;
     }
   }

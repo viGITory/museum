@@ -13,6 +13,7 @@
   }
 
   &__screen,
+  &__screen-btn,
   &__playback,
   &__rewind {
     transition: opacity .2s ease;
@@ -49,6 +50,11 @@
 
     transform: translate(-50%, -50%);
 
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+
     path {
       transition: fill .2s ease;
     }
@@ -60,23 +66,23 @@
 
   &__playback,
   &__rewind {
-    bottom: 24px;
+    bottom: 4%;
 
-    font-size: 30px;
     opacity: 0;
   }
 
   &__playback {
-    left: 41px;
+    left: 2%;
   }
 
   &__rewind {
-    right: 41px;
-    width: 250px;
+    right: 2%;
+    width: 150px;
 
     text-align: center;
 
+    background-image: url("../assets/svg/rewind.svg");
     background-repeat: no-repeat;
-    background-size: 45px auto;
+    background-size: auto 100%;
   }
 }

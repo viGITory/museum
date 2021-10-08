@@ -1,28 +1,16 @@
-:fullscreen .video-player__screen {
-  width: 100%;
-  height: 100vh;
-}
-
-:fullscreen .control-bar {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-
-  background-color: #000;
-  opacity: 0;
-
-  transition: opacity .2s ease;
-
-  &:hover {
-    opacity: 1;
+:fullscreen {
+  .video-player__wrapper {
+    height: calc(100vh - 85px);
+    padding: 0;
   }
-}
 
-:fullscreen .control-bar__progress-bar {
-  width: 100%;
-  min-width: 250px;
-}
+  .video-player__screen {
+    width: 100%;
+    height: 100%;
+  }
 
-:fullscreen .control-bar__progress-bar--vol {
-  width: 250px;
+  .control-bar {
+    width: 100%;
+    height: 85px;
+  }
 }

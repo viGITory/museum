@@ -249,13 +249,10 @@
         width: 13px;
         height: 13px;
       }
-
-      &--vol {
-        width: 143px;
-      }
     }
 
     &__volume-bar {
+      width: 35.5%;
       column-gap: 31px;
     }
   }

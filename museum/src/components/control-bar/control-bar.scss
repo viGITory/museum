@@ -2,7 +2,7 @@
   box-sizing: border-box;
   min-height: 85px;
   padding: 24px 30px;
-  column-gap: 50px;
+  column-gap: 3.5%;
 
   background-color: $extra-dark-bg;
 
@@ -67,8 +67,6 @@
     background: linear-gradient(to right, $progress-active 0%, $progress-active 0%, $progress-bg 0%, $progress-bg 100%);
 
     &--vol {
-      width: 155px;
-
       background: linear-gradient(to right, $progress-active 44%, $progress-active 44%, $progress-bg 0%, $progress-bg 100%);
     }
   }
@@ -83,6 +81,7 @@
   }
 
   &__volume-bar {
+    width: 26.2%;
     column-gap: 50px;
   }
 }
