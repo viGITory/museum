@@ -8,6 +8,10 @@
   color: $primary-light-text;
   word-break: break-word;
 
+  *::selection {
+    @include selection();
+  }
+
   &::-webkit-scrollbar {
     width: 15px;
     background-color: $light-bg;
