@@ -250,13 +250,14 @@
 
   // *** TICKETS ***
   .tickets {
-    &__picture {
-      margin-bottom: 40px;
-    }
-
     &__wrapper {
       justify-content: center;
+      row-gap: 41px;
     }
+  }
+
+  .tickets-slider {
+    padding-bottom: 41.6%;
   }
 
   .form {

@@ -275,10 +275,11 @@
     &__wrapper {
       column-gap: 59px;
     }
+  }
 
-    &__picture {
-      max-width: 444px;
-    }
+  .tickets-slider {
+    max-width: 444px;
+    padding-bottom: 46.6%;
   }
 
   .form {

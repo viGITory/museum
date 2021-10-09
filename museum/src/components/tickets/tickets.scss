@@ -7,18 +7,6 @@
     column-gap: 60px;
   }
 
-  &__picture {
-    max-width: 720px;
-  }
-
-  &__img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-
-    object-fit: cover;
-  }
-
   &__form {
     flex-basis: 660px;
   }
