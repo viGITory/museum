@@ -2,17 +2,18 @@
   overflow: hidden;
 
   &__wrapper {
-    display: grid;
-    grid-auto-columns: calc(100% / 3 - 28px);
-    grid-auto-flow: column;
     margin-bottom: 40px;
-    column-gap: 42px;
   }
 
   &__frame-wrapper {
     position: relative;
     height: 0;
-    padding-bottom: 56.25%;
+    padding-bottom: 17.64%;
+  }
+
+  &__frame,
+  &__arrow {
+    border: 0;
   }
 
   &__frame {
@@ -23,24 +24,56 @@
     height: 100%;
 
     background-color: $extra-dark-bg;
-    border: 0;
   }
 
+  &__pagination,
   &__bullets {
     display: flex;
     align-items: center;
+  }
+
+  &__pagination {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+
+  &__bullets.swiper-pagination-horizontal .swiper-pagination-bullet,
+  &__arrow {
+    height: 12px;
+    margin: 0;
+
+    cursor: pointer;
+  }
+
+  &__bullets {
     justify-content: center;
     column-gap: 20px;
+
+    &.swiper-pagination-horizontal .swiper-pagination-bullet {
+      width: 12px;
+
+      background-color: $video-bullet-color;
+      border-radius: 50%;
+      opacity: 1;
+
+      transition: background-color .2s ease;
+
+      &-active {
+        background-color: $video-bullet-active;
+      }
+
+      &:hover {
+        background-color: $video-bullet-hover;
+      }
+    }
   }
 
   &__arrow {
+    position: static;
     width: 10px;
-    height: 12px;
     padding: 0;
 
-    cursor: pointer;
     background-color: transparent;
-    border: 0;
 
     path {
       transition: fill .2s ease;
@@ -49,25 +82,10 @@
     &:hover path {
       fill: $video-bullet-hover;
     }
-  }
 
-  &__bullet-item {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-
-    cursor: pointer;
-    background-color: $video-bullet-color;
-    border-radius: 50%;
-
-    transition: background-color .2s ease;
-
-    &--active {
-      background-color: $video-bullet-active;
-    }
-
-    &:hover {
-      background-color: $video-bullet-hover;
+    // SWIPER
+    &::after {
+      content: "";
     }
   }
 }

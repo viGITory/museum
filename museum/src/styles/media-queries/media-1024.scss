@@ -257,6 +257,12 @@
     }
   }
 
+  .video-slider {
+    &__frame-wrapper {
+      padding-bottom: 17.3%;
+    }
+  }
+
   // *** GALLERY ***
   .gallery {
     height: 1460px;

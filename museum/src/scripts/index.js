@@ -5,6 +5,7 @@ import '../styles/style.scss';
 import '../components/main-header/header-nav.js';
 import '../components/welcome-slider/welcome-slider.js';
 import '../components/video-player/video-player.js';
+import videoSlider from '../components/video-slider/video-slider.js';
 import '../components/compare-slider/compare-slider.js';
 import ticketsSlider from '../components/tickets-slider/tickets-slider.js';
 import createGallery from '../components/gallery/gallery.js';

@@ -222,6 +222,14 @@
       margin-bottom: 37px;
     }
 
+    &__frame-wrapper {
+      padding-bottom: 26.5%;
+    }
+
+    &__pagination {
+      max-width: 174px;
+    }
+
     &__arrow {
       &,
       & > svg {
@@ -229,9 +237,11 @@
       }
     }
 
-    &__bullet-item {
-      width: 8px;
-      height: 8px;
+    &__bullets {
+      &.swiper-pagination-horizontal .swiper-pagination-bullet {
+        width: 8px;
+        height: 8px;
+      }
     }
   }
 

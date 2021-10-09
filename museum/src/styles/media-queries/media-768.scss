@@ -223,14 +223,22 @@
 
   .video-slider {
     &__wrapper {
-      grid-auto-columns: calc(50% - 10px);
       margin-bottom: 20px;
-      column-gap: 20px;
     }
 
-    &__bullet-item {
-      width: 10px;
-      height: 10px;
+    &__frame-wrapper {
+      padding-bottom: 27.2%;
+    }
+
+    &__pagination {
+      max-width: 190px;
+    }
+
+    &__bullets {
+      &.swiper-pagination-horizontal .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+      }
     }
   }
 
