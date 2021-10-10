@@ -46,15 +46,21 @@
 
   .main-menu {
     flex-direction: column;
-    max-width: 122px;
+    max-width: 132px;
 
     &__item {
       padding: 0;
 
       background-image: url("../assets/svg/menu-arrow.svg");
       background-repeat: no-repeat;
-      background-position: right center;
+      background-position: right 10px center;
       background-size: 12px auto;
+
+      transition: background-position .2s ease;
+
+      &:hover {
+        background-position: right center;
+      }
     }
 
     &__link  {

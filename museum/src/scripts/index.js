@@ -1,4 +1,5 @@
 //- *** STYLES ***
+import 'swiper/css/bundle';
 import '../styles/style.scss';
 
 //- *** COMPONENTS ***

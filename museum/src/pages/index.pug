@@ -9,10 +9,6 @@ html.html(lang="en")
     script(src="https://api.mapbox.com/mapbox-gl-js/v2.5.0/mapbox-gl.js")
     link(href="https://api.mapbox.com/mapbox-gl-js/v2.5.0/mapbox-gl.css" rel="stylesheet")
 
-    //- *** SWIPER ***
-    script(src="https://unpkg.com/swiper@7/swiper-bundle.min.js")
-    link(href="https://unpkg.com/swiper@7/swiper-bundle.min.css" rel="stylesheet" )
-
   body.page
 
     //- *** HEADER ***
@@ -101,36 +97,35 @@ html.html(lang="en")
                               target="_blank")
               | Discover the Louvre
           div.welcome__slider.welcome-slider
-            div.welcome-slider__wrapper.swiper
-              div.swiper-wrapper
-                div.swiper-slide
-                  picture
-                    source(srcset="assets/images/welcome-slider/welcome-slider1.webp" type="image/webp")
-                    img.welcome-slider__img(src="assets/images/welcome-slider/welcome-slider1.jpg" alt="Mona Lisa")
-                div.swiper-slide
-                  picture
-                    source(srcset="assets/images/welcome-slider/welcome-slider2.webp" type="image/webp")
-                    img.welcome-slider__img(src="assets/images/welcome-slider/welcome-slider2.jpg" alt="Liberty Leading the People")
-                div.swiper-slide
-                  picture
-                    source(srcset="assets/images/welcome-slider/welcome-slider3.webp" type="image/webp")
-                    img.welcome-slider__img(src="assets/images/welcome-slider/welcome-slider3.jpg" alt="La Belle Ferronnière by Leonardo da Vinci")
-                div.swiper-slide
-                  picture
-                    source(srcset="assets/images/welcome-slider/welcome-slider4.webp" type="image/webp")
-                    img.welcome-slider__img(src="assets/images/welcome-slider/welcome-slider4.jpg" alt="The Raft of the Medusa")
-                div.swiper-slide
+            div.welcome-slider__wrapper.swiper-wrapper
+              div.swiper-slide
+                picture
+                  source(srcset="assets/images/welcome-slider/welcome-slider1.webp" type="image/webp")
+                  img.welcome-slider__img(src="assets/images/welcome-slider/welcome-slider1.jpg" alt="Mona Lisa, Leonardo da Vinci")
+              div.swiper-slide
+                picture
+                  source(srcset="assets/images/welcome-slider/welcome-slider2.webp" type="image/webp")
+                  img.welcome-slider__img(src="assets/images/welcome-slider/welcome-slider2.jpg" alt="Liberty Leading the People, Eugène Delacroix")
+              div.swiper-slide
+                picture
+                  source(srcset="assets/images/welcome-slider/welcome-slider3.webp" type="image/webp")
+                  img.welcome-slider__img(src="assets/images/welcome-slider/welcome-slider3.jpg" alt="La Belle Ferronnière, Leonardo da Vinci")
+              div.swiper-slide
+                picture
+                  source(srcset="assets/images/welcome-slider/welcome-slider4.webp" type="image/webp")
+                  img.welcome-slider__img(src="assets/images/welcome-slider/welcome-slider4.jpg" alt="The Raft of the Medusa, Théodore Géricault")
+              div.swiper-slide
                   picture
                     source(srcset="assets/images/welcome-slider/welcome-slider5.webp" type="image/webp")
                     img.welcome-slider__img(src="assets/images/welcome-slider/welcome-slider5.jpg" alt="The Astronomer, Johannes Vermeer")
-              div.welcome-slider__controls
-                div.welcome-slider__numbers
-                  span.welcome-slider__current-slide 01
-                  span 05
-                div.welcome-slider__bullets.swiper-pagination
-                div.welcome-slider__arrows
-                  div.welcome-slider__arrow-item.swiper-button-prev
-                  div.welcome-slider__arrow-item.welcome-slider__arrow-item--next.swiper-button-next
+            div.welcome-slider__controls
+              div.welcome-slider__numbers
+                span.welcome-slider__current-slide 01
+                span 05
+              div.welcome-slider__bullets.swiper-pagination
+              div.welcome-slider__arrows
+                button.welcome-slider__arrow-item.swiper-button-prev(type="button")
+                button.welcome-slider__arrow-item.welcome-slider__arrow-item--next.swiper-button-next(type="button")
 
       //- *** VISITING ***
       section.section.section--light.visiting#visiting

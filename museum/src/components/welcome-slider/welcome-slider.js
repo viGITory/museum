@@ -1,6 +1,8 @@
+import Swiper from 'swiper/bundle';
+
 const currentSlide = document.querySelector('.welcome-slider__current-slide');
 
-const swiper = new Swiper('.swiper', {
+const welcomeSlider = new Swiper('.welcome-slider', {
   loop: true,
   pagination: {
     el: '.swiper-pagination',
@@ -17,6 +19,6 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
-swiper.on('slideChange', function() {
+welcomeSlider.on('slideChange', function() {
   currentSlide.textContent = `0${this.realIndex + 1}`;
 });

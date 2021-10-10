@@ -1,3 +1,5 @@
+import Swiper from 'swiper/bundle';
+
 const ticketsSlider = new Swiper('.tickets-slider', {
   loop: true,
   autoplay: {

@@ -3,6 +3,8 @@
   height: 0;
   padding-bottom: 81%;
 
+  overflow: hidden;
+
   &,
   &__numbers {
     position: relative;
@@ -136,12 +138,15 @@
   &__arrow-item {
     width: 30px;
     height: 8px;
+    padding: 0;
     margin: 0;
 
+    background-color: transparent;
     background-image: url("../assets/svg/slider-arrow.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+    border: 0;
 
     transition: filter .2s ease;
 

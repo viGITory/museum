@@ -1,3 +1,5 @@
+import Swiper from 'swiper/bundle';
+
 const videoSlider = new Swiper('.video-slider', {
   loop: true,
   pagination: {
