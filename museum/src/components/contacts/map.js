@@ -1,3 +1,5 @@
+import mapboxgl from 'mapbox-gl';
+
 mapboxgl.accessToken = 'pk.eyJ1IjoicGFudG9yeSIsImEiOiJja3RvdWtrcTcwZ2JmMnVvYXhzcTJ1Ymx2In0.iHARQCH0cLkTZ2s52LQ-HQ';
 
 const map = new mapboxgl.Map(

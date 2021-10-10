@@ -1,5 +1,6 @@
 //- *** STYLES ***
 import 'swiper/css/bundle';
+import 'mapbox-gl/dist/mapbox-gl.css'
 import '../styles/style.scss';
 
 //- *** COMPONENTS ***
