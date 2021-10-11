@@ -23,3 +23,12 @@ divider.addEventListener('pointerdown', (event) => {
 document.addEventListener('pointerup', () => {
   document.removeEventListener('pointermove', compareImages);
 });
+
+divider.addEventListener('touchstart', (event) => {
+  event.preventDefault();
+  document.addEventListener('touchmove', compareImages);
+});
+
+document,addEventListener('touchend', () => {
+  document.removeEventListener('touchmove', compareImages);
+});
