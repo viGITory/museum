@@ -56,7 +56,7 @@ const showElement = (elem) => {
 
 //- *** VIDEO PROGRESS ***
 const videoProgress = () => {
-  progressBar.value = Math.floor(video.currentTime) / (Math.floor(video.duration) / 100);
+  progressBar.value = Math.floor(video.currentTime) / (Math.floor(video.duration) / 100) || 0;
   progressBar.style.background = `linear-gradient(to right,
                                                   #710707 0%, #710707 ${progressBar.value}%,
                                                   #c4c4c4 ${progressBar.value}%, #c4c4c4 100%)`;
@@ -64,6 +64,18 @@ const videoProgress = () => {
 
 const changeVideoTime = (event) => {
   video.currentTime = video.duration * (progressBar.value / 100);
+};
+
+export const dropVideoProgress = () => {
+  video.removeEventListener('timeupdate', videoProgress);
+  video.currentTime = 0;
+  progressBar.value = 0;
+  playBtn.style.backgroundImage = 'url(assets/svg/play-btn.svg)';
+  screenBtn.style.opacity = '1';
+  progressBar.style.background = `linear-gradient(to right,
+                                                  #710707 0%, #710707 ${progressBar.value}%,
+                                                  #c4c4c4 ${progressBar.value}%, #c4c4c4 100%)`;
+  video.addEventListener('timeupdate', videoProgress);
 };
 
 video.addEventListener('timeupdate', videoProgress);

@@ -75,6 +75,10 @@
 
     background-color: transparent;
 
+    svg {
+      pointer-events: none;
+    }
+
     path {
       transition: fill .2s ease;
     }
