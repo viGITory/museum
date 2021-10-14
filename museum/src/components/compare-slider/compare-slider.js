@@ -11,8 +11,8 @@ const compareImages = (event) => {
     return;
   }
 
-  divider.style.left = `${dividerPos}px`;
-  imgAfter.style.width = `${dividerPos + dividerHalf}px`;
+  divider.style.left = `${dividerPos / containerCoords.width * 100}%`;
+  imgAfter.style.width = `${(dividerPos + dividerHalf) / containerCoords.width * 100}%`;
 };
 
 divider.addEventListener('pointerdown', (event) => {
