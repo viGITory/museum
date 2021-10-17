@@ -32,3 +32,6 @@ const marker5 = new mapboxgl.Marker({ color: '#757575', scale: 0.8 })
 .addTo(map);
 
 map.addControl(new mapboxgl.NavigationControl());
+map.once('idle', function() {
+  map.resize();
+});
