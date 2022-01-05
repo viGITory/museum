@@ -9,7 +9,8 @@
   word-break: break-word;
 
   *::selection {
-    @include selection();
+    color: $primary-light-text;
+    background-color: $primary-selection;
   }
 
   &::-webkit-scrollbar {
