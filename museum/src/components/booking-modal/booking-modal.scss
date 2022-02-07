@@ -11,9 +11,9 @@
 
   &__booking {
     top: 50%;
-    left: 0;
+    left: -10000px;
     z-index: 3;
 
-    transform: translate(-10000px, -50%);
+    transform: translate(0, -50%);
   }
 }

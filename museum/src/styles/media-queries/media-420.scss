@@ -38,7 +38,7 @@
       grid-column: auto;
     }
 
-    picture:nth-child(2)  {
+    picture:nth-child(2) {
       order: -1;
     }
   }
@@ -368,10 +368,11 @@
   }
 
   .footer-menu {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(0, max-content));
     grid-template-rows: repeat(2, 1fr);
     grid-auto-flow: column;
-    gap: 30px calc(100% / 3 - 55px);
+    justify-content: space-between;
+    gap: 30px 0;
 
     &__item {
       padding: 0;
@@ -424,7 +425,7 @@
       margin-bottom: 12px;
 
       background-image: url("../assets/images/booking/booking-louvre-420.jpg");
-      background-size: 120px auto;
+      background-size: 36% auto;
     }
 
     &__text {
@@ -454,9 +455,13 @@
     &__input {
       font-size: 13px;
       line-height: 15px;
+
+      &--holder {
+        width: 100%;
+      }
     }
 
-    &__label  {
+    &__label {
       font-size: 11px;
       line-height: 13px;
 
@@ -465,12 +470,6 @@
 
         font-size: 13px;
         line-height: 15px;
-      }
-    }
-
-    &__input {
-      &--holder {
-        width: 100%;
       }
     }
 
