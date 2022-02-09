@@ -1,0 +1,54 @@
+@media (max-width: 600px) {
+  .visiting {
+    &__item {
+      width: calc(100% - 26.5%);
+    }
+  }
+
+  .tickets {
+    &__wrapper {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  .tickets-slider {
+    width: 100%;
+  }
+
+  .form {
+    &__amount {
+      align-items: center;
+    }
+  }
+
+  .main-footer {
+    &__wrapper {
+      row-gap: 40px;
+    }
+
+    &__nav {
+      flex-basis: 100%;
+      margin-bottom: 0;
+    }
+
+    &__social {
+      margin-right: auto;
+    }
+
+    &__bottom {
+      justify-content: center;
+      gap: 10px;
+    }
+
+    &__text {
+      &--school {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .footer-menu {
+    justify-content: center;
+  }
+}

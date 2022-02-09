@@ -1,4 +1,4 @@
-@media (max-width: 767px) {
+@media (max-width: 420px) {
   // *** COMMON COMPONENTS ***
   .page {
     font-size: 16px;
@@ -32,6 +32,10 @@
       padding-bottom: 20px;
       margin-bottom: 0;
       column-gap: 12px;
+    }
+
+    &__img {
+      height: auto;
     }
 
     &__wide {
@@ -343,21 +347,10 @@
       border-bottom-width: 2px;
     }
 
-    &__wrapper {
-      row-gap: 40px;
-    }
-
-    &__nav {
-      flex-basis: 100%;
-      margin-bottom: 0;
-    }
-
     &__bottom {
-      font-size: inherit;
-    }
+      justify-content: space-between;
 
-    &__social {
-      margin-right: auto;
+      font-size: inherit;
     }
 
     &__text {

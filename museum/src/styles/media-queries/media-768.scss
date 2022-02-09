@@ -56,6 +56,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      min-height: auto;
     }
 
     &__wrapper {
@@ -80,10 +81,15 @@
     &__button {
       display: none;
     }
+
+    &__slider {
+      position: relative;
+      right: 0;
+    }
   }
 
   .welcome-slider {
-    min-width: 100%;
+    max-width: 100%;
     padding-bottom: 88.6%;
 
     &::after {
@@ -114,11 +120,11 @@
     }
 
     &__wrapper {
-      gap: 39px 56px;
+      gap: 39px 8%;
     }
 
     &__item {
-      width: calc(50% - 86px);
+      width: calc(50% - 11.8%);
     }
   }
 
@@ -310,6 +316,10 @@
   // *** CONTACTS ***
   .contacts {
     padding-bottom: 67px;
+
+    &__wrapper {
+      flex-wrap: wrap;
+    }
 
     &__subtitle,
     &__text:last-child {
