@@ -27,6 +27,7 @@
   }
 
   &__bottom {
+    justify-content: space-between;
     padding-top: 50px;
 
     font-weight: 100;
@@ -36,14 +37,6 @@
 
   &__text {
     margin: 0;
-
-    &--year {
-      margin-right: 488px;
-    }
-
-    &--school {
-      margin-right: auto;
-    }
   }
 
   &__link {

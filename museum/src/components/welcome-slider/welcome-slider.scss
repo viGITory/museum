@@ -1,11 +1,9 @@
 .welcome-slider {
-  min-width: 1000px;
-  height: 0;
-  padding-bottom: 81%;
+  max-width: 1000px;
+  height: 100%;
 
   overflow: hidden;
 
-  &,
   &__numbers {
     position: relative;
   }
@@ -36,7 +34,13 @@
   &::after {
     pointer-events: none;
     content: "";
-    background: linear-gradient(90deg, $extra-dark-bg 0%, rgba(0, 0, 0, .5) 16.19%, rgba(0, 0, 0, 0) 30.73%);
+    background:
+      linear-gradient(
+        90deg,
+        $extra-dark-bg 0%,
+        rgba(0, 0, 0, .5) 16.19%,
+        rgba(0, 0, 0, 0) 30.73%
+      );
   }
 
   &__wrapper {

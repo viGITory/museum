@@ -2,11 +2,13 @@
   &__inner {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 60px;
   }
 
   &__wrapper {
-    flex-basis: 659px;
+    width: 100%;
+    max-width: 659px;
   }
 
   &__text {
