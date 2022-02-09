@@ -49,13 +49,15 @@
   &__form,
   &__wrapper {
     display: flex;
-    justify-content: space-between;
   }
 
   &__form {
+    flex-wrap: wrap;
+    justify-content: center;
     max-width: 970px;
     padding: 90px 0;
     margin: 0 auto;
+    gap: 40px;
   }
 
   &__details {
@@ -130,6 +132,7 @@
   &__wrapper {
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
     margin-bottom: 18px;
 
     &:last-child {

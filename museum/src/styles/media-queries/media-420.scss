@@ -125,14 +125,6 @@
   // *** VISITING ***
   .visiting {
     padding-bottom: 40px;
-
-    &__wrapper {
-      row-gap: 39px;
-    }
-
-    &__item {
-      width: calc(100% - 102px);
-    }
   }
 
   .place {
@@ -265,7 +257,6 @@
   // *** TICKETS ***
   .tickets {
     &__wrapper {
-      justify-content: center;
       row-gap: 41px;
     }
   }
@@ -397,20 +388,6 @@
       font-size: 32px;
       line-height: 35px;
     }
-
-    &__field {
-      width: 100%;
-      margin-right: 0;
-    }
-  }
-
-  .booking-field {
-    &__input {
-      &--date,
-      &--time {
-        width: 100%;
-      }
-    }
   }
 
   .booking-overview {
@@ -434,15 +411,9 @@
   }
 
   .payment-card {
-    max-width: 330px;
-
     &__frontside,
     &__backside {
       width: 100%;
-    }
-
-    &__frontside {
-      margin-bottom: 25px;
     }
 
     &__input {
@@ -464,13 +435,6 @@
         font-size: 13px;
         line-height: 15px;
       }
-    }
-
-    &__backside {
-      position: relative;
-      top: 0;
-      left: 0;
-      padding-top: 19px;
     }
 
     &__description {

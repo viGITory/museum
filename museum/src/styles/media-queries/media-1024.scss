@@ -189,10 +189,6 @@
     }
   }
 
-  .compare-slider {
-    width: 75%;
-  }
-
   // *** VIDEO ***
   .video {
     &__wrapper {
@@ -390,21 +386,9 @@
     }
 
     &__bottom {
-      justify-content: space-between;
       padding-top: 52px;
 
       font-size: 22px;
-    }
-
-    &__text {
-      &--year,
-      &--school {
-        margin-right: 0;
-      }
-
-      &--school {
-        margin-left: 10px;
-      }
     }
   }
 

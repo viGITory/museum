@@ -145,10 +145,6 @@
       display: block;
     }
 
-    &__wrapper {
-      margin-bottom: 0;
-    }
-
     &__title {
       margin-bottom: 40px;
     }
@@ -159,7 +155,6 @@
   }
 
   .compare-slider {
-    width: 100%;
     max-width: 728px;
 
     &__after {
@@ -360,7 +355,6 @@
     &__social {
       margin-right: 90px;
       margin-bottom: 0;
-      margin-left: auto;
     }
 
     &__bottom {
@@ -381,9 +375,7 @@
   .booking {
     box-sizing: border-box;
     max-width: 590px;
-    height: 100vh;
     padding: 80px 30px 40px;
-    overflow-y: scroll;
 
     &__close-btn {
       right: 25px;
@@ -391,8 +383,7 @@
 
     &__form {
       display: block;
-      padding-top: 0;
-      padding-bottom: 0;
+      padding: 0;
     }
 
     &__details {
