@@ -73,7 +73,7 @@
     padding: 0;
 
     &__inner {
-      min-height: auto;
+      min-height: 585px;
     }
 
     &__wrapper {
@@ -102,8 +102,7 @@
   }
 
   .welcome-slider {
-    min-width: 700px;
-    padding-bottom: 83.5%;
+    max-width: 700px;
 
     &__controls {
       justify-content: flex-end;
@@ -144,11 +143,11 @@
   .visiting {
     &__wrapper {
       justify-content: center;
-      gap: 59px 108px;
+      gap: 59px 11%;
     }
 
     &__item {
-      width: calc(50% - 162px);
+      width: calc(50% - 16.5%);
     }
   }
 
@@ -175,11 +174,6 @@
 
   // *** EXPLORE ***
   .explore {
-    &__wrapper {
-      flex-basis: 100%;
-      margin-bottom: 59px;
-    }
-
     &__text {
       margin-bottom: 0;
 
@@ -285,7 +279,9 @@
   // *** TICKETS ***
   .tickets {
     &__wrapper {
-      column-gap: 80px;
+      flex-wrap: nowrap;
+      justify-content: stretch;
+      column-gap: 8.2%;
     }
   }
 
@@ -332,7 +328,7 @@
     }
 
     &__total {
-      margin-bottom: auto;
+      margin-bottom: 67px;
     }
 
     &__total-sum {
@@ -354,6 +350,11 @@
   // *** CONTACTS ***
   .contacts {
     padding-bottom: 63px;
+
+    &__wrapper {
+      flex-wrap: nowrap;
+      column-gap: 38px;
+    }
 
     &__subtitle {
       max-width: 185px;
@@ -385,6 +386,7 @@
 
     &__social {
       margin-bottom: 16px;
+      margin-left: auto;
     }
 
     &__bottom {
