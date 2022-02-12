@@ -620,15 +620,15 @@ html.html(lang="en")
               label.booking__field.booking-field.booking-field--name
                 span.visually-hidden
                   | Name
-                input.booking-field__input(type="text" placeholder="Name")
+                input.booking-field__input(type="text" placeholder="Name" data-form="username" maxlength="15")
               label.booking__field.booking-field.booking-field--email
                 span.visually-hidden
                   | E-mail
-                input.booking-field__input(type="email" placeholder="E-mail")
+                input.booking-field__input(type="email" placeholder="E-mail" data-form="email")
               label.booking__field.booking-field.booking-field--tel
                 span.visually-hidden
                   | Tel
-                input.booking-field__input(type="tel" placeholder="Phone")
+                input.booking-field__input(type="tel" placeholder="Phone" data-form="tel" maxlength="13")
               div.booking__field.booking-field
                 select.booking-field__input.booking-field__input--ticket-type
                   option(value="Ticket Type" hidden)

@@ -96,6 +96,8 @@
     border: 1px solid $booking-primary-dark;
     outline: none;
 
+    transition: border-color .2s ease;
+
     &,
     &::placeholder {
       font-family: inherit;
